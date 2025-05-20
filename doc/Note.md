@@ -149,8 +149,8 @@
     > 看到的 `imageUrl="..." title="..." description="..."` 是什麼魔法？\
     > 別急，你先看到這裡有兩個 constructor。\
     > 第一個 constructor `Card()`，\
-    > 是用在【寫法 B - 用在 FXML】的，它會由 `FXMLLoader` 自動呼叫，\
-    > 然後接著它會呼叫你的 setter (`setImageUrl` / `setTitle` / `setDescription`)。\
+    > 是用在【寫法 B - 用在 FXML】的，`FXMLLoader` 會自動呼叫這個沒參數的 constructor，\
+    > 然後會接著呼叫你的 setter (`setImageUrl` / `setTitle` / `setDescription`)。\
     > 沒錯，你在 FXML 傳進去的參數就是這樣設定的。\
     > 所以你的元件外部類別，<mark>一定要為傳進來的參數準備好 getter / setter</mark>！\
     > 第二個 constructor `Card(String imageUrl, String title, String description)`，\
