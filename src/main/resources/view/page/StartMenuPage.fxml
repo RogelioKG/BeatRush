@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.FlowPane?>
+<?import org.notiva.beatrush.component.Card?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.notiva.beatrush.controller.StartMenuPageController">
+    <FlowPane hgap="20" vgap="20" fx:id="flowContainer">
+        <Card imageUrl="https://picsum.photos/500/300"
+              title="First Card"
+              description="The description of first card" />
+        <Card imageUrl="https://picsum.photos/500/300"
+              title="Second Card"
+              description="The description of second card" />
+    </FlowPane>
+</VBox>
