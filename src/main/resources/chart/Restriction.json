@@ -1,0 +1,26 @@
+[
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 1000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 1500,
+    "duration": 0
+  },
+  {
+    "type": "hold",
+    "track": 1,
+    "timestamp": 2000,
+    "duration": 1.5
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 3000,
+    "duration": 0
+  }
+]
