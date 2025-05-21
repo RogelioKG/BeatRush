@@ -7,21 +7,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 public class StageManager {
-    /** 儲存所有已註冊視窗的字典，key 為視窗名稱，value 為對應的 Stage 物件 */
     private final Map<String, Stage> stages = new HashMap<>();
     private final int DEFAULT_WIDTH = 600;
     private final int DEFAULT_HEIGHT = 600;
 
-    /**
-     * 用於實現單例模式的內部類別。
-     * 當第一次存取 Holder 類時，會創建 StageManager 的唯一實例。
-     */
     private static class Holder {
         private static final StageManager INSTANCE = new StageManager();
     }
 
     /**
-     * 獲取 StageManager 的單例實例。
+     * 獲取 StageManager 的唯一實例 (Singleton Patterns)。
      *
      * @return StageManager 的唯一實例
      */
@@ -59,7 +54,7 @@ public class StageManager {
      * 使用預設的寬度和高度 (600x600)。
      *
      * @param name 要顯示的視窗名稱
-     * @param fxmlFile FXML 檔案路徑，用於加載場景內容
+     * @param fxmlFile FXML 檔案路徑 (以 resources 目錄為根目錄)，用於加載場景內容
      */
     public void showStage(String name, String fxmlFile) {
         showStage(name, fxmlFile, DEFAULT_WIDTH, DEFAULT_HEIGHT);
@@ -69,7 +64,7 @@ public class StageManager {
      * 顯示指定名稱的視窗，並加載指定的 FXML 檔案作為其場景內容，使用指定的寬度和高度。
      *
      * @param name 要顯示的視窗名稱
-     * @param fxmlFile FXML 檔案路徑，用於加載場景內容
+     * @param fxmlFile FXML 檔案路徑 (以 resources 目錄為根目錄)
      * @param width 場景寬度
      * @param height 場景高度
      */
@@ -93,7 +88,7 @@ public class StageManager {
      * 創建一個新的場景，使用指定的 FXML 檔案作為其內容。
      * 使用預設的寬度和高度 (600x600)。
      *
-     * @param fxmlFile FXML 檔案路徑，用於加載場景內容
+     * @param fxmlFile FXML 檔案路徑 (以 resources 目錄為根目錄)
      * @return 配置好的 Scene 物件
      */
     public Scene getScene(String fxmlFile) {
@@ -103,7 +98,7 @@ public class StageManager {
     /**
      * 創建一個新的場景，使用指定的 FXML 檔案作為其內容。
      *
-     * @param fxmlFile FXML 檔案路徑，用於加載場景內容
+     * @param fxmlFile FXML 檔案路徑 (以 resources 目錄為根目錄)
      * @param width 場景寬度
      * @param height 場景高度
      * @return 配置好的 Scene 物件
