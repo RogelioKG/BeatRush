@@ -110,7 +110,6 @@ public class StageManager {
      */
     public Scene getScene(String fxmlFile, int width, int height) {
         Parent root = Loader.loadView(fxmlFile);
-        Scene scene = new Scene(root, width, height);
-        return scene;
+        return new Scene(root, width, height);
     }
 }
