@@ -76,9 +76,9 @@ public class StageManager {
     }
 
     /**
-     * 從管理器中移除指定名稱的視窗。
+     * 註銷指定名稱的視窗。
      *
-     * @param name 要移除的視窗名稱
+     * @param name 要註銷的視窗名稱
      */
     public void removeStage(String name) {
         this.stages.remove(name);

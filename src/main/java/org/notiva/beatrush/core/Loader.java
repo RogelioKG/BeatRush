@@ -4,14 +4,13 @@ import java.io.IOException;
 import java.net.URL;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 
 public class Loader {
 
     /**
      * 加載元件視圖。
      *
-     * @param component 作為根節點和控制器的元件實例
+     * @param component 元件實例
      * @param fxmlPath FXML 文件的路徑 (以 resources 目錄為根目錄)
      * @return 加載後的父節點
      * @throws RuntimeException 如果 FXML 加載失敗
@@ -45,9 +44,6 @@ public class Loader {
 
     /**
      * 加載指定路徑的資源，並返回其 URL。
-     * <p>
-     * 此方法通過類別加載器查找資源，如果找不到資源則拋出異常。
-     * </p>
      *
      * @param path 資源路徑 (以 resources 目錄為根目錄)
      * @return 資源的 URL
