@@ -18,23 +18,64 @@
     ```
 ## Caution
 
-### 1. 一定要註解
+### 1. 註解
 + 只要 method 有註解即可，實作內容不需要註解 (當然你願意加上註解是更好的)
 + 可交給 AI 生成
 + 註解格式：JavaDoc
 
-### 2. 務必遵守命名 Java 命名規則
-+ 請參考[菜鳥工程師 肉豬 - Java 程式的命名慣例](https://matthung0807.blogspot.com/2019/05/java-naming-convention.html)
+### 2. 風格
++ 務必遵守命名 Java 命名規則
+  + 請參考[菜鳥工程師 肉豬 - Java 程式的命名慣例](https://matthung0807.blogspot.com/2019/05/java-naming-convention.html)
++ 每個類別只負責一項具體工作
+  + 例如：`Note` 類別做好音符的工作，`Score` 類別做好計分的工作，不要讓它們混為一談
++ 多用 `enum`
+  + 避免使用 magic number (0, 1, 2, 3 是什麼？哪條軌道？)
+    ```java
+    int track = 1;
+    switch (track) {
+        case 0:
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        default:
+            break;
+    }
+    ```
+  + 噢，所以有四條軌道，左邊、左中、右中、右邊
+    ```java
+    enum Track {
+        LEFT,
+        MIDDLE_LEFT,
+        MIDDLE_RIGHT,
+        RIGHT
+    };
+    ```
+    ```java
+    Track track = Track.LEFT;
+    switch (track) {
+        case LEFT:
+            break;
+        case MIDDLE_LEFT:
+            break;
+        case MIDDLE_RIGHT:
+            break;
+        case RIGHT:
+            break;
+        default:
+            break;
+    }
+    ```
 
 ### 3. 千萬不能用系統時鐘計時
 + 系統時鐘不是單調時鐘 (monotonic)，會根據 NTC 調整時間 (時間會倒帶！)
 + 而且後續若要實作暫停功能會很麻煩
 + 我的建議是直接使用播放器本身的計時 `mediaPlayer.getCurrentTime()`
 
-### 4. 每個類別只負責一項具體工作
-+ 例如：`Note` 類別做好音符的工作，`Score` 類別做好計分的工作，不要讓它們混為一談
-
-### 5. 大家 push 上來的時候，請保持 App 是空的
+### 4. push 上來請保持 App 是空的
 + 你可以在 `App` 裡面實驗一些功能，但要推上來請保持空的 (要不然 App 你改一下、我改一下會很多衝突)
   ```java
   package org.notiva.beatrush;
@@ -54,7 +95,7 @@
   }
   ```
 
-### 6. 反射問題
+### 5. 反射問題
 + 反射 (reflection)：在執行期去存取任意類別的資訊（甭管有沒有 `public`）
   + 在採用【模組系統】 (我們現在的專案) 構建的 Java 程式，預設是禁止反射的
   + 但問題是，`FXMLLoader` 需要在執行期去存取你的 Controller 類別
