@@ -34,7 +34,27 @@
 ### 4. 每個類別只負責一項具體工作
 + 例如：`Note` 類別做好音符的工作，`Score` 類別做好計分的工作，不要讓它們混為一談
 
-### 5. 反射問題
+### 5. 大家 push 上來的時候，請保持 App 是空的
++ 你可以在 `App` 裡面實驗一些功能，但要推上來請保持空的 (要不然 App 你改一下、我改一下會很多衝突)
+  ```java
+  package org.notiva.beatrush;
+
+  import javafx.application.Application;
+  import javafx.stage.Stage;
+  
+  public class App extends Application {
+  
+      @Override
+      public void start(Stage primaryStage) {
+      }
+  
+      public static void main(String[] args) {
+          launch(args);
+      }
+  }
+  ```
+
+### 6. 反射問題
 + 反射 (reflection)：在執行期去存取任意類別的資訊（甭管有沒有 `public`）
   + 在採用【模組系統】 (我們現在的專案) 構建的 Java 程式，預設是禁止反射的
   + 但問題是，`FXMLLoader` 需要在執行期去存取你的 Controller 類別
@@ -55,6 +75,7 @@
         exports org.notiva.beatrush;
     }
     ```
+
 
 ## GUI
 ![](https://i.meee.com.tw/5E7yRZ7.png)
