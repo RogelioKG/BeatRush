@@ -25,11 +25,43 @@ public class Card extends AnchorPane {
     private final StringProperty title = new SimpleStringProperty();
     private final StringProperty description = new SimpleStringProperty();
 
+    /**
+     * 預設建構子，會載入對應的 FXML 版面，並綁定屬性。
+     * <p>
+     * 建議在 FXML 中使用此建構子（由 JavaFX 自動呼叫）。
+     *
+     * <p><b>FXML 使用範例：</b></p>
+     * <pre>{@code
+     * <Card imageUrl="https://picsum.photos/500/300"
+     *       title="First Card"
+     *       description="The description of first card" />
+     * }</pre>
+     */
     public Card() {
         Loader.loadComponentView(this, "/view/component/Card.fxml");
         bindProperty();
     }
 
+    /**
+     * 使用指定參數建立卡片元件。
+     * <p>
+     * 建議在 Java 程式中手動建立元件時使用，例如控制器中動態加入卡片。
+     *
+     * <p><b>Java 使用範例：</b></p>
+     * <pre>{@code
+     * FlowPane container = new FlowPane();
+     * Card card = new Card(
+     *     "https://picsum.photos/500/300",
+     *     "Third Card",
+     *     "The description of third card"
+     * );
+     * container.getChildren().add(card);
+     * }</pre>
+     *
+     * @param imageUrl    卡片圖片的 URL
+     * @param title       卡片標題
+     * @param description 卡片描述文字
+     */
     public Card(String imageUrl, String title, String description) {
         this();
         setImageUrl(imageUrl);
@@ -46,7 +78,7 @@ public class Card extends AnchorPane {
             try {
                 return new Image(url);
             } catch (Exception e) {
-                System.err.println("無法載入圖片: " + url);
+                System.err.printf("Failed to load image: %s%n", url);
                 return null;
             }
         }));
