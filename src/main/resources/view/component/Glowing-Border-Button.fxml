@@ -7,13 +7,13 @@
 
 <fx:root type="javafx.scene.control.Button"
          xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-         mnemonicParsing="false" styleClass="pa-button-wrapper">
+         mnemonicParsing="false" styleClass="gb-button-wrapper">
     <stylesheets>
         <URL value="@../../css/glowing-border-button.css"/>
     </stylesheets>
     <graphic>
-        <StackPane fx:id="startButton" prefHeight="60.0" prefWidth="200.0" styleClass="pa-button">
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="pa-button-text" text="START"/>
+        <StackPane fx:id="startButton" prefHeight="60.0" prefWidth="200.0">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gb-button-text" text="START"/>
         </StackPane>
     </graphic>
 </fx:root>
