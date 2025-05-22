@@ -61,6 +61,19 @@ public class StageManager {
     }
 
     /**
+     * 顯示指定名稱的視窗，並以指定的 Parent 物件作為其場景內容。
+     * 使用預設的寬度和高度 (600x600)。
+     * 主要是用於需要傳遞參數的情況。
+     * 範例可見ScorePageController
+     *
+     * @param name 要顯示的視窗名稱
+     * @param root 要顯示的 Parent 物件
+     */
+    public void showStage(String name, Parent root) {
+        showStage(name, root, DEFAULT_WIDTH, DEFAULT_HEIGHT);
+    }
+
+    /**
      * 顯示指定名稱的視窗，並加載指定的 FXML 檔案作為其場景內容，使用指定的寬度和高度。
      *
      * @param name 要顯示的視窗名稱
@@ -71,6 +84,22 @@ public class StageManager {
     public void showStage(String name, String fxmlFile, int width, int height) {
         Stage stage = getStage(name);
         Scene scene = getScene(fxmlFile, width, height);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    /**
+     * 顯示指定名稱的視窗，並以指定的 Parent 物件作為其場景內容，使用指定的寬度和高度。
+     * 主要是用於需要傳遞參數的情況。
+     *
+     * @param name 要顯示的視窗名稱
+     * @param root 要顯示的 Parent 物件
+     * @param width 場景寬度
+     * @param height 場景高度
+     */
+    public void showStage(String name, Parent root, int width, int height) {
+        Stage stage = getStage(name);
+        Scene scene = new Scene(root, width, height);
         stage.setScene(scene);
         stage.show();
     }

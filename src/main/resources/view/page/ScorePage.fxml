@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import java.net.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.notiva.beatrush.controller.ScorePageController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.notiva.beatrush.controller.ScorePageController">
+    <stylesheets>
+        <URL value="@../../css/all.css" />
+        <URL value="@../../css/game-button.css" />
+        <URL value="@../../css/label-title.css" />
+        <URL value="@../../css/container.css" />
+    </stylesheets>
 
+    <Pane fx:id="scorePane" layoutX="166.0" layoutY="64.0" prefHeight="125.0" prefWidth="330.0" styleClass="rounded-pane" />
+    <StackPane fx:id="scoreTierPane" layoutX="83.0" layoutY="43.0" prefHeight="167.0" prefWidth="167.0" styleClass="circle-stackPane" />
+
+    <HBox alignment="CENTER" layoutX="155.0" layoutY="276.0" spacing="30">
+        <Button onAction="#onContinueButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="CONTINUE" />
+        <Button onAction="#onReplayButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="REPLAY" />
+    </HBox>
 </AnchorPane>

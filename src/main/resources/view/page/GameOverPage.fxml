@@ -5,8 +5,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml" fx:controller="org.notiva.beatrush.controller.GameOverPageController">
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #131313;" spacing="30"
+      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.notiva.beatrush.controller.GameOverPageController">
     <stylesheets>
         <URL value="@../../css/all.css"/>
         <URL value="@../../css/game-button.css"/>
@@ -17,8 +18,7 @@
     </padding>
     <Label styleClass="label-title" text="Game Over"/>
     <HBox alignment="CENTER" spacing="30">
-        <Button onAction="#onContinueButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button"
-                text="CONTINUE"/>
+        <Button onAction="#onContinueButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="CONTINUE"/>
         <Button onAction="#onReplayButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="REPLAY"/>
     </HBox>
 </VBox>
