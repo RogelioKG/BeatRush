@@ -1,0 +1,19 @@
+.game-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #4c84ff;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0.0, 0, 2);
+}
+
+.game-button:hover {
+    -fx-background-color: #3367d6;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.0, 0, 3);
+}
+
+.game-button:pressed {
+    -fx-background-color: #2a56b2;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 2, 0.0, 0, 1);
+}

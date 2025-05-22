@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import org.notiva.beatrush.component.Card?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.notiva.beatrush.controller.StartMenuPageController">
-    <FlowPane hgap="20" vgap="20" fx:id="flowContainer">
-        <Card imageUrl="https://picsum.photos/500/300"
-              title="First Card"
-              description="The description of first card" />
-        <Card imageUrl="https://picsum.photos/500/300"
-              title="Second Card"
-              description="The description of second card" />
-    </FlowPane>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #131313;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.notiva.beatrush.controller.StartMenuPageController">
+   <children>
+      <ImageView fitHeight="192.0" fitWidth="483.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/beatrush.png" />
+         </image>
+      </ImageView>
+   </children>
 </VBox>
