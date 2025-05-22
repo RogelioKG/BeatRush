@@ -12,8 +12,8 @@
         <URL value="@../../css/glowing-border-button.css"/>
     </stylesheets>
     <graphic>
-        <StackPane fx:id="startButton" prefHeight="60.0" prefWidth="200.0">
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gb-button-text" text="START"/>
+        <StackPane fx:id="button" prefHeight="60.0" prefWidth="200.0">
+            <Text fx:id="buttonText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gb-button-text" text="START"/>
         </StackPane>
     </graphic>
 </fx:root>
