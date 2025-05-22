@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane styleClass="vaporwave-background">
+    <stylesheets>
+        <URL value="@../../css/vaporwave-background.css"/>
+    </stylesheets>
+    <AnchorPane styleClass="darken-layer"
+                AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    </AnchorPane>
+</AnchorPane>

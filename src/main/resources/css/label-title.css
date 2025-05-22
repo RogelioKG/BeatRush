@@ -1,7 +1,0 @@
-.label-title {
-    -fx-font-size: 42px;
-    -fx-text-fill: #ff3366;
-    -fx-font-weight: bold;
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0, 3);
-    -fx-padding: 20px 0 30px 0;
-}

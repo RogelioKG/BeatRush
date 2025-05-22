@@ -1,0 +1,29 @@
+/* 圓角 Pane */
+.rounded-pane {
+    -fx-background-color: #88ccff;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #336699;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.5, 0, 2);
+}
+
+.rounded-pane:hover {
+    -fx-background-color: #66bbff;
+    -fx-cursor: hand;
+}
+
+/* 圓形 StackPane */
+.circle-stackPane {
+    -fx-background-color: #44aaff;
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-border-color: #1a8fd6;
+    -fx-border-width: 3;
+    -fx-alignment: center;
+}
+
+.circle-stackPane:hover {
+    -fx-background-color: #3399ff;
+    -fx-cursor: hand;
+}
