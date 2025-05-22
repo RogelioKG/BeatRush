@@ -50,4 +50,8 @@ public class GlowingBorderButton extends Button {
     public void setButtonText(String text) {
         buttonText.setText(text);
     }
+
+    public String getButtonText() {
+        return buttonText.getText();
+    }
 }

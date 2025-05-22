@@ -15,6 +15,6 @@
         <ImageView fitHeight="192.0" fitWidth="483.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../image/beatrush.png"/>
         </ImageView>
-        <GlowingBorderButton />
+        <GlowingBorderButton buttonText="START" />
     </VBox>
 </StackPane>
