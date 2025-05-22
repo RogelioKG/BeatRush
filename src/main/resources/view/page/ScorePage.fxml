@@ -4,19 +4,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<!--<?import org.notiva.beatrush.component.GlowingBorderButton?>-->
+
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.notiva.beatrush.controller.ScorePageController">
     <stylesheets>
         <URL value="@../../css/all.css" />
         <URL value="@../../css/game-button.css" />
-        <URL value="@../../css/label-title.css" />
+        <URL value="@../../css/label.css" />
         <URL value="@../../css/container.css" />
     </stylesheets>
 
-    <Pane fx:id="scorePane" layoutX="166.0" layoutY="64.0" prefHeight="125.0" prefWidth="330.0" styleClass="rounded-pane" />
-    <StackPane fx:id="scoreTierPane" layoutX="83.0" layoutY="43.0" prefHeight="167.0" prefWidth="167.0" styleClass="circle-stackPane" />
+    <Pane fx:id="scorePane" layoutX="142.0" layoutY="62.0" prefHeight="125.0" prefWidth="400.0"
+          styleClass="rounded-pane">
+        <Label fx:id="score" alignment="CENTER" layoutX="154.0" layoutY="36.0" prefHeight="53.0" prefWidth="92.0" text="Label"/>
+    </Pane>
+    <StackPane fx:id="scoreTierPane" layoutX="59.0" layoutY="41.0" prefHeight="167.0" prefWidth="167.0"
+               styleClass="circle-stackPane">
+        <Label fx:id="scoreTier" alignment="CENTER" prefHeight="63.0" prefWidth="75.0" text="Label"/>
+    </StackPane>
 
-    <HBox alignment="CENTER" layoutX="155.0" layoutY="276.0" spacing="30">
-        <Button onAction="#onContinueButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="CONTINUE" />
-        <Button onAction="#onReplayButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="REPLAY" />
+    <HBox alignment="CENTER" layoutX="35.0" layoutY="276.0" prefHeight="0.0" prefWidth="550.0" spacing="30">
+<!--        <Button onAction="#onContinueButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="CONTINUE" />-->
+<!--        <Button onAction="#onReplayButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="REPLAY" />-->
+<!--        <GlowingBorderButton fx:id="continueButton" onAction="#onContinueButtonClick"/>-->
+<!--        <GlowingBorderButton fx:id="replayButton" onAction="#onReplayButtonClick"/>-->
     </HBox>
 </AnchorPane>
