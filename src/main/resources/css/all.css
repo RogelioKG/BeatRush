@@ -5,3 +5,7 @@
 .button {
     -fx-cursor: hand;
 }
+
+.icon {
+    -fx-fill: white;
+}

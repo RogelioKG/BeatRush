@@ -3,8 +3,8 @@
 <?import java.net.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-
 <?import org.notiva.beatrush.component.GlowingBorderButton?>
+
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
            fx:controller="org.notiva.beatrush.controller.StartMenuPageController">
     <stylesheets>
@@ -15,6 +15,6 @@
         <ImageView fitHeight="192.0" fitWidth="483.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../image/beatrush.png"/>
         </ImageView>
-        <GlowingBorderButton buttonText="START" />
+        <GlowingBorderButton buttonText="START" onAction="#onStartButtonClick" />
     </VBox>
 </StackPane>

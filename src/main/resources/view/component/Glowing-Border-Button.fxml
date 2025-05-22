@@ -13,7 +13,7 @@
     </stylesheets>
     <graphic>
         <StackPane fx:id="button" prefHeight="60.0" prefWidth="200.0">
-            <Text fx:id="buttonText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gb-button-text" text="START"/>
+            <Text fx:id="buttonText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gb-button-text"/>
         </StackPane>
     </graphic>
 </fx:root>
