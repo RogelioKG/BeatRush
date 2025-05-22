@@ -1,0 +1,12 @@
+.pa-button-wrapper {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 4, 1, 0, 3);
+}
+
+.pa-button-text {
+    -fx-fill: #D640AF;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+/* #AF84FE #FF0068 */
