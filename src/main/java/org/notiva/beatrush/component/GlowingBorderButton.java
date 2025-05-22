@@ -44,7 +44,7 @@ public class GlowingBorderButton extends Button {
     }
 
     public GlowingBorderButton() {
-        Loader.loadComponentView(this, "/view/component/Glowing-Border-Button.fxml");
+        Loader.loadComponentView(this, "/view/component/GlowingBorderButton.fxml");
     }
 
     public void setButtonText(String text) {
