@@ -2,6 +2,7 @@ package org.notiva.beatrush.controller;
 
 
 
+import javafx.scene.input.KeyCode;
 import org.notiva.beatrush.util.Song; // <-- 在這裡導入 Song
 import org.notiva.beatrush.util.Note;
 import org.notiva.beatrush.App;
@@ -37,7 +38,7 @@ public class GamePageController {
     // 遊戲常數，需要根據你的 UI 設計來調整
     private static final double GAME_HEIGHT = 800; // 遊戲區域的高度
     private static final double NOTE_DROP_DURATION_MS = 1500; // 音符從生成到判定線所需的時間 (毫秒)
-    private static final double HIT_LINE_Y = GAME_HEIGHT * 0.8; // 判定線的 Y 座標 (例如，在 80% 的高度)
+    private static final double HIT_LINE_Y = 500; // 判定線的 Y 座標 (例如，在 80% 的高度)
     private static final double SPAWN_Y = 0 - NoteView.NOTE_HIGH; // 音符生成時的 Y 座標 (從螢幕外開始)
     private static final double LANE_WIDTH = 100; // 每條軌道的寬度
     private static final double START_X_OFFSET = 150; // 第一條軌道開始的 X 偏移
@@ -54,6 +55,12 @@ public class GamePageController {
     @FXML
     public void initialize() {
         // 通常在這裡初始化一些 UI 元素，但 MediaPlayer 的初始化可能更適合在設定譜面後進行。
+        gamePane.setFocusTraversable(true); // 確保 gamePane 可以被聚焦
+        gamePane.setOnKeyPressed(event -> {
+            //keyPressStatus.put(event.getCode(), true);
+            handleKeyPress(event.getCode().getName()); // 呼叫你的處理方法
+            event.consume(); // 消費事件，防止它被其他 Node 再次處理
+        });
     }
 
     // 在 GamePageController.java 的 setupGame(Song song) 方法內：
@@ -101,6 +108,9 @@ public class GamePageController {
                 // 處理錯誤
             }
 
+            mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) -> {
+                updateGame(newValue);
+            });
 
             mediaPlayer.setOnReady(() -> {
                 System.out.println("音樂準備完成，開始播放。");
@@ -178,6 +188,7 @@ public class GamePageController {
     public void handleKeyPress(String keyCode) { // 接收按下的按鍵碼
         // 假設你的按鍵對應軌道 (例如 'D' -> 軌道 0, 'F' -> 軌道 1, 等)
         int pressedLane = -1;
+        System.out.println(1);
         switch (keyCode) {
             case "D": pressedLane = 0; break;
             case "F": pressedLane = 1; break;

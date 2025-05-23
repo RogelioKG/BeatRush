@@ -29,12 +29,15 @@ public class NoteView extends StackPane { // 可以是 StackPane 或其他你喜
      * @param dropDuration 音符下落的持續時間 (毫秒)
      * @param laneX 該音符所在軌道的 X 座標
      */
-    public NoteView(Note noteData, double startY, double targetY, double dropDuration, double laneX) {
+    public NoteView(Note noteData, double startY, double targetY, double dropDuration, double laneX)  {
         this.noteData = noteData;
         this.targetY = targetY; // 保存判定線的 Y 座標
 
         // 設置音符的視覺外觀 (這裡簡單用一個 Rectangle 或 Circle)
+
         Rectangle visualNote = new Rectangle(NOTE_WIDTH, NOTE_HIGH);
+
+
         // Circle visualNote = new Circle(NOTE_SIZE / 2, Color.BLUE); // 可以用圓形
 
         // 根據音符類型或軌道給予不同的顏色或形狀
@@ -50,7 +53,9 @@ public class NoteView extends StackPane { // 可以是 StackPane 或其他你喜
         // Text noteText = new Text(String.valueOf(noteData.getTimestamp()));
         // noteText.setFill(Color.BLACK);
         // this.getChildren().addAll(visualNote, noteText);
+
         this.getChildren().add(visualNote); // 只添加矩形
+
 
         // 設置音符的初始位置 (X 軸是軌道中心，Y 軸是開始下落點)
         this.setLayoutX(laneX - NOTE_WIDTH / 2); // 減去一半寬度以使中心對齊軌道X

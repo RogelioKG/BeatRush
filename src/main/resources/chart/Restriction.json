@@ -2,25 +2,25 @@
   {
     "type": "tap",
     "track": 0,
-    "timestamp": 1000,
+    "timestamp": 5000,
     "duration": 0
   },
   {
     "type": "tap",
     "track": 2,
-    "timestamp": 1500,
+    "timestamp": 5500,
     "duration": 0
   },
   {
     "type": "hold",
     "track": 1,
-    "timestamp": 2000,
+    "timestamp": 6000,
     "duration": 1.5
   },
   {
     "type": "tap",
     "track": 3,
-    "timestamp": 3000,
+    "timestamp": 7500,
     "duration": 0
   }
 ]
