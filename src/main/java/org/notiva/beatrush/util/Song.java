@@ -28,4 +28,8 @@ public class Song {
         return songName;
     }
 
+    public Media getSongFile() {
+        return songFile;
+    }
+
 }

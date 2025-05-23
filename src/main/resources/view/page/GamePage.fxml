@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="gamePane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.notiva.beatrush.controller.GamePageController">
+    <children>
+        <Label fx:id="timeLabel" layoutX="14.0" layoutY="14.0" text="00:00" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Rectangle fx:id="hitLine1" fill="#35d2ad00" height="15.0" layoutX="340.0" layoutY="500.0" stroke="#b48686" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="hitLine2" fill="#35d2ad00" height="15.0" layoutX="475.0" layoutY="500.0" stroke="#b48686" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="hitLine3" fill="#35d2ad00" height="15.0" layoutX="610.0" layoutY="500.0" stroke="#b48686" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="hitLine11" fill="#35d2ad00" height="15.0" layoutX="205.0" layoutY="500.0" stroke="#b48686" strokeType="INSIDE" width="130.0" />
+    </children>
+</AnchorPane>
