@@ -17,6 +17,7 @@
         <URL value="@../../css/all.css"/>
         <URL value="@../../css/song-select-page.css"/>
     </stylesheets>
+    <fx:include source="../component/VaporwaveBackground.fxml" />
     <ScrollPane fitToWidth="true">
         <AnchorPane>
             <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0"

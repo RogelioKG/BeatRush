@@ -6,23 +6,21 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-            maxWidth="Infinity" prefHeight="150.0" styleClass="song-item-card">
+<AnchorPane maxWidth="Infinity" prefHeight="150.0" styleClass="song-item-card" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
-        <URL value="@../../css/song-item-card.css"/>
+        <URL value="@../../css/song-item-card.css" />
     </stylesheets>
-    <HBox styleClass="song-item" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-          AnchorPane.topAnchor="0.0">
+    <HBox styleClass="song-item" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../../image/vaporwave-background.gif"/>
+            <Image url="@../../image/beatrush.png" />
         </ImageView>
         <VBox maxWidth="Infinity" prefHeight="150.0">
             <padding>
-                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </padding>
-            <Label fx:id="songName" styleClass="song-name" text="Into the Night"/>
-            <Label fx:id="songAuthor" styleClass="song-author" text="YOASOBI"/>
-            <Label fx:id="songLength" styleClass="song-length" text="0:00"/>
+            <Label fx:id="songName" styleClass="song-name" text="Into the Night" />
+            <Label fx:id="songAuthor" styleClass="song-author" text="YOASOBI" />
+            <Label fx:id="songLength" styleClass="song-length" text="0:00" />
         </VBox>
     </HBox>
 </AnchorPane>
