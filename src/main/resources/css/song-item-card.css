@@ -1,0 +1,19 @@
+.song-item-card .song-name {
+    -fx-font-size: 28px;
+    -fx-text-fill: #FFF;
+    -fx-font-weight: bold;
+}
+
+.song-item-card .song-item {
+    -fx-background-color: rgba(60, 60, 60, 0.5);
+}
+
+.song-item-card .song-author {
+    -fx-font-size: 16px;
+    -fx-text-fill: #AAA;
+}
+
+.song-item-card .song-length {
+    -fx-font-size: 12px;
+    -fx-text-fill: #AAA;
+}

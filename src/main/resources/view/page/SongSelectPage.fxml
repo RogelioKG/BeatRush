@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-            prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #1E1E1E;"
-            fx:controller="org.notiva.beatrush.controller.SongSelectPageController">
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #101010;"
+           fx:controller="org.notiva.beatrush.controller.SongSelectPageController"
+           styleClass="song-select-page">
     <stylesheets>
         <URL value="@../../css/all.css"/>
+        <URL value="@../../css/song-select-page.css"/>
     </stylesheets>
-    <fx:include source="../component/Icon-Heart.fxml"/>
-</AnchorPane>
+    <fx:include source="../component/VaporwaveBackground.fxml" />
+    <ScrollPane fitToWidth="true">
+        <AnchorPane>
+            <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0"
+                  AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0">
+                <Label text="Song Select" styleClass="song-select-title" />
+                <TabPane tabClosingPolicy="UNAVAILABLE">
+                    <Tab text="📙 All">
+                        <VBox spacing="20.0">
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                        </VBox>
+                    </Tab>
+                    <Tab text="💝 Favorite">
+                        <VBox spacing="20.0">
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                            <fx:include source="../component/SongItemCard.fxml"/>
+                        </VBox>
+                    </Tab>
+                </TabPane>
+            </VBox>
+        </AnchorPane>
+    </ScrollPane>
+</StackPane>
