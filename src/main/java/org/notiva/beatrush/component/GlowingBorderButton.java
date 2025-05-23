@@ -40,7 +40,6 @@ public class GlowingBorderButton extends Button {
      * 並在載入完成後自動觸發 initialize() 方法啟動動畫效果。
      */
     public GlowingBorderButton() {
-        System.out.println("GlowingBorderButton");
         Loader.loadComponentView(this, "/view/component/GlowingBorderButton.fxml");
     }
 
@@ -54,7 +53,6 @@ public class GlowingBorderButton extends Button {
      */
     @FXML
     protected void initialize() {
-        System.out.println("initialize");
         // 定義動畫使用的顏色陣列
         Color[] colors = Stream.of("#AF84FE", "#FF0068")
                 .map(Color::web)
@@ -92,7 +90,6 @@ public class GlowingBorderButton extends Button {
      * @param text 要顯示的按鈕文字，可為 null（會顯示為空白）
      */
     public void setButtonText(String text) {
-        System.out.println("setButtonText");
         buttonText.setText(text);
     }
 
