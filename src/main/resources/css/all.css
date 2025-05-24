@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou');
 
-.root {
+.root, .popup {
     -fx-font-family: "ZCOOL QingKe HuangYou", "Microsoft JhengHei", san-serif;
 }
 

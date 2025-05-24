@@ -1,7 +1,5 @@
 package org.notiva.beatrush.component;
 
-import javafx.animation.PauseTransition;
-import org.notiva.beatrush.controller.GamePageController;
 import javafx.animation.Interpolator;
 import javafx.animation.TranslateTransition;
 import javafx.scene.layout.StackPane;

@@ -11,7 +11,7 @@
         <URL value="@../../css/all.css"/>
     </stylesheets>
     <fx:include source="../component/VaporwaveBackground.fxml" />
-    <VBox alignment="CENTER"  spacing="50.0">
+    <VBox alignment="CENTER"  spacing="100.0">
         <ImageView fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../image/beatrush.png"/>
         </ImageView>

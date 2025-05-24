@@ -7,7 +7,7 @@
 
 <fx:root type="javafx.scene.layout.AnchorPane"
          xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-         styleClass="song-item-card" prefWidth="700.0">
+         styleClass="song-item-card" prefHeight="150.0" prefWidth="700.0">
     <stylesheets>
         <URL value="@../../css/all.css"/>
         <URL value="@../../css/song-item-card.css"/>
@@ -15,10 +15,11 @@
     <HBox styleClass="song-item"
           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <ImageView fx:id="songImage" pickOnBounds="true"/>
+        <ImageView fx:id="songImageView" pickOnBounds="true" />
         <VBox styleClass="song-info" HBox.hgrow="ALWAYS" maxWidth="Infinity">
             <Label fx:id="songNameLabel" styleClass="song-name"/>
             <Label fx:id="songAuthorLabel" styleClass="song-author"/>
+            <Region VBox.vgrow="ALWAYS" /> <!-- 以下元素對齊下方 -->
             <Label fx:id="songLengthLabel" styleClass="song-length"/>
         </VBox>
         <HBox styleClass="control" alignment="CENTER_LEFT">

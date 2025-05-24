@@ -3,7 +3,6 @@
 }
 
 .song-item-card .song-item {
-    -fx-background-color: rgba(60, 60, 60, 0.5);
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.2, 10, 10);
 }
 
@@ -13,6 +12,7 @@
 }
 
 .song-item-card .song-info {
+    -fx-background-color: rgba(60, 60, 60, 0.5);
     -fx-padding: 10px 20px 10px 20px;
 }
 
@@ -26,7 +26,6 @@
 .song-item-card .song-author {
     -fx-font-size: 18px;
     -fx-text-fill: #AAA;
-    -fx-padding: 0px 0px 25px 0px;
 }
 
 .song-item-card .song-length {
@@ -35,5 +34,6 @@
 }
 
 .song-item-card .control {
+    -fx-background-color: rgba(60, 60, 60, 0.5);
     -fx-padding: 0px 20px 0px 0px;
 }
