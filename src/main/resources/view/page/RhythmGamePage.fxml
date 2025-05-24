@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane fx:id="gamePane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.notiva.beatrush.controller.GamePageController">
+<AnchorPane fx:id="gamePane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.notiva.beatrush.controller.RhythmGamePageController">
     <children>
         <Label fx:id="timeLabel" layoutX="14.0" layoutY="14.0" text="00:00" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
       <Rectangle fx:id="hitLine1" fill="#35d2ad00" height="15.0" layoutX="355.0" layoutY="520.0" stroke="#b48686" strokeType="INSIDE" width="130.0" />
