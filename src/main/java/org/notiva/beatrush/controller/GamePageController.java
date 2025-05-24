@@ -2,13 +2,10 @@ package org.notiva.beatrush.controller;
 
 
 
-import javafx.scene.input.KeyCode;
 import org.notiva.beatrush.util.Song; // <-- 在這裡導入 Song
 import org.notiva.beatrush.util.Note;
-import org.notiva.beatrush.App;
 import org.notiva.beatrush.component.NoteView;
 
-import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import java.util.List;
 import com.google.gson.Gson;
@@ -21,7 +18,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Comparator;
 import javafx.util.Duration;
-import java.util.List;
+import javafx.animation.PauseTransition;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -38,10 +35,17 @@ public class GamePageController {
     // 遊戲常數，需要根據你的 UI 設計來調整
     private static final double GAME_HEIGHT = 800; // 遊戲區域的高度
     private static final double NOTE_DROP_DURATION_MS = 1500; // 音符從生成到判定線所需的時間 (毫秒)
-    private static final double HIT_LINE_Y = 500; // 判定線的 Y 座標 (例如，在 80% 的高度)
-    private static final double SPAWN_Y = 0 - NoteView.NOTE_HIGH; // 音符生成時的 Y 座標 (從螢幕外開始)
-    private static final double LANE_WIDTH = 100; // 每條軌道的寬度
-    private static final double START_X_OFFSET = 150; // 第一條軌道開始的 X 偏移
+    private static final double END_Y = 607.5; // 判定線的 Y 座標 (例如，在 80% 的高度)
+    private static final double START_Y = - NoteView.NOTE_HIGH/2; // 音符生成時的 Y 座標 (從螢幕外開始)
+    private static final double JUDGELINE_Y = 527.5;
+    private static final double LANE_WIDTH = 1000; // 每條軌道的寬度
+    private static final double START_X_OFFSET = 215; // 第一條軌道開始的 X 偏移
+    private static final double LATE = -65;//處理延遲
+    private static final int perfectjudgetime = 20;
+    private static final int greatjudgetime = 40;
+    private static final int goodjudgetime = 60;
+    private static final int badjudgetime = 100;
+
 
     // 儲存當前活躍的音符 (在螢幕上，還未被擊中或錯過的音符)
     private List<NoteView> activeNoteViews = new ArrayList<>();
@@ -51,6 +55,9 @@ public class GamePageController {
 
     @FXML
     private Label timeLabel;
+
+    @FXML
+    private Label judge;
 
     @FXML
     public void initialize() {
@@ -70,7 +77,7 @@ public class GamePageController {
         // 載入音樂
         try {
             mediaPlayer = new MediaPlayer(song.getSongFile());
-            mediaPlayer.setVolume(0.5);
+            mediaPlayer.setVolume(0);
 
             // 構建譜面檔案路徑
             String chartPath = "/chart/" + song.getSongName() + ".json";
@@ -142,15 +149,16 @@ public class GamePageController {
 
             // 計算音符應該開始動畫的時間點
             // 音符的 timestamp 是它到達判定線的時間
-            double spawnTime = noteTimestamp - NOTE_DROP_DURATION_MS;
+            double spawnTime = noteTimestamp - NOTE_DROP_DURATION_MS*JUDGELINE_Y/(END_Y - START_Y);
 
             if (currentMillis >= spawnTime) {
                 // 計算音符的 X 座標 (根據軌道)
                 // 假設有 4 條軌道 (0, 1, 2, 3)
-                double laneX = START_X_OFFSET + (nextNoteData.getTrack() * LANE_WIDTH) + (LANE_WIDTH / 2);
+                double laneX = START_X_OFFSET + nextNoteData.getTrack()*140 ;
 
                 // 創建 NoteView 實例
-                NoteView noteView = new NoteView(nextNoteData, SPAWN_Y, HIT_LINE_Y, NOTE_DROP_DURATION_MS, laneX);
+                NoteView noteView = new NoteView(nextNoteData, START_Y, END_Y, NOTE_DROP_DURATION_MS , laneX);
+
                 gamePane.getChildren().add(noteView); // 將音符添加到遊戲面板
                 activeNoteViews.add(noteView); // 添加到活躍音符列表
 
@@ -171,11 +179,12 @@ public class GamePageController {
             // 檢查音符是否已經錯過 (超過判定線)
             // 如果音符的動畫已經完成 (即 translateY 達到目標) 並且還在 activeNoteViews 中，說明它已經錯過
             // 或者直接檢查其當前 Y 座標
-            if (noteView.getCurrentY() > HIT_LINE_Y + NoteView.NOTE_HIGH / 2) { // 稍微超過判定線
+            if (noteView.getCurrentY() > JUDGELINE_Y + (END_Y-START_Y)*badjudgetime/NOTE_DROP_DURATION_MS) { // 稍微超過判定線
                 System.out.println("音符錯過: " + noteView.getNoteData().getTimestamp());
+                getHitJudgment(200);
                 // TODO: 處理 Miss 判定，扣分等
                 notesToRemove.add(noteView);
-                noteView.stopAnimation(); // 停止動畫
+                //noteView.stopAnimation(); // 停止動畫
             }
         }
 
@@ -204,11 +213,11 @@ public class GamePageController {
             // 尋找最近的、未被擊中且在判定範圍內的音符
             NoteView bestHitNote = null;
             double minTimeDiff = Double.MAX_VALUE;
-
+            System.out.println(currentTimeMillis);
             for (NoteView noteView : activeNoteViews) {
                 if (noteView.getNoteData().getTrack() == pressedLane) {
                     double noteTimestamp = noteView.getNoteData().getTimestamp();
-                    double timeDiff = Math.abs(currentTimeMillis - noteTimestamp);
+                    double timeDiff = Math.abs(currentTimeMillis - noteTimestamp + LATE);
 
                     // 定義一個判定範圍 (例如，正負 150 毫秒)
                     double hitWindow = 150; // 毫秒
@@ -226,20 +235,43 @@ public class GamePageController {
                 // TODO: 加分、顯示判定文字、移除音符視覺效果
                 gamePane.getChildren().remove(bestHitNote);
                 activeNoteViews.remove(bestHitNote);
-                bestHitNote.stopAnimation(); // 停止動畫
+                //bestHitNote.stopAnimation(); // 停止動畫
             } else {
                 // 沒有擊中任何音符，或者擊中範圍外
                 System.out.println("空擊或過早/過晚。");
+                
             }
         }
     }
 
     // 簡單的判定邏輯範例
-    private String getHitJudgment(double timeDiff) {
-        if (timeDiff <= 30) return "Perfect!";
-        if (timeDiff <= 80) return "Good";
-        if (timeDiff <= 150) return "Bad";
-        return "Miss"; // 其實 Miss 在上面錯過時已經處理，這裡基本不會觸發
+    public String getHitJudgment(double timeDiff) {
+        String judgmentText;
+        if (timeDiff <= perfectjudgetime) {
+            judgmentText = "Perfect!";
+        } else if (timeDiff <= greatjudgetime) {
+            judgmentText = "great";
+        }else if (timeDiff <= goodjudgetime) {
+            judgmentText = "good";
+        } else if (timeDiff <= badjudgetime) {
+            judgmentText = "bad";
+        } else if (timeDiff == 200) {
+            judgmentText = "MISS";//若要設為miss則回傳200
+        } else {
+            judgmentText = "MISS";//裝飾用
+        }
+
+        // 設置判定文字
+        judge.setText(judgmentText);
+
+        // 創建一個延時動畫，讓文字在 0.4 秒後消失
+        PauseTransition delay = new PauseTransition(Duration.millis(300)); // 0.4 秒 = 400 毫秒
+        delay.setOnFinished(event -> {
+            //judge.setText(""); // 清空文字，使其消失
+        });
+        delay.play(); // 啟動延時
+
+        return judgmentText; // 返回判定文字，以便在控制台輸出
     }
 
     /**

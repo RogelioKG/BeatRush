@@ -22,5 +22,19 @@
     "track": 3,
     "timestamp": 7500,
     "duration": 0
+  },
+  {
+    "type": "hold",
+    "track": 1,
+    "timestamp": 8000,
+    "duration": 1.5
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 9500,
+    "duration": 0
   }
+
+
 ]
