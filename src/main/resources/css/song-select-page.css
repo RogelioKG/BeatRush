@@ -23,8 +23,8 @@
 .song-select-page .tab-container {
     -fx-border-color: transparent;
     -fx-padding: 0px 0px 0px 0px;
-    transition: -fx-border-color 500ms;
-    transition: -fx-padding 500ms;
+    transition: -fx-border-color 200ms;
+    transition: -fx-padding 200ms;
 }
 
 .song-select-page .focus-indicator {
@@ -40,11 +40,12 @@
 }
 
 .song-select-page .tab-label {
-    -fx-font-size: 20px;
-    -fx-text-fill: #888;
+    -fx-font-size: 22px;
+    -fx-text-fill: #777;
 }
 
 .song-select-page .tab:selected .tab-label {
+    -fx-font-size: 24px;
     -fx-text-fill: #FFF;
 }
 

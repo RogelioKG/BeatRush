@@ -11,8 +11,8 @@
         <URL value="@../../css/all.css"/>
     </stylesheets>
     <fx:include source="../component/VaporwaveBackground.fxml" />
-    <VBox alignment="CENTER" prefHeight="800.0" prefWidth="800.0" spacing="50.0">
-        <ImageView fitHeight="192.0" fitWidth="483.0" pickOnBounds="true" preserveRatio="true">
+    <VBox alignment="CENTER"  spacing="50.0">
+        <ImageView fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../image/beatrush.png"/>
         </ImageView>
         <GlowingBorderButton buttonText="START" onAction="#onStartButtonClick" />

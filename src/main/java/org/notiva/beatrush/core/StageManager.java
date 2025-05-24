@@ -8,8 +8,8 @@ import javafx.scene.Scene;
 
 public class StageManager {
     private final Map<String, Stage> stages = new HashMap<>();
-    private final int DEFAULT_WIDTH = 600;
-    private final int DEFAULT_HEIGHT = 600;
+    private final int DEFAULT_WIDTH = 1000;
+    private final int DEFAULT_HEIGHT = 800;
 
     private static class Holder {
         private static final StageManager INSTANCE = new StageManager();
