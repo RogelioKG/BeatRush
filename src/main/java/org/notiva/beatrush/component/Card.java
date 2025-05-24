@@ -100,17 +100,7 @@ public class Card extends AnchorPane {
      * 標準錯誤輸出中印出錯誤訊息，並將圖片設為 null。
      */
     private void bindProperty() {
-        imageView.imageProperty().bind(imageUrlProperty().map(url -> {
-            if (url == null || url.isEmpty()) {
-                return null;
-            }
-            try {
-                return new Image(url);
-            } catch (Exception e) {
-                System.err.printf("Failed to load image: %s%n", url);
-                return null;
-            }
-        }));
+        imageView.imageProperty().bind(imageUrlProperty().map(Loader::loadImage));
 
         titleLabel.textProperty().bind(titleProperty());
         descriptionLabel.textProperty().bind(descriptionProperty());

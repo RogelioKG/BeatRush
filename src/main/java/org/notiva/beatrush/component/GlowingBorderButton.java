@@ -36,23 +36,17 @@ public class GlowingBorderButton extends Button {
     /**
      * 預設建構子，載入對應的 FXML 版面。
      * <p>
-     * 此建構子會載入 GlowingBorderButton.fxml 檔案，
-     * 並在載入完成後自動觸發 initialize() 方法啟動動畫效果。
+     * 此建構子會載入 GlowingBorderButton.fxml 檔案。
      */
     public GlowingBorderButton() {
         Loader.loadComponentView(this, "/view/component/GlowingBorderButton.fxml");
+        initGlowingBorderEffect();
     }
 
-
     /**
-     * FXML 控制器初始化方法，在 FXML 載入完成後自動呼叫。
-     * <p>
-     * 此方法會建立並啟動邊框的漸變色動畫效果。動畫使用兩種顏色
-     * （紫色 #AF84FE 和粉紅色 #FF0068）建立 100 個關鍵幀的時間軸動畫，
-     * 每個關鍵幀間隔 0.5 秒，形成平滑的顏色循環效果。
+     * 初始化 glowing border 特效。
      */
-    @FXML
-    protected void initialize() {
+    private void initGlowingBorderEffect() {
         // 定義動畫使用的顏色陣列
         Color[] colors = Stream.of("#AF84FE", "#FF0068")
                 .map(Color::web)
