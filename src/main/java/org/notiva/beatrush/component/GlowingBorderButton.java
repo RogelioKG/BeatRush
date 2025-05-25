@@ -8,6 +8,7 @@ import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.CycleMethod;
@@ -25,12 +26,18 @@ public class GlowingBorderButton extends Button {
     @FXML
     private Text buttonText;
 
-    private Timeline glowBorderAnimation;
+    private final double HOVER_SPEED = 1.8;
+    private final double NORMAL_SPEED = 0.8;
+
+    private Timeline glowingBorder;
 
     /**
      * 預設建構子，載入對應的 FXML 版面。
-     * <p>
-     * 此建構子會載入 GlowingBorderButton.fxml 檔案。
+     *
+     * <p>FXML 使用範例：</p>
+     * <pre>{@code
+     * <GlowingBorderButton />
+     * }</pre>
      */
     public GlowingBorderButton() {
         Loader.loadComponentView(this, "/view/component/GlowingBorderButton.fxml");
@@ -59,16 +66,16 @@ public class GlowingBorderButton extends Button {
                         new KeyValue(button.borderProperty(), b, Interpolator.EASE_IN)))
                 .toArray(KeyFrame[]::new);
 
-        glowBorderAnimation = new Timeline(keyFrames);
-        glowBorderAnimation.setCycleCount(Timeline.INDEFINITE);
-        glowBorderAnimation.setRate(1.0); // 預設速度
-        glowBorderAnimation.play();
+        glowingBorder = new Timeline(keyFrames);
+        glowingBorder.setCycleCount(Timeline.INDEFINITE);
+        glowingBorder.setRate(NORMAL_SPEED); // 預設速度
+        glowingBorder.play();
     }
 
     /**
      * 設定按鈕顯示的文字內容。
      *
-     * @param text 要顯示的按鈕文字，可為 null（會顯示為空白）
+     * @param text 要顯示的按鈕文字
      */
     public void setButtonText(String text) {
         buttonText.setText(text);
@@ -77,14 +84,17 @@ public class GlowingBorderButton extends Button {
     /**
      * 取得目前按鈕顯示的文字內容。
      *
-     * @return 目前按鈕的文字內容，可能為 null 或空字串
+     * @return 目前按鈕的文字內容
      */
     public String getButtonText() {
         return buttonText.getText();
     }
 
+    /**
+     * 啟用 hover 時 glowing border 加速的特效。
+     */
     private void enableHoverSpeedUpEffect() {
-        this.setOnMouseEntered(e -> glowBorderAnimation.setRate(2.0)); // hover 時加速
-        this.setOnMouseExited(e -> glowBorderAnimation.setRate(1.0));  // 離開時恢復
+        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> glowingBorder.setRate(HOVER_SPEED)); // 加速
+        addEventHandler(MouseEvent.MOUSE_EXITED, e -> glowingBorder.setRate(NORMAL_SPEED)); // 恢復
     }
 }
