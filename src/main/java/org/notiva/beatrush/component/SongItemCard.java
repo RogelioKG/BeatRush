@@ -7,14 +7,14 @@ import javafx.beans.property.*;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.image.*;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 import javafx.stage.Popup;
 import javafx.util.Duration;
 import org.notiva.beatrush.core.Loader;
+import org.notiva.beatrush.event.MaskLayerHideEvent;
+import org.notiva.beatrush.event.MaskLayerShowEvent;
 import org.notiva.beatrush.util.MiscUtil;
 
 public class SongItemCard extends AnchorPane {
@@ -45,10 +45,10 @@ public class SongItemCard extends AnchorPane {
 
     public SongItemCard() {
         Loader.loadComponentView(this, "/view/component/SongItemCard.fxml");
+        bindProperty();
         initClickHandler();
         initScalingEffect();
         enableScalingEffect();
-        bindProperty();
     }
 
     public SongItemCard(String songName, String songAuthor, Duration songLength, String songImageUrl, boolean scalingEffect) {
@@ -145,54 +145,25 @@ public class SongItemCard extends AnchorPane {
         setOnMouseClicked(e -> showSongInfoPopup());
     }
 
-    private Pane overlayPane;
-
     private void showSongInfoPopup() {
+        // === 0. 已彈窗 guard ===
         if (songInfoPopup != null && songInfoPopup.isShowing()) {
-            songInfoPopup.hide(); // 關閉時也淡出遮罩
+            songInfoPopup.hide();
             return;
         }
 
-        // === 1. 初始化遮罩層 ===
-        if (overlayPane == null) {
-            overlayPane = new Pane();
-            overlayPane.setStyle("-fx-background-color: rgba(0, 0, 0, 0.9);");
-            overlayPane.setOpacity(0);
-            overlayPane.setMouseTransparent(false); // 阻擋事件，模擬 modal
-            overlayPane.setPrefSize(getScene().getWidth(), getScene().getHeight());
+        // === 1. 淡入遮罩 ===
+        fireEvent(new MaskLayerShowEvent());
 
-            // 加到最上層 root
-            // NOTE: 必須是 StackPane 才會有作用
-            if (getScene().getRoot() instanceof Pane root) {
-                root.getChildren().add(overlayPane);
-            }
-        }
-
-        overlayPane.setVisible(true);
-
-        // 淡入遮罩
-        FadeTransition overlayFadeIn = new FadeTransition(Duration.millis(300), overlayPane);
-        overlayFadeIn.setFromValue(0);
-        overlayFadeIn.setToValue(1);
-        overlayFadeIn.play();
-
-        // === 2. 建立內容 ===
+        // === 2. 內容 ===
         SongInfoModal popupContent = new SongInfoModal(getSongName(), getSongAuthor(), getSongLength(), getSongImageUrl());
         popupContent.setOpacity(0);
 
+        // === 3. popup ===
         songInfoPopup = new Popup();
         songInfoPopup.getContent().add(popupContent);
         songInfoPopup.setAutoHide(true);
         songInfoPopup.setHideOnEscape(true);
-
-        // 當 popup 被關閉時，也淡出遮罩
-        songInfoPopup.setOnHidden(e -> {
-            FadeTransition overlayFadeOut = new FadeTransition(Duration.millis(300), overlayPane);
-            overlayFadeOut.setFromValue(1);
-            overlayFadeOut.setToValue(0);
-            overlayFadeOut.setOnFinished(ev -> overlayPane.setVisible(false));
-            overlayFadeOut.play();
-        });
 
         // 顯示 popup
         Scene scene = this.getScene();
@@ -204,7 +175,13 @@ public class SongItemCard extends AnchorPane {
         fadeIn.setToValue(1);
         fadeIn.play();
 
-        // 中央定位
+        // 當 popup 被關閉時，淡出遮罩
+        songInfoPopup.setOnHidden(e -> {
+            fireEvent(new MaskLayerHideEvent());
+            songInfoPopup = null;
+        });
+
+        // === 4. 中央定位 ===
         Platform.runLater(() -> {
             double anchorX = scene.getWindow().getX() + scene.getWidth() / 2 - songInfoPopup.getWidth() / 2;
             double anchorY = scene.getWindow().getY() + scene.getHeight() / 2 - songInfoPopup.getHeight() / 2;
@@ -212,7 +189,6 @@ public class SongItemCard extends AnchorPane {
             songInfoPopup.setY(anchorY);
         });
     }
-
 
     // songName
     public String getSongName() {

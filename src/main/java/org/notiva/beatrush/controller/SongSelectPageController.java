@@ -4,13 +4,18 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
+import org.notiva.beatrush.component.MaskLayer;
 import org.notiva.beatrush.component.SongItemCard;
 
 import java.util.List;
 
 public class SongSelectPageController {
+
+    @FXML
+    private StackPane root;
 
     @FXML
     private ScrollPane scrollPane;
@@ -22,10 +27,15 @@ public class SongSelectPageController {
     private VBox favoriteSongList;
 
     @FXML
+    private MaskLayer maskLayer;
+
+    @FXML
     protected void initialize() {
-        Platform.runLater(() -> {
-            scrollPane.setVvalue(0); // 開啟頁面時，應滾動到最上面
-        });
+        // 開啟頁面時，應滾動到最上面
+        Platform.runLater(() -> scrollPane.setVvalue(0));
+        // root 開始監聽 MaskLayerShowEvent 和 MaskLayerHideEvent，
+        maskLayer.addEventHandlersFor(root);
+        // 新增範例歌曲
         addSongs();
     }
 

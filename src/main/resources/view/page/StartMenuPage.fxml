@@ -4,17 +4,20 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import org.notiva.beatrush.component.GlowingBorderButton?>
+<?import org.notiva.beatrush.component.MaskLayer?>
 
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-           fx:controller="org.notiva.beatrush.controller.StartMenuPageController">
+           fx:controller="org.notiva.beatrush.controller.StartMenuPageController"
+           fx:id="root">
     <stylesheets>
         <URL value="@../../css/all.css"/>
     </stylesheets>
     <fx:include source="../component/VaporwaveBackground.fxml" />
+    <MaskLayer fx:id="maskLayer" />
     <VBox alignment="CENTER"  spacing="100.0">
         <ImageView fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../image/beatrush.png"/>
         </ImageView>
-        <GlowingBorderButton buttonText="START" onAction="#onStartButtonClick" />
+        <GlowingBorderButton fx:id="startButton" buttonText="START" onAction="#onStartButtonClick" />
     </VBox>
 </StackPane>

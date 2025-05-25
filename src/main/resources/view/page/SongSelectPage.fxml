@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import java.net.URL?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.paint.Color?>
+<?import org.notiva.beatrush.component.MaskLayer?>
 
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
            fx:controller="org.notiva.beatrush.controller.SongSelectPageController"
+           fx:id="root"
            styleClass="song-select-page">
     <stylesheets>
         <URL value="@../../css/all.css"/>
@@ -31,4 +35,5 @@
             </VBox>
         </HBox>
     </ScrollPane>
+    <MaskLayer fx:id="maskLayer" />
 </StackPane>
