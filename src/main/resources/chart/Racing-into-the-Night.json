@@ -1,0 +1,4040 @@
+[
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 0,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 1154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 1384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 1615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 2077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 2423,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 3000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 3692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 3923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 4846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 5077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 5307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 5538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 5769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 6692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 7154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 7384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 7615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 8077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 8538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 8769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 9231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 9461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 9692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 10154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 10846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 11307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 11423,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 15000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 15115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 15461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 15923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 16154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 16384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 16615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 16846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 16961,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 17307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 17538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 17769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 18231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 18692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 18807,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 19154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 19615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 19846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 20077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 20538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 20884,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 21231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 21461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 21692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 21923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 22154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 22384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 22500,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 22846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 23307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 23538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 23769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 24000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 24231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 24346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 24692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 25154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 25384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 25615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 25846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 26077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 26192,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 26538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 27000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 27231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 27461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 27692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 27923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 28269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 28384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 28731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 28846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 29077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 29307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 37154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 37615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 38077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 38538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 39000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 39231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 39346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 39461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 39692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 39923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 40615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 40846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 41077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 41538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 42231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 42461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 42692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 43038,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 43154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 43384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 43615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 44538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 45000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 45461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 45923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 46154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 46846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 47307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 47538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 47769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 48000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 48231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 48692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 49154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 49384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 49846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 50538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 50769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 51000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 51231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 51461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 51692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 51923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 52384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 52846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 53307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 53769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 54000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 54115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 54231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 54692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 55384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 55615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 55846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 56077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 56307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 57000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 57461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 57692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 57923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 58384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 58731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 58846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 59077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 59307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 59654,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 60000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 60231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 60461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 60692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 61154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 61500,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 61846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 62077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 62192,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 62307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 62538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 62769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 63000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 63461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 63923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 64269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 64384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 64846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 65307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 65769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 66115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 66461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 66923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 67154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 67384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 67615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 68077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 68423,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 68538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 68769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 69000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 69231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 69692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 69923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 70154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 70269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 70384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 70615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 70846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 71077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 71538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 71654,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 71769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 72000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 72231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 73154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 74077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 74538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 74769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 75231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 75346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 75461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 75692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 75923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 76269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 76615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 76846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 77538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 77769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 78000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 78231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 78577,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 78692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 79154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 79384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 79615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 79961,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 80307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 80769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 81000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 81231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 81461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 81923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 82154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 82384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 82615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 82731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 82846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 83307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 83654,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 84000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 84461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 84692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 84923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 85154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 85615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 86077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 86538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 87000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 87231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 87461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 87692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 87807,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 87923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 88154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 88384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 88615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 88846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 89307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 89538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 90000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 90115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 90231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 90461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 90692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 91038,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 91384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 91615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 92077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 92307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 92538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 93000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 93346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 93461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 93692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 93923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 94154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 94384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 94731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 95077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 95538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 95769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 96000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 96231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 96692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 97038,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 97154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 97384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 97615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 97846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 98077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 98307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 98769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 99461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 99923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 100269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 100384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 100731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 101307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 101423,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 101538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 101654,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 101769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 109154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 109269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 109615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 110077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 110307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 110538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 110769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 111000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 111115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 111461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 111923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 112154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 112384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 112615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 112846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 112961,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 113307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 113769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 114000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 114231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 114461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 114692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 115038,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 115154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 115500,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 115615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 115846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 116077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 117000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 117692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 117923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 118154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 118615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 119077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 119307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 120000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 120231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 120692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 121154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 121384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 121846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 123000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 123231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 123461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 123692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 123923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 124384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 124846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 125307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 125769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 126115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 126231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 126692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 127154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 127615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 128077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 128307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 128538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 129000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 129461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 129692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 130615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 130731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 130846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 131077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 131307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 131769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 132115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 132231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 132692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 133154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 133500,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 133846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 134077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 134769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 134884,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 135000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 135231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 135461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 135807,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 136154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 136384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 136615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 136846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 137192,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 137538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 137769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 138231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 138461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 138692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 139154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 139500,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 139615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 140077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 140423,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 140538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 141000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 141461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 141692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 141923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 142154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 142384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 142846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 143307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 144231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 144692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 145384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 145615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 146077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 146769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 146884,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 147231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 147461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 147923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 148615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 148731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 149307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 149769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 150231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 150577,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 151154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 151615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 151731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 152077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 152423,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 152769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 153000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 153461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 153577,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 153923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 154269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 154615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 154846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 155307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 155884,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 156346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 156692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 157154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 157269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 157615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 157961,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 158307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 158538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 158769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 159000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 159461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 159923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 160269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 160384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 160846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 161077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 161307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 161538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 161769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 162231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 162577,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 162692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 163384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 163500,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 163615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 164077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 164307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 164538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 164884,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 165461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 165923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 166154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 166384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 166846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 167077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 167307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 167769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 168231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 168461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 168692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 168923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 169154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 169384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 169615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 169845,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 170077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 170538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 171000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 171461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 171923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 172269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 172384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 172846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 173307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 173769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 174115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 174461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 174692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 174923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 175154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 175615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 175961,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 176307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 176538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 176654,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 177000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 177346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 177461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 178154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 178384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 178846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 179307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 180000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 180115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 180231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 180461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 180692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 180923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 181154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 181500,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 181846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 182077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 182307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 182538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 183000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 183346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 183692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 184154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 184384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 184615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 184846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 185307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 185538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 186000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 186231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 186461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 186692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 187154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 187615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 188077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 197769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 198692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 198923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 199154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 199615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 200538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 201231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 201461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 201923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 202384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 202846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 203307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 205154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 205500,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 205846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 206077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 206307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 206538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 206769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 207000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 207461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 207692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 208154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 208269,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 208384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 208615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 208846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 209192,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 209538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 209769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 210231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 210346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 210461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 210577,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 210692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 211154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 211500,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 211615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 212077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 212307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 212538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 212884,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 213231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 213461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 213923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 214154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 214384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 214846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 215307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 215538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 215654,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 215769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 216000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 216231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 216577,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 216923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 217154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 217846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 218077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 218307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 218538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 218769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 218884,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 219000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 219231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 219461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 219692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 219923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 220384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 220731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 220846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 221077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 221307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 221538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 221769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 222231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 222461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 222923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 223038,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 223154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 223384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 223615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 223961,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 224307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 224538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 225000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 225115,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 225231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 225346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 225461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 225923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 226384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 226615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 226731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 226846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 227077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 227307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 227654,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 227884,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 228231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 228692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 228923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 229154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 229615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 230077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 230307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 230423,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 230538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 230769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 231000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 231231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 231461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 231692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 232154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 232846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 233077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 233307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 233654,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 233769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 234231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 234692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 235038,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 235154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 235615,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 3,
+    "timestamp": 235846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 236077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 236307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 236538,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 237000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 237346,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 237461,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 237692,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 237923,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 238154,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 238384,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 238731,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 238846,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 239077,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 239307,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 239769,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 1,
+    "timestamp": 240000,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 240231,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 240577,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 240807,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 2,
+    "timestamp": 241038,
+    "duration": 0
+  },
+  {
+    "type": "tap",
+    "track": 0,
+    "timestamp": 242077,
+    "duration": 0
+  }
+]
