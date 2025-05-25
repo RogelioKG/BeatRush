@@ -25,7 +25,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
 
-public class GamePageController {
+public class RhythmGamePageController {
 
     private MediaPlayer mediaPlayer;
     private List<Note> chartNotes; // 從 JSON 載入的音符列表

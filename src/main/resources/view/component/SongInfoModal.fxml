@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<?import org.notiva.beatrush.component.GlowingBorderButton?>
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         prefHeight="600.0" prefWidth="500.0" styleClass="song-info-modal,popup">
+    <stylesheets>
+        <URL value="@../../css/all.css"/>
+        <URL value="@../../css/song-info-modal.css"/>
+    </stylesheets>
+    <VBox>
+        <ImageView fx:id="songImageView" preserveRatio="true" />
+        <VBox alignment="CENTER" prefHeight="150.0" styleClass="song-info">
+            <Label fx:id="songNameLabel" styleClass="song-name"/>
+            <Label fx:id="songAuthorLabel" styleClass="song-author"/>
+            <Region VBox.vgrow="ALWAYS" /> <!-- 以下元素對齊下方 -->
+            <Label fx:id="songLengthLabel" styleClass="song-length"/>
+        </VBox>
+        <HBox alignment="CENTER" prefHeight="150.0" styleClass="button-area">
+            <GlowingBorderButton fx:id="startButton" buttonText="START"/>
+        </HBox>
+    </VBox>
+</fx:root>

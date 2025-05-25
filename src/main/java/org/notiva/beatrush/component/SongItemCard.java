@@ -1,18 +1,17 @@
 package org.notiva.beatrush.component;
 
+import javafx.animation.FadeTransition;
 import javafx.animation.ScaleTransition;
+import javafx.application.Platform;
 import javafx.beans.property.*;
 import javafx.fxml.FXML;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.Pane;
 import javafx.stage.Popup;
 import javafx.util.Duration;
 import org.notiva.beatrush.core.Loader;
@@ -20,7 +19,7 @@ import org.notiva.beatrush.util.MiscUtil;
 
 public class SongItemCard extends AnchorPane {
     @FXML
-    private ImageView songImage;
+    private ImageView songImageView;
 
     @FXML
     private Label songNameLabel;
@@ -34,18 +33,18 @@ public class SongItemCard extends AnchorPane {
     private ScaleTransition scaleUpOnHover;
     private ScaleTransition scaleDownOnExit;
     private Popup songInfoPopup;
-    private final double VIEW_WIDTH = 200.0;
-    private final double VIEW_HEIGHT = 150.0;
+
+    private final double DEFAULT_VIEW_WIDTH = 200.0;
 
     private final StringProperty songName = new SimpleStringProperty();
     private final StringProperty songAuthor = new SimpleStringProperty();
     private final ObjectProperty<Duration> songLength = new SimpleObjectProperty<>();
     private final StringProperty songImageUrl = new SimpleStringProperty();
     private final BooleanProperty scalingEffect = new SimpleBooleanProperty(true);
+    private final DoubleProperty songImageWidth = new SimpleDoubleProperty(DEFAULT_VIEW_WIDTH);
 
     public SongItemCard() {
         Loader.loadComponentView(this, "/view/component/SongItemCard.fxml");
-        initImageView();
         initClickHandler();
         initScalingEffect();
         enableScalingEffect();
@@ -62,20 +61,41 @@ public class SongItemCard extends AnchorPane {
     }
 
     private void bindProperty() {
+        // 卡面上的歌名 <- 歌名屬性
         songNameLabel.textProperty().bind(songNameProperty());
+        // 卡面上的歌手 <- 歌手屬性
         songAuthorLabel.textProperty().bind(songAuthorProperty());
+        // 卡面上的歌曲長度 <- 歌曲長度屬性
         songLength.addListener((obs, oldVal, newVal) -> {
             String songLengthString = MiscUtil.formatDuration(newVal);
             songLengthLabel.setText(songLengthString);
         });
-        songImage.imageProperty().bind(songImageUrlProperty().map(url -> {
+        // 卡面上的歌曲圖片 <- 歌曲視圖圖片屬性
+        songImageView.imageProperty().bind(songImageUrlProperty().map(url -> {
             Image image = Loader.loadImage(url);
             if (image != null) {
-                Rectangle2D viewport = MiscUtil.getCenteredCoverCrop(image.getHeight(), image.getWidth(), VIEW_HEIGHT, VIEW_WIDTH);
-                songImage.setViewport(viewport);
+                Rectangle2D viewport = MiscUtil.getCenteredCoverCrop(image.getHeight(), image.getWidth(), getPrefHeight(), songImageWidth.get());
+                songImageView.setViewport(viewport);
             }
             return image;
         }));
+        // 卡面上歌曲視圖的寬 <- 歌曲視圖寬屬性 (寬度不與卡片同寬，因為這是橫向卡片)
+        songImageView.fitWidthProperty().bind(songImageWidth);
+        // 歌曲視圖圖片的 viewport 變動 <- 卡面上歌曲視圖的寬
+        songImageView.fitWidthProperty().addListener((obs, oldVal, newVal) -> {
+            Image image = songImageView.getImage();
+            Rectangle2D viewport = MiscUtil.getCenteredCoverCrop(image.getHeight(), image.getWidth(), getPrefHeight(), newVal.doubleValue());
+            songImageView.setViewport(viewport);
+        });
+        // 卡面上歌曲視圖的高 <- 高度屬性 (高度與卡片同高)
+        songImageView.fitHeightProperty().bind(prefHeightProperty());
+        // 歌曲視圖圖片的 viewport 變動 <- 卡面上歌曲視圖的高
+        songImageView.fitHeightProperty().addListener((obs, oldVal, newVal) -> {
+            Image image = songImageView.getImage();
+            Rectangle2D viewport = MiscUtil.getCenteredCoverCrop(image.getHeight(), image.getWidth(), newVal.doubleValue(), songImageWidth.get());
+            songImageView.setViewport(viewport);
+        });
+        // 縮放動效是否啟用 <- 縮放動效啟用屬性
         scalingEffect.addListener((obs, oldVal, newVal) -> {
             if (newVal) {
                 enableScalingEffect();
@@ -83,11 +103,6 @@ public class SongItemCard extends AnchorPane {
                 disableScalingEffect();
             }
         });
-    }
-
-    private void initImageView() {
-        songImage.setFitWidth(VIEW_WIDTH);
-        songImage.setFitHeight(VIEW_HEIGHT);
     }
 
     private void initScalingEffect() {
@@ -130,127 +145,74 @@ public class SongItemCard extends AnchorPane {
         setOnMouseClicked(e -> showSongInfoPopup());
     }
 
+    private Pane overlayPane;
+
     private void showSongInfoPopup() {
-        System.out.println("showSongInfoPopup");
         if (songInfoPopup != null && songInfoPopup.isShowing()) {
-            songInfoPopup.hide();
+            songInfoPopup.hide(); // 關閉時也淡出遮罩
             return;
         }
 
-        // 創建 Popup 內容
-        VBox popupContent = createPopupContent();
+        // === 1. 初始化遮罩層 ===
+        if (overlayPane == null) {
+            overlayPane = new Pane();
+            overlayPane.setStyle("-fx-background-color: rgba(0, 0, 0, 0.9);");
+            overlayPane.setOpacity(0);
+            overlayPane.setMouseTransparent(false); // 阻擋事件，模擬 modal
+            overlayPane.setPrefSize(getScene().getWidth(), getScene().getHeight());
 
-        // 創建 Popup
+            // 加到最上層 root
+            // NOTE: 必須是 StackPane 才會有作用
+            if (getScene().getRoot() instanceof Pane root) {
+                root.getChildren().add(overlayPane);
+            }
+        }
+
+        overlayPane.setVisible(true);
+
+        // 淡入遮罩
+        FadeTransition overlayFadeIn = new FadeTransition(Duration.millis(300), overlayPane);
+        overlayFadeIn.setFromValue(0);
+        overlayFadeIn.setToValue(1);
+        overlayFadeIn.play();
+
+        // === 2. 建立內容 ===
+        SongInfoModal popupContent = new SongInfoModal(getSongName(), getSongAuthor(), getSongLength(), getSongImageUrl());
+        popupContent.setOpacity(0);
+
         songInfoPopup = new Popup();
         songInfoPopup.getContent().add(popupContent);
         songInfoPopup.setAutoHide(true);
         songInfoPopup.setHideOnEscape(true);
 
-        // 顯示 Popup
-        Scene scene = this.getScene();
-        if (scene != null && scene.getWindow() != null) {
-            double centerX = scene.getWindow().getX() + scene.getWidth() / 2 - 150; // 150 是 popup 寬度的一半
-            double centerY = scene.getWindow().getY() + scene.getHeight() / 2 - 200; // 200 是 popup 高度的估計值的一半
-            songInfoPopup.show(scene.getWindow(), centerX, centerY);
-        }
-    }
-
-    private VBox createPopupContent() {
-        VBox content = new VBox(15);
-        content.setAlignment(Pos.CENTER);
-        content.setPadding(new Insets(20));
-        content.setStyle("-fx-background-color: white; " +
-                "-fx-background-radius: 10; " +
-                "-fx-border-color: #cccccc; " +
-                "-fx-border-radius: 10; " +
-                "-fx-border-width: 1; " +
-                "-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);");
-        content.setPrefWidth(300);
-
-        // 歌曲圖片
-        ImageView popupImage = new ImageView();
-        popupImage.setFitWidth(200);
-        popupImage.setFitHeight(200);
-        popupImage.setPreserveRatio(true);
-
-        // 綁定圖片
-        if (getSongImageUrl() != null && !getSongImageUrl().isEmpty()) {
-            try {
-                Image image = new Image(getSongImageUrl());
-                popupImage.setImage(image);
-            } catch (Exception e) {
-                System.err.printf("Failed to load popup image: %s%n", getSongImageUrl());
-            }
-        }
-
-        // 歌曲名稱
-        Label popupSongName = new Label(getSongName());
-        popupSongName.setStyle("-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #333333;");
-
-        // 歌手名稱
-        Label popupArtist = new Label(getSongAuthor());
-        popupArtist.setStyle("-fx-font-size: 14px; -fx-text-fill: #666666;");
-
-        // 歌曲長度
-        Label popupLength = new Label();
-        Duration length = getSongLength();
-        if (length != null && !length.isUnknown()) {
-            double totalSeconds = length.toSeconds();
-            int minutes = (int) (totalSeconds / 60);
-            int seconds = (int) (totalSeconds % 60);
-            popupLength.setText(String.format("Length: %02d:%02d", minutes, seconds));
-        } else {
-            popupLength.setText("Length: Unknown");
-        }
-        popupLength.setStyle("-fx-font-size: 12px; -fx-text-fill: #888888;");
-
-        // 按鈕
-        Button actionButton = new Button("Play");
-        actionButton.setStyle("-fx-background-color: #4CAF50; " +
-                "-fx-text-fill: white; " +
-                "-fx-font-size: 14px; " +
-                "-fx-padding: 8 20; " +
-                "-fx-background-radius: 5;");
-        actionButton.setOnMouseEntered(e ->
-                actionButton.setStyle("-fx-background-color: #45a049; " +
-                        "-fx-text-fill: white; " +
-                        "-fx-font-size: 14px; " +
-                        "-fx-padding: 8 20; " +
-                        "-fx-background-radius: 5;"));
-        actionButton.setOnMouseExited(e ->
-                actionButton.setStyle("-fx-background-color: #4CAF50; " +
-                        "-fx-text-fill: white; " +
-                        "-fx-font-size: 14px; " +
-                        "-fx-padding: 8 20; " +
-                        "-fx-background-radius: 5;"));
-
-        actionButton.setOnAction(e -> {
-            // 在這裡添加播放歌曲的邏輯
-            System.out.println("Play song: " + getSongName());
-            songInfoPopup.hide();
+        // 當 popup 被關閉時，也淡出遮罩
+        songInfoPopup.setOnHidden(e -> {
+            FadeTransition overlayFadeOut = new FadeTransition(Duration.millis(300), overlayPane);
+            overlayFadeOut.setFromValue(1);
+            overlayFadeOut.setToValue(0);
+            overlayFadeOut.setOnFinished(ev -> overlayPane.setVisible(false));
+            overlayFadeOut.play();
         });
 
-        // 關閉按鈕
-        Button closeButton = new Button("Close");
-        closeButton.setStyle("-fx-background-color: #f44336; " +
-                "-fx-text-fill: white; " +
-                "-fx-font-size: 12px; " +
-                "-fx-padding: 5 15; " +
-                "-fx-background-radius: 5;");
-        closeButton.setOnAction(e -> songInfoPopup.hide());
+        // 顯示 popup
+        Scene scene = this.getScene();
+        songInfoPopup.show(scene.getWindow());
 
-        // 組裝內容
-        content.getChildren().addAll(
-                popupImage,
-                popupSongName,
-                popupArtist,
-                popupLength,
-                actionButton,
-                closeButton
-        );
+        // 淡入內容
+        FadeTransition fadeIn = new FadeTransition(Duration.millis(300), popupContent);
+        fadeIn.setFromValue(0);
+        fadeIn.setToValue(1);
+        fadeIn.play();
 
-        return content;
+        // 中央定位
+        Platform.runLater(() -> {
+            double anchorX = scene.getWindow().getX() + scene.getWidth() / 2 - songInfoPopup.getWidth() / 2;
+            double anchorY = scene.getWindow().getY() + scene.getHeight() / 2 - songInfoPopup.getHeight() / 2;
+            songInfoPopup.setX(anchorX);
+            songInfoPopup.setY(anchorY);
+        });
     }
+
 
     // songName
     public String getSongName() {
@@ -302,6 +264,19 @@ public class SongItemCard extends AnchorPane {
 
     public StringProperty songImageUrlProperty() {
         return songImageUrl;
+    }
+
+    // songImageWidth
+    public double getSongImageWidth() {
+        return songImageWidth.get();
+    }
+
+    public void setSongImageWidth(double width) {
+        songImageWidth.set(width);
+    }
+
+    public DoubleProperty songImageWidthProperty() {
+        return songImageWidth;
     }
 
     // scaling effect
