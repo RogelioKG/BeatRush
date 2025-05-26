@@ -17,6 +17,7 @@ import javafx.scene.paint.Stop;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 import org.notiva.beatrush.core.Loader;
+import org.notiva.beatrush.util.SoundEffectManager;
 
 
 public class GlowingBorderButton extends Button {
@@ -28,6 +29,7 @@ public class GlowingBorderButton extends Button {
 
     private final double HOVER_SPEED = 1.8;
     private final double NORMAL_SPEED = 0.8;
+    private final String SOUND_EFFECT = "ui-menu-sound-1.mp3";
 
     private Timeline glowingBorder;
 
@@ -42,7 +44,8 @@ public class GlowingBorderButton extends Button {
     public GlowingBorderButton() {
         Loader.loadComponentView(this, "/view/component/GlowingBorderButton.fxml");
         initGlowingBorderEffect();
-        enableHoverSpeedUpEffect();
+        enableBorderSpeedUpEffect();
+        enableSoundEffect();
     }
 
     /**
@@ -72,6 +75,22 @@ public class GlowingBorderButton extends Button {
         glowingBorder.play();
     }
 
+
+    /**
+     * 啟用 hover 時 UI 聲音。
+     */
+    private void enableSoundEffect() {
+        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> SoundEffectManager.play(SOUND_EFFECT, 0.3));
+    }
+
+    /**
+     * 啟用 hover 時 glowing border 加速效果。
+     */
+    private void enableBorderSpeedUpEffect() {
+        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> glowingBorder.setRate(HOVER_SPEED)); // 加速
+        addEventHandler(MouseEvent.MOUSE_EXITED, e -> glowingBorder.setRate(NORMAL_SPEED)); // 恢復
+    }
+
     /**
      * 設定按鈕顯示的文字內容。
      *
@@ -90,11 +109,4 @@ public class GlowingBorderButton extends Button {
         return buttonText.getText();
     }
 
-    /**
-     * 啟用 hover 時 glowing border 加速的特效。
-     */
-    private void enableHoverSpeedUpEffect() {
-        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> glowingBorder.setRate(HOVER_SPEED)); // 加速
-        addEventHandler(MouseEvent.MOUSE_EXITED, e -> glowingBorder.setRate(NORMAL_SPEED)); // 恢復
-    }
 }

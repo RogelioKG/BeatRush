@@ -4,11 +4,13 @@ import javafx.animation.FadeTransition;
 import javafx.animation.ScaleTransition;
 import javafx.application.Platform;
 import javafx.beans.property.*;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.image.*;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Popup;
 import javafx.util.Duration;
@@ -16,6 +18,7 @@ import org.notiva.beatrush.core.Loader;
 import org.notiva.beatrush.event.MaskLayerHideEvent;
 import org.notiva.beatrush.event.MaskLayerShowEvent;
 import org.notiva.beatrush.util.MiscUtil;
+import org.notiva.beatrush.util.SoundEffectManager;
 
 /**
  * <h2>歌曲卡片元件</h2>
@@ -28,23 +31,30 @@ import org.notiva.beatrush.util.MiscUtil;
  * 註：歌名、歌手、長度和封面圖片，通通都是 responsive。
  */
 public class SongItemCard extends AnchorPane {
+
+    private final double DEFAULT_VIEW_WIDTH = 200.0;
+    private final String SOUND_EFFECT = "ui-menu-sound-2.mp3";
+
     @FXML
     private ImageView songImageView;
-
     @FXML
     private Label songNameLabel;
-
     @FXML
     private Label songAuthorLabel;
-
     @FXML
     private Label songLengthLabel;
 
     private ScaleTransition scaleUpOnHover;
     private ScaleTransition scaleDownOnExit;
     private Popup songInfoPopup;
-
-    private final double DEFAULT_VIEW_WIDTH = 200.0;
+    private final EventHandler<MouseEvent> scalingMouseEnterHandler = e -> {
+        scaleDownOnExit.stop();
+        scaleUpOnHover.playFromStart();
+    };
+    private final EventHandler<MouseEvent> scalingMouseExitHandler = e -> {
+        scaleUpOnHover.stop();
+        scaleDownOnExit.playFromStart();
+    };
 
     private final StringProperty songName = new SimpleStringProperty();
     private final StringProperty songAuthor = new SimpleStringProperty();
@@ -70,6 +80,7 @@ public class SongItemCard extends AnchorPane {
         initClickHandler();
         initScalingEffect();
         enableScalingEffect();
+        enableSoundEffect();
     }
 
     /**
@@ -166,41 +177,39 @@ public class SongItemCard extends AnchorPane {
     }
 
     /**
-     * 啟用滑鼠懸停縮放效果。
+     * 啟用 hover 時 UI 聲音。
      */
-    private void enableScalingEffect() {
-        setOnMouseEntered(e -> {
-            scaleDownOnExit.stop();
-            scaleUpOnHover.playFromStart();
-        });
-
-        setOnMouseExited(e -> {
-            scaleUpOnHover.stop();
-            scaleDownOnExit.playFromStart();
-        });
+    private void enableSoundEffect() {
+        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> SoundEffectManager.play(SOUND_EFFECT, 0.1));
     }
 
     /**
-     * 停用滑鼠懸停縮放效果。
+     * 啟用 hover 時卡片縮放效果。
+     */
+    private void enableScalingEffect() {
+        addEventHandler(MouseEvent.MOUSE_ENTERED, scalingMouseEnterHandler);
+        addEventHandler(MouseEvent.MOUSE_EXITED, scalingMouseExitHandler);
+    }
+
+    /**
+     * 停用 hover 時卡片縮放效果。
      */
     private void disableScalingEffect() {
-        // 停止動畫並重設大小
         if (scaleUpOnHover != null) scaleUpOnHover.stop();
         if (scaleDownOnExit != null) scaleDownOnExit.stop();
 
         setScaleX(1.0);
         setScaleY(1.0);
 
-        // 移除滑鼠事件
-        setOnMouseEntered(null);
-        setOnMouseExited(null);
+        removeEventHandler(MouseEvent.MOUSE_ENTERED, scalingMouseEnterHandler);
+        removeEventHandler(MouseEvent.MOUSE_EXITED, scalingMouseExitHandler);
     }
 
     /**
      * 初始化點擊事件處理器。
      */
     private void initClickHandler() {
-        setOnMouseClicked(e -> showSongInfoPopup());
+        addEventHandler(MouseEvent.MOUSE_CLICKED, e -> showSongInfoPopup());
     }
 
     /**
