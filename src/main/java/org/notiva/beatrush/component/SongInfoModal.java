@@ -7,7 +7,7 @@ import javafx.scene.control.*;
 import javafx.scene.image.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
-import org.notiva.beatrush.core.Loader;
+import org.notiva.beatrush.core.ResourceLoader;
 import org.notiva.beatrush.util.Misc;
 
 /**
@@ -52,7 +52,7 @@ public class SongInfoModal extends AnchorPane {
      * }</pre>
      */
     public SongInfoModal() {
-        Loader.loadComponentView(this, "/view/component/SongInfoModal.fxml");
+        ResourceLoader.loadComponentView(this, "/view/component/SongInfoModal.fxml");
         bindProperty();
     }
 
@@ -96,11 +96,18 @@ public class SongInfoModal extends AnchorPane {
             songLengthLabel.setText(songLengthString);
         });
         // 彈窗上的封面圖片 <- 封面圖片 URL 屬性
-        songImageView.imageProperty().bind(songImageUrlProperty().map(url -> {
-            Image image = Loader.loadImage(url);
-            if (image != null) {
-                Rectangle2D viewport = Misc.getCenteredCoverCrop(image.getHeight(), image.getWidth(), songImageHeight.get(), getPrefWidth());
-                songImageView.setViewport(viewport);
+        songImageView.imageProperty().bind(songImageUrlProperty().map(path -> {
+            Image image = ResourceLoader.loadImage(path);
+            if (image.getWidth() > 0) {
+                // normal loading 時，直接更新 viewport
+                updateViewport(image, songImageHeight.get(), getPrefWidth());
+            } else {
+                // background loading 在未載入時，圖片長寬為 0，我們要等載入完後再調整 viewport
+                image.widthProperty().addListener((obs, oldVal, newVal) -> {
+                    if (newVal.doubleValue() > 0) {
+                        updateViewport(image, songImageHeight.get(), getPrefWidth());
+                    }
+                });
             }
             return image;
         }));
@@ -108,18 +115,28 @@ public class SongInfoModal extends AnchorPane {
         songImageView.fitWidthProperty().bind(prefWidthProperty());
         // 封面圖片視圖的 viewport <- 彈窗上的封面圖片的寬度屬性
         songImageView.fitWidthProperty().addListener((obs, oldVal, newVal) -> {
-            Image image = songImageView.getImage();
-            Rectangle2D viewport = Misc.getCenteredCoverCrop(image.getHeight(), image.getWidth(), getPrefHeight(), newVal.doubleValue());
-            songImageView.setViewport(viewport);
+            updateViewport(songImageView.getImage(), getPrefHeight(), newVal.doubleValue());
         });
         // 彈窗上的封面圖片的高度屬性 <- 封面圖片高度屬性 (圖片高度不與彈窗同高，因為這是直向卡片)
         songImageView.fitHeightProperty().bind(songImageHeight);
         // 封面圖片視圖的 viewport <- 彈窗上的封面圖片的高度屬性
         songImageView.fitHeightProperty().addListener((obs, oldVal, newVal) -> {
-            Image image = songImageView.getImage();
-            Rectangle2D viewport = Misc.getCenteredCoverCrop(image.getHeight(), image.getWidth(), newVal.doubleValue(), songImageHeight.get());
-            songImageView.setViewport(viewport);
+            updateViewport(songImageView.getImage(), newVal.doubleValue(), songImageHeight.get());
         });
+    }
+
+    /**
+     * 更新 viewport。
+     *
+     * @param image 歌曲封面圖片
+     * @param viewHeight  目標高度
+     * @param viewWidth   目標寬度
+     */
+    private void updateViewport(Image image, double viewHeight, double viewWidth) {
+        double imageHeight = image.getHeight();
+        double imageWidth = image.getWidth();
+        Rectangle2D viewport = Misc.getCenteredCoverCrop(imageHeight, imageWidth, viewHeight, viewWidth);
+        songImageView.setViewport(viewport);
     }
 
     /**

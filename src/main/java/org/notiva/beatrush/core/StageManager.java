@@ -16,9 +16,9 @@ public class StageManager {
     }
 
     /**
-     * 獲取 StageManager 的唯一實例 (Singleton Patterns)。
+     * 獲取 {@link StageManager} 的唯一實例 (Singleton Patterns)。
      *
-     * @return StageManager 的唯一實例
+     * @return {@link StageManager} 的唯一實例
      */
     public static StageManager getInstance() {
         return Holder.INSTANCE;
@@ -28,7 +28,7 @@ public class StageManager {
      * 註冊一個具有指定名稱的視窗。
      *
      * @param name 視窗的唯一 ID
-     * @param stage 要註冊的 Stage 物件
+     * @param stage 要註冊的 {@link Stage} 物件
      */
     public void registerStage(String name, Stage stage) {
         this.stages.put(name, stage);
@@ -38,7 +38,7 @@ public class StageManager {
      * 獲取指定名稱的視窗。
      *
      * @param name 要獲取的視窗名稱
-     * @return 與指定名稱關聯的 Stage 物件
+     * @return 與指定名稱關聯的 {@link Stage} 物件
      * @throws RuntimeException 如果指定名稱的視窗不存在
      */
     public Stage getStage(String name) {
@@ -61,10 +61,10 @@ public class StageManager {
     }
 
     /**
-     * 顯示指定名稱的視窗，並以指定的 Parent 物件作為其場景內容。
+     * 顯示指定名稱的視窗，並以指定的 {@link Parent} 物件作為其場景內容。
      * 使用預設的寬度和高度 (600x600)。
      * 主要是用於需要傳遞參數的情況。
-     * 範例可見ScorePageController
+     * 範例可見 ScorePageController
      *
      * @param name 要顯示的視窗名稱
      * @param root 要顯示的 Parent 物件
@@ -89,11 +89,11 @@ public class StageManager {
     }
 
     /**
-     * 顯示指定名稱的視窗，並以指定的 Parent 物件作為其場景內容，使用指定的寬度和高度。
+     * 顯示指定名稱的視窗，並以指定的 {@link Parent} 物件作為其場景內容，使用指定的寬度和高度。
      * 主要是用於需要傳遞參數的情況。
      *
      * @param name 要顯示的視窗名稱
-     * @param root 要顯示的 Parent 物件
+     * @param root 要顯示的 {@link Parent} 物件
      * @param width 場景寬度
      * @param height 場景高度
      */
@@ -133,7 +133,7 @@ public class StageManager {
      * @return 配置好的 Scene 物件
      */
     public Scene getScene(String fxmlFile, int width, int height) {
-        Parent root = Loader.loadView(fxmlFile);
+        Parent root = ResourceLoader.loadView(fxmlFile);
         return new Scene(root, width, height);
     }
 }

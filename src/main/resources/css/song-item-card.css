@@ -1,5 +1,6 @@
 .song-item-card {
     -fx-cursor: hand;
+    -fx-background-color: rgba(60, 60, 60, 0.5);
 }
 
 .song-item-card .song-item {
@@ -12,7 +13,6 @@
 }
 
 .song-item-card .song-info {
-    -fx-background-color: rgba(60, 60, 60, 0.5);
     -fx-padding: 10px 20px 10px 20px;
 }
 
@@ -34,6 +34,5 @@
 }
 
 .song-item-card .control {
-    -fx-background-color: rgba(60, 60, 60, 0.5);
     -fx-padding: 0px 20px 0px 0px;
 }

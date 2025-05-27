@@ -16,8 +16,8 @@ import javafx.scene.paint.LinearGradient;
 import javafx.scene.paint.Stop;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
-import org.notiva.beatrush.core.Loader;
-import org.notiva.beatrush.core.SoundEffectManager;
+import org.notiva.beatrush.core.ResourceLoader;
+import org.notiva.beatrush.core.MediaManager;
 
 
 public class GlowingBorderButton extends Button {
@@ -26,11 +26,12 @@ public class GlowingBorderButton extends Button {
     @FXML
     private Text buttonText;
 
-    private final double HOVER_SPEED = 1.8;
     private final double NORMAL_SPEED = 0.8;
-    private final String SOUND_EFFECT = "ui-menu-sound-1.mp3";
+    private final double HOVER_SPEED = 1.8;
+    private final double SOUND_VOLUME = 0.1;
+    private final String SOUND_EFFECT = "https://cdn.pixabay.com/audio/2022/02/17/audio_988aaf064c.mp3";
 
-    private final SoundEffectManager soundEffectManager = SoundEffectManager.getInstance();
+    private final MediaManager mediaManager = MediaManager.getInstance();
     private Timeline glowingBorder;
 
     /**
@@ -42,7 +43,7 @@ public class GlowingBorderButton extends Button {
      * }</pre>
      */
     public GlowingBorderButton() {
-        Loader.loadComponentView(this, "/view/component/GlowingBorderButton.fxml");
+        ResourceLoader.loadComponentView(this, "/view/component/GlowingBorderButton.fxml");
         initGlowingBorderEffect();
         enableBorderSpeedUpEffect();
         enableSoundEffect();
@@ -75,12 +76,11 @@ public class GlowingBorderButton extends Button {
         glowingBorder.play();
     }
 
-
     /**
      * 啟用 hover 時 UI 聲音。
      */
     private void enableSoundEffect() {
-        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> soundEffectManager.play(SOUND_EFFECT, 0.3));
+        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> mediaManager.getClip(SOUND_EFFECT).play(SOUND_VOLUME));
     }
 
     /**

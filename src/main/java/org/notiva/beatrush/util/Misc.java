@@ -3,6 +3,11 @@ package org.notiva.beatrush.util;
 import javafx.geometry.Rectangle2D;
 import javafx.util.Duration;
 
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+
 public class Misc {
 
     /**
@@ -56,6 +61,15 @@ public class Misc {
             return String.format("%02d:%02d", minutes, seconds);
         } else {
             return "00:00";
+        }
+    }
+
+    public static boolean isUrl(String path) {
+        try {
+            URI uri = new URI(path);
+            return uri.getScheme() != null;
+        } catch (Exception e) {
+            return false;
         }
     }
 }

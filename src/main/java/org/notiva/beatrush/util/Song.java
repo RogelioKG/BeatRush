@@ -3,7 +3,7 @@ package org.notiva.beatrush.util;
 import javafx.scene.media.Media;
 
 import javafx.util.Duration;
-import org.notiva.beatrush.core.Loader;
+import org.notiva.beatrush.core.ResourceLoader;
 import org.notiva.beatrush.core.ScoreManager;
 
 public class Song {
@@ -23,9 +23,9 @@ public class Song {
         this.songName = songName;
         this.author = author;
         this.duration = duration;
-        songFilePath = Loader.loadResource("/media/" + songName + ".mp3").toExternalForm();
-        songFile = new Media(songFilePath);
-        posterPath = Loader.loadResource("/icon/" + songName + ".jpg").toExternalForm();
+        songFilePath = "/media/" + songName + ".mp3";
+        songFile = ResourceLoader.loadMedia(songFilePath);
+        posterPath = "/poster/" + songName + ".jpg";
         ScoreManager.getInstance().setCurrentSong(songName);
     }
 

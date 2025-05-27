@@ -8,7 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
-import org.notiva.beatrush.core.Loader;
+import org.notiva.beatrush.core.ResourceLoader;
 import org.notiva.beatrush.event.MaskLayerHideEvent;
 import org.notiva.beatrush.event.MaskLayerShowEvent;
 
@@ -61,7 +61,7 @@ public class MaskLayer extends Pane {
      * }</pre>
      */
     public MaskLayer() {
-        Loader.loadComponentView(this, "/view/component/MaskLayer.fxml");
+        ResourceLoader.loadComponentView(this, "/view/component/MaskLayer.fxml");
         init();
     }
 

@@ -231,7 +231,7 @@
     import javafx.scene.image.Image;
     import javafx.scene.image.ImageView;
     import javafx.scene.layout.AnchorPane;
-    import org.notiva.beatrush.core.Loader;
+    import org.notiva.beatrush.core.ResourceLoader;
 
     public class Card extends AnchorPane {
 
