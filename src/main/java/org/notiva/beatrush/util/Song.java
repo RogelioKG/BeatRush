@@ -4,6 +4,7 @@ import javafx.scene.media.Media;
 
 import javafx.util.Duration;
 import org.notiva.beatrush.core.Loader;
+import org.notiva.beatrush.core.ScoreManager;
 
 public class Song {
     private String songName;

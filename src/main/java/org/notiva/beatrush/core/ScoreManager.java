@@ -1,4 +1,4 @@
-package org.notiva.beatrush.util;
+package org.notiva.beatrush.core;
 
 import java.util.HashMap;
 import java.util.Map;

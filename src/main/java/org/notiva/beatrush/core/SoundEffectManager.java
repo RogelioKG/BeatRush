@@ -1,55 +1,42 @@
-package org.notiva.beatrush.util;
+package org.notiva.beatrush.core;
 
 import javafx.scene.media.AudioClip;
-import org.notiva.beatrush.core.Loader;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class SoundEffectManager {
 
-    private static final String SOUND_EFFECT_PATH = "/sound/";
-    private static final Map<String, AudioClip> soundMap = new HashMap<>();
+    private final String SOUND_EFFECT_PATH = "/media/sound/";
+    private final Map<String, AudioClip> soundMap = new HashMap<>();
 
-    /**
-     * SoundEffectManager 的單例實現。
-     * 使用靜態內部類 Holder 來延遲實例化，確保線程安全。
-     */
     private static class Holder {
         private static final SoundEffectManager INSTANCE = new SoundEffectManager();
     }
 
     /**
-     * 私有構造函數，防止外部直接實例化。
-     * 初始化所有音效。
+     * 獲取 SoundEffectManager 的唯一實例 (Singleton Patterns)。
+     *
+     * @return SoundEffectManager 的唯一實例
      */
-    private SoundEffectManager() {
-        loadAll();
+    public static SoundEffectManager getInstance() {
+        return Holder.INSTANCE;
     }
 
     /**
-     * 初始化 SoundEffectManager 的實例。
+     * 載入所有音效。
      */
-    public static void initInstance() {
-        SoundEffectManager instance = Holder.INSTANCE;
-    }
-
-    /**
-     * 預載入所有音效。
-     * 這些音效會在應用啟動時自動加載。
-     */
-    private static void loadAll() {
+    public void loadAll() {
         load("ui-menu-sound-1.mp3");
         load("ui-menu-sound-2.mp3");
     }
 
     /**
-     * 加載指定的音效文件。
-     * 如果音效已經存在於 soundMap 中，則不會重複加載。
+     * 加載指定的音效。
      *
      * @param filename 音效文件名
      */
-    private static void load(String filename) {
+    private void load(String filename) {
         try {
             String fullPath = Loader.loadResource(SOUND_EFFECT_PATH + filename).toExternalForm();
             AudioClip clip = new AudioClip(fullPath);
@@ -66,7 +53,7 @@ public class SoundEffectManager {
      *
      * @param filename 音效文件名
      */
-    public static void play(String filename) {
+    public void play(String filename) {
         play(filename, 1.0);
     }
 
@@ -74,9 +61,9 @@ public class SoundEffectManager {
      * 播放指定的音效，並可以指定音量。
      *
      * @param filename 音效文件名
-     * @param volume   音量，範圍從 0.0 到 1.0
+     * @param volume   音量，範圍從 0.0 開始
      */
-    public static void play(String filename, double volume) {
+    public void play(String filename, double volume) {
         AudioClip clip = soundMap.get(filename);
         if (clip != null) {
             clip.play(volume);
@@ -90,7 +77,7 @@ public class SoundEffectManager {
      *
      * @param filename 音效文件名
      */
-    public static void stop(String filename) {
+    public void stop(String filename) {
         AudioClip clip = soundMap.get(filename);
         if (clip != null) {
             clip.stop();

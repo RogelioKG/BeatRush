@@ -17,13 +17,12 @@ import javafx.scene.paint.Stop;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 import org.notiva.beatrush.core.Loader;
-import org.notiva.beatrush.util.SoundEffectManager;
+import org.notiva.beatrush.core.SoundEffectManager;
 
 
 public class GlowingBorderButton extends Button {
     @FXML
     private StackPane button;
-
     @FXML
     private Text buttonText;
 
@@ -31,6 +30,7 @@ public class GlowingBorderButton extends Button {
     private final double NORMAL_SPEED = 0.8;
     private final String SOUND_EFFECT = "ui-menu-sound-1.mp3";
 
+    private final SoundEffectManager soundEffectManager = SoundEffectManager.getInstance();
     private Timeline glowingBorder;
 
     /**
@@ -80,9 +80,7 @@ public class GlowingBorderButton extends Button {
      * 啟用 hover 時 UI 聲音。
      */
     private void enableSoundEffect() {
-        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> {
-            SoundEffectManager.play(SOUND_EFFECT, 0.3);
-        });
+        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> soundEffectManager.play(SOUND_EFFECT, 0.3));
     }
 
     /**

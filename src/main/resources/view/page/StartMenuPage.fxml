@@ -16,7 +16,7 @@
     <MaskLayer fx:id="maskLayer" />
     <VBox alignment="CENTER"  spacing="100.0">
         <ImageView fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../../image/beatrush.png"/>
+            <Image url="@../../image/material/beatrush.png"/>
         </ImageView>
         <GlowingBorderButton fx:id="startButton" buttonText="START" onAction="#onStartButtonClick" />
     </VBox>

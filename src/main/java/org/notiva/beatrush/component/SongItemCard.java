@@ -17,8 +17,8 @@ import javafx.util.Duration;
 import org.notiva.beatrush.core.Loader;
 import org.notiva.beatrush.event.MaskLayerHideEvent;
 import org.notiva.beatrush.event.MaskLayerShowEvent;
-import org.notiva.beatrush.util.MiscUtil;
-import org.notiva.beatrush.util.SoundEffectManager;
+import org.notiva.beatrush.util.Misc;
+import org.notiva.beatrush.core.SoundEffectManager;
 
 /**
  * <h2>歌曲卡片元件</h2>
@@ -31,10 +31,6 @@ import org.notiva.beatrush.util.SoundEffectManager;
  * 註：歌名、歌手、長度和封面圖片，通通都是 responsive。
  */
 public class SongItemCard extends AnchorPane {
-
-    private final double DEFAULT_VIEW_WIDTH = 200.0;
-    private final String SOUND_EFFECT = "ui-menu-sound-2.mp3";
-
     @FXML
     private ImageView songImageView;
     @FXML
@@ -44,6 +40,10 @@ public class SongItemCard extends AnchorPane {
     @FXML
     private Label songLengthLabel;
 
+    private final double DEFAULT_VIEW_WIDTH = 200.0;
+    private final String SOUND_EFFECT = "ui-menu-sound-2.mp3";
+
+    private final SoundEffectManager soundEffectManager = SoundEffectManager.getInstance();
     private ScaleTransition scaleUpOnHover;
     private ScaleTransition scaleDownOnExit;
     private Popup songInfoPopup;
@@ -124,14 +124,14 @@ public class SongItemCard extends AnchorPane {
         songAuthorLabel.textProperty().bind(songAuthorProperty());
         // 卡面上的歌曲長度 <- 歌曲長度屬性
         songLength.addListener((obs, oldVal, newVal) -> {
-            String songLengthString = MiscUtil.formatDuration(newVal);
+            String songLengthString = Misc.formatDuration(newVal);
             songLengthLabel.setText(songLengthString);
         });
         // 卡面上的封面圖片 <- 封面圖片 URL 屬性
         songImageView.imageProperty().bind(songImageUrlProperty().map(url -> {
             Image image = Loader.loadImage(url);
             if (image != null) {
-                Rectangle2D viewport = MiscUtil.getCenteredCoverCrop(image.getHeight(), image.getWidth(), getPrefHeight(), songImageWidth.get());
+                Rectangle2D viewport = Misc.getCenteredCoverCrop(image.getHeight(), image.getWidth(), getPrefHeight(), songImageWidth.get());
                 songImageView.setViewport(viewport);
             }
             return image;
@@ -141,7 +141,7 @@ public class SongItemCard extends AnchorPane {
         // 封面圖片視圖的 viewport <- 卡面上的封面圖片的寬度屬性
         songImageView.fitWidthProperty().addListener((obs, oldVal, newVal) -> {
             Image image = songImageView.getImage();
-            Rectangle2D viewport = MiscUtil.getCenteredCoverCrop(image.getHeight(), image.getWidth(), getPrefHeight(), newVal.doubleValue());
+            Rectangle2D viewport = Misc.getCenteredCoverCrop(image.getHeight(), image.getWidth(), getPrefHeight(), newVal.doubleValue());
             songImageView.setViewport(viewport);
         });
         // 卡面上的封面圖片的高度屬性 <- 卡片高度屬性 (圖片高度與卡片同高)
@@ -149,7 +149,7 @@ public class SongItemCard extends AnchorPane {
         // 封面圖片視圖的 viewport <- 卡面上的封面圖片的高度屬性
         songImageView.fitHeightProperty().addListener((obs, oldVal, newVal) -> {
             Image image = songImageView.getImage();
-            Rectangle2D viewport = MiscUtil.getCenteredCoverCrop(image.getHeight(), image.getWidth(), newVal.doubleValue(), songImageWidth.get());
+            Rectangle2D viewport = Misc.getCenteredCoverCrop(image.getHeight(), image.getWidth(), newVal.doubleValue(), songImageWidth.get());
             songImageView.setViewport(viewport);
         });
         // 縮放動效是否啟用 <- 縮放動效啟用屬性
@@ -180,9 +180,7 @@ public class SongItemCard extends AnchorPane {
      * 啟用 hover 時 UI 聲音。
      */
     private void enableSoundEffect() {
-        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> {
-            SoundEffectManager.play(SOUND_EFFECT, 0.1);
-        });
+        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> soundEffectManager.play(SOUND_EFFECT, 0.1));
     }
 
     /**

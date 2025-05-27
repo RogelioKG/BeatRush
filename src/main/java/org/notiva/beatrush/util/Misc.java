@@ -3,7 +3,7 @@ package org.notiva.beatrush.util;
 import javafx.geometry.Rectangle2D;
 import javafx.util.Duration;
 
-public class MiscUtil {
+public class Misc {
 
     /**
      * 根據指定目標寬高比，從圖片中心裁切出最大可能尺寸的區域。
