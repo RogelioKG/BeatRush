@@ -28,13 +28,10 @@ public class SoundEffectManager {
     }
 
     /**
-     * 獲取 SoundEffectManager 的單例實例。
-     * 如果實例尚未創建，則初始化一個新實例。
-     *
-     * @return SoundEffectManager 的唯一實例
+     * 初始化 SoundEffectManager 的實例。
      */
-    public static SoundEffectManager getInstance() {
-        return Holder.INSTANCE;
+    public static void initInstance() {
+        SoundEffectManager instance = Holder.INSTANCE;
     }
 
     /**

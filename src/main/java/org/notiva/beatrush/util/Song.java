@@ -2,22 +2,29 @@ package org.notiva.beatrush.util;
 
 import javafx.scene.media.Media;
 
+import javafx.util.Duration;
 import org.notiva.beatrush.core.Loader;
 
 public class Song {
     private String songName;
+    private String author;
+    private Duration duration;
     private String songFilePath;
     private Media songFile;
+    private String posterPath;
 
     /**
      * 建構子，初始化歌曲名稱和檔案路徑。
      *
      * @param songName 歌曲名稱
      */
-    public Song(String songName) {
+    public Song(String songName, String author, Duration duration) {
         this.songName = songName;
-        songFilePath = Loader.loadResource("/media/" + songName + ".mp3").toString();
+        this.author = author;
+        this.duration = duration;
+        songFilePath = Loader.loadResource("/media/" + songName + ".mp3").toExternalForm();
         songFile = new Media(songFilePath);
+        posterPath = Loader.loadResource("/icon/" + songName + ".jpg").toExternalForm();
         ScoreManager.getInstance().setCurrentSong(songName);
     }
 
