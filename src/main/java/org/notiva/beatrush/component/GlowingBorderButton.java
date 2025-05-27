@@ -80,7 +80,10 @@ public class GlowingBorderButton extends Button {
      * 啟用 hover 時 UI 聲音。
      */
     private void enableSoundEffect() {
-        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> SoundEffectManager.play(SOUND_EFFECT, 0.3));
+        addEventHandler(MouseEvent.MOUSE_ENTERED, e -> {
+            SoundEffectManager.getInstance();
+            SoundEffectManager.play(SOUND_EFFECT, 0.3);
+        });
     }
 
     /**
