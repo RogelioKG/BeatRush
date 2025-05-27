@@ -12,16 +12,18 @@ public class SoundEffectManager {
     private static final Map<String, AudioClip> soundMap = new HashMap<>();
 
     /**
-     * 單例模式的唯一實例
+     * SoundEffectManager 的單例實現。
+     * 使用靜態內部類 Holder 來延遲實例化，確保線程安全。
      */
-    private static SoundEffectManager instance;
+    private static class Holder {
+        private static final SoundEffectManager INSTANCE = new SoundEffectManager();
+    }
 
     /**
      * 私有構造函數，防止外部直接實例化。
      * 初始化所有音效。
      */
     private SoundEffectManager() {
-        instance = this;
         loadAll();
     }
 
@@ -32,10 +34,7 @@ public class SoundEffectManager {
      * @return SoundEffectManager 的唯一實例
      */
     public static SoundEffectManager getInstance() {
-        if (instance == null) {
-            instance = new SoundEffectManager();
-        }
-        return instance;
+        return Holder.INSTANCE;
     }
 
     /**
