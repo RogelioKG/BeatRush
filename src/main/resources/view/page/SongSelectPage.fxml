@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import java.net.URL?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.paint.Color?>
 <?import org.notiva.beatrush.component.MaskLayer?>
 
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
@@ -29,11 +27,11 @@
                         <VBox fx:id="allSongList" />
                     </Tab>
                     <Tab text="💝 Favorite">
-                        <VBox fx:id="favoriteSongList" />
+                        <VBox fx:id="favoriteSongList"/>
                     </Tab>
                 </TabPane>
             </VBox>
         </HBox>
     </ScrollPane>
-    <MaskLayer fx:id="maskLayer" />
+    <MaskLayer fx:id="maskLayer"/>
 </StackPane>

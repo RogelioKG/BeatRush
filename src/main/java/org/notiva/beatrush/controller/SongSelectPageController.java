@@ -1,5 +1,7 @@
 package org.notiva.beatrush.controller;
 
+import java.util.List;
+
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
@@ -10,7 +12,6 @@ import javafx.util.Duration;
 import org.notiva.beatrush.component.MaskLayer;
 import org.notiva.beatrush.component.SongItemCard;
 
-import java.util.List;
 
 public class SongSelectPageController {
 

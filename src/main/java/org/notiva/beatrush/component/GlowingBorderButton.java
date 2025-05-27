@@ -29,7 +29,7 @@ public class GlowingBorderButton extends Button {
     private final double NORMAL_SPEED = 0.8;
     private final double HOVER_SPEED = 1.8;
     private final double SOUND_VOLUME = 0.1;
-    private final String SOUND_EFFECT = "https://cdn.pixabay.com/audio/2022/02/17/audio_988aaf064c.mp3";
+    private final String SOUND_EFFECT = "/media/sound/ui-menu-sound-1.mp3";
 
     private final MediaManager mediaManager = MediaManager.getInstance();
     private Timeline glowingBorder;

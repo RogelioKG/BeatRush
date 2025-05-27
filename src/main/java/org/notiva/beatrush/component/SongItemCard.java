@@ -60,7 +60,7 @@ public class SongItemCard extends AnchorPane {
     private final StringProperty songName = new SimpleStringProperty();
     private final StringProperty songAuthor = new SimpleStringProperty();
     private final ObjectProperty<Duration> songLength = new SimpleObjectProperty<>();
-    private final StringProperty songImageUrl = new SimpleStringProperty();
+    private final StringProperty songImagePath = new SimpleStringProperty();
     private final BooleanProperty scalingEffect = new SimpleBooleanProperty(true);
     private final DoubleProperty songImageWidth = new SimpleDoubleProperty(DEFAULT_VIEW_WIDTH);
 
@@ -71,7 +71,8 @@ public class SongItemCard extends AnchorPane {
      * <pre>{@code
      * <SongItemCard songName="Beautiful Song"
      *               songAuthor="Famous Artist"
-     *               songImageUrl="https://picsum.photos/400/400"
+     *               songLength="394s"
+     *               songImagePath="https://picsum.photos/400/400"
      *               scalingEffect="true" />
      * }</pre>
      */
@@ -103,15 +104,15 @@ public class SongItemCard extends AnchorPane {
      * @param songName      歌曲名稱
      * @param songAuthor    歌手名稱
      * @param songLength    歌曲長度
-     * @param songImageUrl  歌曲封面圖片 URL
+     * @param songImagePath  歌曲封面圖片路徑
      * @param scalingEffect 是否啟用滑鼠懸停縮放效果
      */
-    public SongItemCard(String songName, String songAuthor, Duration songLength, String songImageUrl, boolean scalingEffect) {
+    public SongItemCard(String songName, String songAuthor, Duration songLength, String songImagePath, boolean scalingEffect) {
         this();
         setSongName(songName);
         setSongAuthor(songAuthor);
         setSongLength(songLength);
-        setSongImageUrl(songImageUrl);
+        setSongImagePath(songImagePath);
         setScalingEffect(scalingEffect);
     }
 
@@ -128,8 +129,8 @@ public class SongItemCard extends AnchorPane {
             String songLengthString = Misc.formatDuration(newVal);
             songLengthLabel.setText(songLengthString);
         });
-        // 卡面上的封面圖片 <- 封面圖片 URL 屬性
-        songImageView.imageProperty().bind(songImageUrlProperty().map(path -> {
+        // 卡面上的封面圖片 <- 封面圖片路徑屬性
+        songImageView.imageProperty().bind(songImagePathProperty().map(path -> {
             Image image = ResourceLoader.loadImage(path);
             if (image.getWidth() > 0) {
                 // normal loading 時，直接更新 viewport
@@ -244,7 +245,7 @@ public class SongItemCard extends AnchorPane {
         fireEvent(new MaskLayerShowEvent());
 
         // === 2. 內容 ===
-        SongInfoModal popupContent = new SongInfoModal(getSongName(), getSongAuthor(), getSongLength(), getSongImageUrl());
+        SongInfoModal popupContent = new SongInfoModal(getSongName(), getSongAuthor(), getSongLength(), getSongImagePath());
         popupContent.setOpacity(0);
 
         // === 3. popup ===
@@ -360,30 +361,30 @@ public class SongItemCard extends AnchorPane {
     }
 
     /**
-     * 取得歌曲封面圖片 URL 屬性值。
+     * 取得歌曲封面圖片路徑屬性值。
      *
-     * @return 目前設定的封面圖片 URL
+     * @return 目前設定的封面圖片路徑
      */
-    public String getSongImageUrl() {
-        return songImageUrl.get();
+    public String getSongImagePath() {
+        return songImagePath.get();
     }
 
     /**
-     * 設定歌曲封面圖片 URL 屬性值。
+     * 設定歌曲封面圖片路徑屬性值。
      *
-     * @param imageUrl 新的封面圖片 URL
+     * @param imagePath 新的封面圖片路徑
      */
-    public void setSongImageUrl(String imageUrl) {
-        songImageUrl.set(imageUrl);
+    public void setSongImagePath(String imagePath) {
+        songImagePath.set(imagePath);
     }
 
     /**
-     * 取得歌曲封面圖片 URL 的 StringProperty 物件。
+     * 取得歌曲封面圖片路徑的 StringProperty 物件。
      *
-     * @return 封面圖片 URL 的 StringProperty 物件
+     * @return 封面圖片路徑的 StringProperty 物件
      */
-    public StringProperty songImageUrlProperty() {
-        return songImageUrl;
+    public StringProperty songImagePathProperty() {
+        return songImagePath;
     }
 
     /**

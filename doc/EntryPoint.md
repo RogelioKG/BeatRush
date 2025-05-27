@@ -1,3 +1,6 @@
+# EntryPoint
+
+```java
 package org.notiva.beatrush;
 
 import javafx.application.Application;
@@ -20,3 +23,5 @@ public class App extends Application {
         launch(args);
     }
 }
+
+```

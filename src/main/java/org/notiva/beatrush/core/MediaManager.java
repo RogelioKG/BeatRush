@@ -31,7 +31,7 @@ public class MediaManager {
     public void loadAll() {
         loadClip("/media/sound/ui-menu-sound-1.mp3");
         loadClip("/media/sound/ui-menu-sound-2.mp3");
-        loadMedia("/media/sound/background-music.mp3");
+        // loadMedia("/media/sound/background-music.mp3");
     }
 
     /**
@@ -41,7 +41,6 @@ public class MediaManager {
      * @return 對應的 {@link AudioClip} 實例。
      */
     public AudioClip loadClip(String path) {
-        System.out.println(path);
         AudioClip clip = ResourceLoader.loadAudio(path);
         clipCache.put(path, clip);
         return clip;
