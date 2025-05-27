@@ -9,8 +9,10 @@ import java.util.Map;
  * 但允許每首歌曲擁有獨立的分數記錄。
  */
 public class ScoreManager {
-    /** 單例模式的唯一實例 */
-    private static ScoreManager instance;
+
+    private static class Holder {
+        private static final ScoreManager instance = new ScoreManager();
+    }
 
     /** 儲存每首歌曲對應的分數 */
     private Map<String, Integer> songScores;
@@ -34,10 +36,7 @@ public class ScoreManager {
      * @return ScoreManager 的唯一實例
      */
     public static ScoreManager getInstance() {
-        if (instance == null) {
-            instance = new ScoreManager();
-        }
-        return instance;
+        return Holder.instance;
     }
 
     /**

@@ -181,7 +181,6 @@ public class SongItemCard extends AnchorPane {
      */
     private void enableSoundEffect() {
         addEventHandler(MouseEvent.MOUSE_ENTERED, e -> {
-            SoundEffectManager.getInstance();
             SoundEffectManager.play(SOUND_EFFECT, 0.1);
         });
     }

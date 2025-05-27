@@ -81,7 +81,6 @@ public class GlowingBorderButton extends Button {
      */
     private void enableSoundEffect() {
         addEventHandler(MouseEvent.MOUSE_ENTERED, e -> {
-            SoundEffectManager.getInstance();
             SoundEffectManager.play(SOUND_EFFECT, 0.3);
         });
     }
