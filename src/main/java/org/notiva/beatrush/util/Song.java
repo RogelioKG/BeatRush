@@ -23,9 +23,9 @@ public class Song {
         this.songName = songName;
         this.author = author;
         this.duration = duration;
-        songFilePath = "/media/" + songName + ".mp3";
+        songFilePath = "/media/song/" + songName + ".mp3";
         songFile = ResourceLoader.loadMedia(songFilePath);
-        posterPath = "/poster/" + songName + ".jpg";
+        posterPath = "/media/poster/" + songName + ".jpg";
         ScoreManager.getInstance().setCurrentSong(songName);
     }
 

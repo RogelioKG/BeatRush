@@ -77,7 +77,7 @@ public class RhythmGamePageController {
         // 載入音樂
         try {
             mediaPlayer = new MediaPlayer(song.getSongFile());
-            mediaPlayer.setVolume(0);
+            mediaPlayer.setVolume(0.2);
 
             // 構建譜面檔案路徑
             String chartPath = "/chart/" + song.getSongName() + ".json";
