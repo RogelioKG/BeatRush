@@ -11,6 +11,7 @@ import javafx.scene.media.MediaPlayer;
 public class MediaManager {
     private final Map<String, AudioClip> clipCache = new ConcurrentHashMap<>();
     private final Map<String, Media> mediaCache = new ConcurrentHashMap<>();
+    private MediaPlayer bgmPlayer;
 
     private static class Holder {
         private static final MediaManager INSTANCE = new MediaManager();
@@ -31,7 +32,8 @@ public class MediaManager {
     public void loadAll() {
         loadClip("/media/sound/ui-menu-sound-1.mp3");
         loadClip("/media/sound/ui-menu-sound-2.mp3");
-        // loadMedia("/media/sound/background-music.mp3");
+        loadMedia("/media/sound/background-music.mp3");
+        bgmPlayer = getMediaPlayer("/media/sound/background-music.mp3");
     }
 
     /**
@@ -103,6 +105,10 @@ public class MediaManager {
     public MediaPlayer getMediaPlayer(String path) {
         Media media = getMedia(path);
         return new MediaPlayer(media);
+    }
+
+    public MediaPlayer getBgmPlayer() {
+        return bgmPlayer;
     }
 }
 
