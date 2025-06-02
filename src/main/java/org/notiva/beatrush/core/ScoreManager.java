@@ -1,119 +1,204 @@
 package org.notiva.beatrush.core;
 
-import java.util.HashMap;
-import java.util.Map;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import org.notiva.beatrush.util.JudgementLevel;
 
 /**
- * 計分管理器類，負責處理音樂遊戲中的分數相關操作。
- * 此類使用單例設計模式，確保整個應用程序中只有一個計分管理器實例，
- * 但允許每首歌曲擁有獨立的分數記錄。
+ * 評分管理器，負責處理節奏遊戲的評分邏輯
  */
 public class ScoreManager {
 
+    // 分數和統計屬性
+    private final IntegerProperty totalScore = new SimpleIntegerProperty(0);
+    private final IntegerProperty combo = new SimpleIntegerProperty(0);
+    private final IntegerProperty maxCombo = new SimpleIntegerProperty(0);
+
+    // 各等級統計
+    private final IntegerProperty perfectCount = new SimpleIntegerProperty(0);
+    private final IntegerProperty greatCount = new SimpleIntegerProperty(0);
+    private final IntegerProperty goodCount = new SimpleIntegerProperty(0);
+    private final IntegerProperty badCount = new SimpleIntegerProperty(0);
+    private final IntegerProperty missCount = new SimpleIntegerProperty(0);
+
     private static class Holder {
-        private static final ScoreManager instance = new ScoreManager();
-    }
-
-    /** 儲存每首歌曲對應的分數 */
-    private Map<String, Integer> songScores;
-
-    /** 當前選中的歌曲名稱 */
-    private String currentSongName;
-
-    /**
-     * 私有構造函數，防止外部直接實例化。
-     * 初始化歌曲分數映射。
-     */
-    private ScoreManager() {
-        songScores = new HashMap<>();
-        currentSongName = "";
+        private static final ScoreManager INSTANCE = new ScoreManager();
     }
 
     /**
-     * 獲取 ScoreManager 的單例實例。
-     * 如果實例尚未創建，則初始化一個新實例。
-     *
-     * @return ScoreManager 的唯一實例
+     * 取得 ScoreManager 的唯一實例
      */
     public static ScoreManager getInstance() {
-        return Holder.instance;
+        return Holder.INSTANCE;
+    }
+
+    private ScoreManager() {
     }
 
     /**
-     * 設置當前選中的歌曲。
+     * 根據時間差計算評分
      *
-     * @param songName 歌曲的唯一識別碼
+     * @param timingDifference 時間差（毫秒），負數表示提前，正數表示延遲
+     * @return 評分等級
      */
-    public void setCurrentSong(String songName) {
-        this.currentSongName = songName;
-        // 如果這首歌沒有記錄，初始化為0分
-        if (!songScores.containsKey(songName)) {
-            songScores.put(songName, 0);
+    public JudgementLevel calculateJudgement(double timingDifference) {
+        if (timingDifference >= GameSetting.JudgmentWindow.PERFECT_MIN_MS &&
+                timingDifference <= GameSetting.JudgmentWindow.PERFECT_MAX_MS) {
+            return JudgementLevel.PERFECT;
+        }
+
+        if (timingDifference >= GameSetting.JudgmentWindow.GREAT_MIN_MS &&
+                timingDifference <= GameSetting.JudgmentWindow.GREAT_MAX_MS) {
+            return JudgementLevel.GREAT;
+        }
+
+        if (timingDifference >= GameSetting.JudgmentWindow.GOOD_MIN_MS &&
+                timingDifference <= GameSetting.JudgmentWindow.GOOD_MAX_MS) {
+            return JudgementLevel.GOOD;
+        }
+
+        if (timingDifference >= GameSetting.JudgmentWindow.BAD_MIN_MS &&
+                timingDifference <= GameSetting.JudgmentWindow.BAD_MAX_MS) {
+            return JudgementLevel.BAD;
+        }
+
+        // 超出所有範圍則為 Miss
+        return JudgementLevel.MISS;
+    }
+
+    /**
+     * 添加評分並更新統計
+     *
+     * @param judgement 評分等級
+     */
+    public void addScore(JudgementLevel judgement) {
+        // 更新總分
+        int baseScore = judgement.getScore();
+        int comboBonus = Math.min(combo.get() / 10, 30); // 每 10 連擊增加額外分數，最多 30 分
+        int finalScore = baseScore + comboBonus;
+        totalScore.set(totalScore.get() + finalScore);
+
+        // 更新連擊
+        if (judgement == JudgementLevel.MISS || judgement == JudgementLevel.BAD) {
+            combo.set(0);
+        } else {
+            combo.set(combo.get() + 1);
+            if (combo.get() > maxCombo.get()) {
+                maxCombo.set(combo.get());
+            }
+        }
+
+        // 更新各等級統計
+        switch (judgement) {
+            case PERFECT -> perfectCount.set(perfectCount.get() + 1);
+            case GREAT -> greatCount.set(greatCount.get() + 1);
+            case GOOD -> goodCount.set(goodCount.get() + 1);
+            case BAD -> badCount.set(badCount.get() + 1);
+            case MISS -> missCount.set(missCount.get() + 1);
         }
     }
 
     /**
-     * 設置當前歌曲的分數。
-     *
-     * @param score 要設置的新分數
-     * @throws IllegalStateException 如果當前沒有選擇歌曲
+     * 重置所有分數和統計
      */
-    public void setScore(int score) {
-        if (currentSongName.isEmpty()) {
-            throw new IllegalStateException("必須先選擇一首歌才能設置分數");
-        }
-        songScores.put(currentSongName, score);
+    public void reset() {
+        totalScore.set(0);
+        combo.set(0);
+        maxCombo.set(0);
+        perfectCount.set(0);
+        greatCount.set(0);
+        goodCount.set(0);
+        badCount.set(0);
+        missCount.set(0);
     }
 
     /**
-     * 獲取當前歌曲的分數。
+     * 計算準確率
      *
-     * @return 當前歌曲的分數值
-     * @throws IllegalStateException 如果當前沒有選擇歌曲
+     * @return 準確率百分比 (0-100)
      */
-    public int getScore() {
-        if (currentSongName.isEmpty()) {
-            throw new IllegalStateException("必須先選擇一首歌才能獲取分數");
-        }
-        return songScores.get(currentSongName);
+    public double getAccuracy() {
+        int totalHits = perfectCount.get() + greatCount.get() + goodCount.get() + badCount.get() + missCount.get();
+        if (totalHits == 0) return 100.0;
+
+        int weightedScore = perfectCount.get() * 100 + greatCount.get() * 70 + goodCount.get() * 30 + badCount.get() * 10;
+        return (double) weightedScore / (totalHits * 100) * 100;
     }
 
     /**
-     * 獲取指定歌曲的分數。
-     *
-     * @param songName 歌曲的唯一識別碼
-     * @return 指定歌曲的分數，如果歌曲不存在則返回0
+     * 取得評分等級（S, A, B, C, D）
      */
-    public int getScoreBySongName(String songName) {
-        return songScores.getOrDefault(songName, 0);
+    public String getGrade() {
+        double accuracy = getAccuracy();
+        if (accuracy >= 95.0) return "S";
+        if (accuracy >= 90.0) return "A";
+        if (accuracy >= 80.0) return "B";
+        if (accuracy >= 70.0) return "C";
+        return "D";
     }
 
-    /**
-     * 重置當前歌曲的分數為0。
-     * 通常在重新開始遊玩某首歌時調用。
-     *
-     * @throws IllegalStateException 如果當前沒有選擇歌曲
-     */
-    public void resetScore() {
-        if (currentSongName.isEmpty()) {
-            throw new IllegalStateException("必須先選擇一首歌才能重置分數");
-        }
-        songScores.put(currentSongName, 0);
+    // Getter 方法
+    public int getTotalScore() {
+        return totalScore.get();
     }
 
-    /**
-     * 重置所有歌曲的分數記錄。
-     */
-    public void resetAllScores() {
-        songScores.clear();
+    public IntegerProperty totalScoreProperty() {
+        return totalScore;
     }
 
-    /**
-     * 獲取所有歌曲的分數記錄。
-     *
-     * @return 包含所有歌曲ID和對應分數的映射
-     */
-    public Map<String, Integer> getAllScores() {
-        return new HashMap<>(songScores); // 返回副本以保護內部狀態
+    public int getCombo() {
+        return combo.get();
+    }
+
+    public IntegerProperty comboProperty() {
+        return combo;
+    }
+
+    public int getMaxCombo() {
+        return maxCombo.get();
+    }
+
+    public IntegerProperty maxComboProperty() {
+        return maxCombo;
+    }
+
+    public int getPerfectCount() {
+        return perfectCount.get();
+    }
+
+    public IntegerProperty perfectCountProperty() {
+        return perfectCount;
+    }
+
+    public int getGreatCount() {
+        return greatCount.get();
+    }
+
+    public IntegerProperty greatCountProperty() {
+        return greatCount;
+    }
+
+    public int getGoodCount() {
+        return goodCount.get();
+    }
+
+    public IntegerProperty goodCountProperty() {
+        return goodCount;
+    }
+
+    public int getBadCount() {
+        return badCount.get();
+    }
+
+    public IntegerProperty badCountProperty() {
+        return badCount;
+    }
+
+    public int getMissCount() {
+        return missCount.get();
+    }
+
+    public IntegerProperty missCountProperty() {
+        return missCount;
     }
 }

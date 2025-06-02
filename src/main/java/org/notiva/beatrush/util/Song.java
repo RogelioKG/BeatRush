@@ -1,43 +1,73 @@
 package org.notiva.beatrush.util;
 
-import javafx.scene.media.Media;
-
 import javafx.util.Duration;
-import org.notiva.beatrush.core.ResourceLoader;
-import org.notiva.beatrush.core.ScoreManager;
 
 public class Song {
-    private String songName;
-    private String author;
-    private Duration duration;
-    private String songFilePath;
-    private Media songFile;
-    private String posterPath;
+    private static final String SONG_PATH = "/media/song/";
+    private final String songName;
+    private final String songAuthor;
+    private final Duration songLength;
+    private final String songFilePath;
+    private final String songImagePath;
 
     /**
-     * 建構子，初始化歌曲名稱和檔案路徑。
+     * 建構子，初始化歌曲資訊。
      *
-     * @param songName 歌曲名稱
+     * @param songName   歌曲名稱
+     * @param songAuthor 歌曲作者
+     * @param songLength 歌曲長度
+     * @param songImagePath 歌曲圖片
      */
-    public Song(String songName, String author, Duration duration) {
+    public Song(String songName, String songAuthor, Duration songLength, String songImagePath) {
         this.songName = songName;
-        this.author = author;
-        this.duration = duration;
-        songFilePath = "/media/song/" + songName + ".mp3";
-        songFile = ResourceLoader.loadMedia(songFilePath);
-        posterPath = "/media/poster/" + songName + ".jpg";
-        ScoreManager.getInstance().setCurrentSong(songName);
+        this.songAuthor = songAuthor;
+        this.songLength = songLength;
+        this.songImagePath = songImagePath;
+        this.songFilePath = SONG_PATH + songName + ".mp3";
     }
 
     /**
+     * 取得歌曲名稱。
+     *
      * @return 歌曲名稱
      */
     public String getSongName() {
         return songName;
     }
 
-    public Media getSongFile() {
-        return songFile;
+    /**
+     * 取得歌曲作者。
+     *
+     * @return 歌曲作者
+     */
+    public String getSongAuthor() {
+        return songAuthor;
     }
 
+    /**
+     * 取得歌曲長度。
+     *
+     * @return 歌曲長度
+     */
+    public Duration getSongLength() {
+        return songLength;
+    }
+
+    /**
+     * 取得歌曲檔案路徑。
+     *
+     * @return 歌曲檔案路徑
+     */
+    public String getSongFilePath() {
+        return songFilePath;
+    }
+
+    /**
+     * 取得歌曲海報圖檔路徑。
+     *
+     * @return 歌曲海報圖檔路徑
+     */
+    public String getSongImagePath() {
+        return songImagePath;
+    }
 }

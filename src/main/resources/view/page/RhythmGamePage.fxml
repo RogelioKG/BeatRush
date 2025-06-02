@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane fx:id="gamePane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.notiva.beatrush.controller.RhythmGamePageController">
-    <children>
-        <Label fx:id="timeLabel" layoutX="14.0" layoutY="14.0" text="00:00" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
-      <Rectangle fx:id="hitLine1" fill="#35d2ad00" height="15.0" layoutX="355.0" layoutY="520.0" stroke="#b48686" strokeType="INSIDE" width="130.0" />
-      <Rectangle fx:id="hitLine2" fill="#35d2ad00" height="15.0" layoutX="495.0" layoutY="520.0" stroke="#b48686" strokeType="INSIDE" width="130.0" />
-      <Rectangle fx:id="hitLine3" fill="#35d2ad00" height="15.0" layoutX="635.0" layoutY="520.0" stroke="#b48686" strokeType="INSIDE" width="130.0" />
-      <Rectangle fx:id="hitLine11" fill="#35d2ad00" height="15.0" layoutX="215.0" layoutY="520.0" stroke="#b48686" strokeType="INSIDE" width="130.0" />
-      <Label fx:id="judge" layoutX="477.0" layoutY="414.0" />
-    </children>
-</AnchorPane>
+<?import javafx.scene.control.Label?>
+<?import java.net.URL?>
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="org.notiva.beatrush.controller.RhythmGamePageController"
+           prefHeight="800.0" prefWidth="1600.0" style="-fx-background-color: #1e1e1e;">
+    <stylesheets>
+        <URL value="@../../css/all.css"/>
+    </stylesheets>
+    <HBox alignment="CENTER" fx:id="trackSection"/>
+    <Label fx:id="score" style="-fx-text-fill: #fff; -fx-font-size: 30px;"></Label>
+</StackPane>

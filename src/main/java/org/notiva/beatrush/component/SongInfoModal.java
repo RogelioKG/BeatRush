@@ -1,6 +1,8 @@
 package org.notiva.beatrush.component;
 
 import javafx.beans.property.*;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.control.*;
@@ -8,7 +10,9 @@ import javafx.scene.image.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 import org.notiva.beatrush.core.ResourceLoader;
+import org.notiva.beatrush.event.SongSelectedEvent;
 import org.notiva.beatrush.util.Misc;
+import org.notiva.beatrush.util.Song;
 
 /**
  * <h2>歌曲資訊彈窗元件</h2>
@@ -30,7 +34,7 @@ public class SongInfoModal extends AnchorPane {
     @FXML
     private Label songLengthLabel;
     @FXML
-    private Button actionButton;
+    private Button playButton;
 
     private final double DEFAULT_VIEW_HEIGHT = 300.0;
 
@@ -69,9 +73,9 @@ public class SongInfoModal extends AnchorPane {
      * );
      * }</pre>
      *
-     * @param songName      歌曲名稱
-     * @param songAuthor    歌手名稱
-     * @param songLength    歌曲長度
+     * @param songName       歌曲名稱
+     * @param songAuthor     歌手名稱
+     * @param songLength     歌曲長度
      * @param songImagePath  歌曲封面圖片路徑
      */
     public SongInfoModal(String songName, String songAuthor, Duration songLength, String songImagePath) {
@@ -126,9 +130,18 @@ public class SongInfoModal extends AnchorPane {
     }
 
     /**
+     * 點擊 PLAY 按鈕時所觸發的 EventHandler。
+     *
+     * @param e 要執行的 EventHandler。
+     */
+    public void setOnPlayButtonClick(EventHandler<ActionEvent> e) {
+        playButton.setOnAction(e);
+    }
+
+    /**
      * 更新 viewport。
      *
-     * @param image 歌曲封面圖片
+     * @param image       歌曲封面圖片
      * @param viewHeight  目標高度
      * @param viewWidth   目標寬度
      */

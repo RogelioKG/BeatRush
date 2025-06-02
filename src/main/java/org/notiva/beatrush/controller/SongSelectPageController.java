@@ -11,31 +11,37 @@ import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 import org.notiva.beatrush.component.MaskLayer;
 import org.notiva.beatrush.component.SongItemCard;
-
+import org.notiva.beatrush.core.RhythmGameManager;
+import org.notiva.beatrush.core.StageManager;
+import org.notiva.beatrush.event.SongSelectedEvent;
 
 public class SongSelectPageController {
 
     @FXML
     private StackPane root;
-
     @FXML
     private ScrollPane scrollPane;
-
     @FXML
     private VBox allSongList;
-
     @FXML
     private VBox favoriteSongList;
-
     @FXML
     private MaskLayer maskLayer;
+
+    private final StageManager stageManager = StageManager.getInstance();
+    private final RhythmGameManager rhythmGameManager = RhythmGameManager.getInstance();
 
     @FXML
     protected void initialize() {
         // 開啟頁面時，應滾動到最上面
         Platform.runLater(() -> scrollPane.setVvalue(0));
-        // root 開始監聽 MaskLayerShowEvent 和 MaskLayerHideEvent，
+        // root 監聽 MaskLayerShowEvent 和 MaskLayerHideEvent，
         maskLayer.addEventHandlersFor(root);
+        // root 監聽 SongSelectedEvent
+        root.addEventHandler(SongSelectedEvent.SONG_SELECTED, e -> {
+            rhythmGameManager.setCurrentSong(e.getSong());
+            stageManager.showStage("BeatRush", "/view/page/RhythmGamePage.fxml");
+        });
         // 新增範例歌曲
         addSongs();
     }

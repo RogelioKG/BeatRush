@@ -6,6 +6,7 @@
 
 <!--<?import org.notiva.beatrush.component.GlowingBorderButton?>-->
 
+<?import org.notiva.beatrush.component.GlowingBorderButton?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.notiva.beatrush.controller.ScorePageController">
     <stylesheets>
         <URL value="@../../css/all.css" />
@@ -24,9 +25,7 @@
     </StackPane>
 
     <HBox alignment="CENTER" layoutX="35.0" layoutY="276.0" prefHeight="0.0" prefWidth="550.0" spacing="30">
-<!--        <Button onAction="#onContinueButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="CONTINUE" />-->
-<!--        <Button onAction="#onReplayButtonClick" prefHeight="30" prefWidth="130" styleClass="game-button" text="REPLAY" />-->
-<!--        <GlowingBorderButton fx:id="continueButton" onAction="#onContinueButtonClick"/>-->
-<!--        <GlowingBorderButton fx:id="replayButton" onAction="#onReplayButtonClick"/>-->
+        <GlowingBorderButton fx:id="continueButton" onAction="#onContinueButtonClick"/>
+        <GlowingBorderButton fx:id="replayButton" onAction="#onReplayButtonClick"/>
     </HBox>
 </AnchorPane>

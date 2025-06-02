@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<fx:root type="javafx.scene.layout.StackPane"
+         xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         styleClass="track-view">
+    <stylesheets>
+        <URL value="@../../css/track-view.css"/>
+    </stylesheets>
+    <AnchorPane>
+        <ImageView fitWidth="150.0" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0">
+            <Image url="@../../image/material/track.png"/>
+        </ImageView>
+    </AnchorPane>
+    <Pane fx:id="notesBox" />
+</fx:root>

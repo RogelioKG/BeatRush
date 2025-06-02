@@ -2,11 +2,11 @@ package org.notiva.beatrush.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.StackPane;
 import javafx.scene.media.MediaPlayer;
 import org.notiva.beatrush.component.GlowingBorderButton;
 import org.notiva.beatrush.component.MaskLayer;
 import org.notiva.beatrush.core.MediaManager;
+import org.notiva.beatrush.core.GameSetting;
 import org.notiva.beatrush.core.StageManager;
 
 
@@ -15,10 +15,9 @@ public class StartMenuPageController {
     private MaskLayer maskLayer;
     @FXML
     private GlowingBorderButton startButton;
-    @FXML
-    private MediaManager mediaManager = MediaManager.getInstance();
 
-    private double BGM_VOLUME = 0.03;
+    private final StageManager stageManager = StageManager.getInstance();
+    private final MediaManager mediaManager = MediaManager.getInstance();
 
     @FXML
     protected void initialize() {
@@ -27,7 +26,7 @@ public class StartMenuPageController {
             maskLayer.hide();
             MediaPlayer bgmPlayer = mediaManager.getBgmPlayer();
             if (bgmPlayer.getStatus() == MediaPlayer.Status.READY) {
-                bgmPlayer.setVolume(BGM_VOLUME);
+                bgmPlayer.setVolume(GameSetting.Audio.BGM_VOLUME_RATIO);
                 bgmPlayer.setCycleCount(MediaPlayer.INDEFINITE);
                 bgmPlayer.play();
             }
@@ -36,7 +35,6 @@ public class StartMenuPageController {
 
     @FXML
     protected void onStartButtonClick() {
-        StageManager stageManager = StageManager.getInstance();
         stageManager.showStage("BeatRush", "/view/page/SongSelectPage.fxml");
     }
 }

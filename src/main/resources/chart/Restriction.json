@@ -1,40 +1,26 @@
 [
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 5000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 1400,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 5500,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 1400,
     "duration": 0
   },
   {
-    "type": "hold",
-    "track": 1,
-    "timestamp": 6000,
-    "duration": 1.5
-  },
-  {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 7500,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 1400,
     "duration": 0
   },
   {
-    "type": "hold",
-    "track": 1,
-    "timestamp": 8000,
-    "duration": 1.5
-  },
-  {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 9500,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 1400,
     "duration": 0
   }
-
-
 ]

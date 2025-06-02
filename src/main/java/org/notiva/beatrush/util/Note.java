@@ -2,32 +2,36 @@ package org.notiva.beatrush.util;
 
 
 public class Note {
-    private String type;
-    private int track;
-    private long timestamp;
-    private double duration;  // 使用 double 對應 JSON 中的 1.5
+    private NoteType noteType;
+    private TrackType trackType;
+    private double timestamp;
+    private double duration; // 若為 TapNote 則為 0
 
-    public Note() {
+    public Note(NoteType noteType, TrackType trackType, double timestamp, double duration) {
+        this.noteType = noteType;
+        this.trackType = trackType;
+        this.timestamp = timestamp;
+        this.duration = duration;
     }
 
-    // Getter 和 Setter（Gson 需要）
-    public String getType() {
-        return type;
+    public NoteType getNoteType() {
+        return noteType;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setNoteType(NoteType noteType) {
+        this.noteType = noteType;
     }
 
-    public int getTrack() {
-        return track;
+    public TrackType getTrackType() {
+        return trackType;
     }
 
-    public void setTrack(int track) {
-        this.track = track;
+    public void setTrackType(TrackType trackType) {
+        this.trackType = trackType;
     }
 
-    public long getTimestamp() {
+    public double getTimestamp() {
+        // 時間戳單位：ms
         return timestamp;
     }
 
@@ -46,11 +50,11 @@ public class Note {
     @Override
     public String toString() {
         return "Note{" +
-                "type='" + type + '\'' +
-                ", track=" + track +
-                ", timestamp=" + timestamp +
-                ", duration=" + duration +
-                '}';
+                "noteType='" + noteType.getSerializedName() + "', " +
+                "trackType='" + trackType.getSerializedName() + "', " +
+                "timestamp=" + timestamp + ", " +
+                "duration=" + duration +
+                "}";
     }
 }
 

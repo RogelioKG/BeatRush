@@ -1,4040 +1,4040 @@
 [
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 0,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 1600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 1831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 1154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 2754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 1384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 2984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 1615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 3215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 2077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 3677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 2423,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 4023,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 3000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 4600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 3692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 5292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 3923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 5523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 4846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 6446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 5077,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 6677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 5307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 6907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 5538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 7138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 5769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 7369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 6692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 8292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 7154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 8754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 7384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 8984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 7615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 9215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 8077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 9677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 8538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 10138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 8769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 10369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 9231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 10831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 9461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 11061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 9692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 11292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 10154,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 11754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 10846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 12446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 11307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 12907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 11423,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 13023,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 15000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 16600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 15115,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 16715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 15461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 17061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 15923,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 17523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 16154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 17754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 16384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 17984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 16615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 18215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 16846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 18446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 16961,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 18561,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 17307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 18907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 17538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 19138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 17769,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 19369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 18231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 19831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 18692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 20292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 18807,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 20407,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 19154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 20754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 19615,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 21215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 19846,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 21446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 20077,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 21677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 20538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 22138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 20884,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 22484,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 21231,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 22831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 21461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 23061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 21692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 23292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 21923,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 23523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 22154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 23754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 22384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 23984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 22500,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 24100,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 22846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 24446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 23307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 24907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 23538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 25138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 23769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 25369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 24000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 25600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 24231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 25831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 24346,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 25946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 24692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 26292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 25154,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 26754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 25384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 26984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 25615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 27215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 25846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 27446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 26077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 27677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 26192,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 27792,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 26538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 28138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 27000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 28600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 27231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 28831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 27461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 29061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 27692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 29292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 27923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 29523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 28269,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 29869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 28384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 29984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 28731,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 30331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 28846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 30446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 29077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 30677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 29307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 30907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 37154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 38754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 37615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 39215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 38077,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 39677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 38538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 40138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 39000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 40600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 39231,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 40831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 39346,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 40946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 39461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 41061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 39692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 41292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 39923,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 41523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 40615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 42215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 40846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 42446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 41077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 42677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 41538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 43138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 42231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 43831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 42461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 44061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 42692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 44292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 43038,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 44638,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 43154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 44754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 43384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 44984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 43615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 45215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 44538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 46138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 45000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 46600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 45461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 47061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 45923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 47523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 46154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 47754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 46846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 48446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 47307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 48907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 47538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 49138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 47769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 49369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 48000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 49600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 48231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 49831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 48692,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 50292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 49154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 50754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 49384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 50984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 49846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 51446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 50538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 52138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 50769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 52369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 51000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 52600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 51231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 52831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 51461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 53061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 51692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 53292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 51923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 53523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 52384,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 53984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 52846,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 54446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 53307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 54907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 53769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 55369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 54000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 55600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 54115,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 55715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 54231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 55831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 54692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 56292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 55384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 56984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 55615,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 57215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 55846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 57446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 56077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 57677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 56307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 57907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 57000,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 58600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 57461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 59061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 57692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 59292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 57923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 59523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 58384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 59984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 58731,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 60331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 58846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 60446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 59077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 60677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 59307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 60907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 59654,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 61254,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 60000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 61600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 60231,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 61831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 60461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 62061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 60692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 62292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 61154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 62754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 61500,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 63100,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 61846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 63446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 62077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 63677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 62192,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 63792,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 62307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 63907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 62538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 64138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 62769,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 64369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 63000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 64600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 63461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 65061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 63923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 65523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 64269,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 65869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 64384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 65984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 64846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 66446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 65307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 66907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 65769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 67369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 66115,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 67715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 66461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 68061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 66923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 68523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 67154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 68754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 67384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 68984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 67615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 69215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 68077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 69677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 68423,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 70023,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 68538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 70138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 68769,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 70369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 69000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 70600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 69231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 70831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 69692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 71292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 69923,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 71523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 70154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 71754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 70269,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 71869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 70384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 71984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 70615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 72215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 70846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 72446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 71077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 72677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 71538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 73138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 71654,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 73254,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 71769,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 73369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 72000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 73600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 72231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 73831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 73154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 74754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 74077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 75677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 74538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 76138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 74769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 76369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 75231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 76831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 75346,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 76946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 75461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 77061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 75692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 77292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 75923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 77523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 76269,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 77869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 76615,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 78215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 76846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 78446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 77538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 79138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 77769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 79369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 78000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 79600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 78231,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 79831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 78577,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 80177,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 78692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 80292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 79154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 80754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 79384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 80984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 79615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 81215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 79961,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 81561,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 80307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 81907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 80769,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 82369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 81000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 82600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 81231,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 82831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 81461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 83061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 81923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 83523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 82154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 83754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 82384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 83984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 82615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 84215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 82731,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 84331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 82846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 84446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 83307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 84907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 83654,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 85254,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 84000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 85600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 84461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 86061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 84692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 86292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 84923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 86523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 85154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 86754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 85615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 87215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 86077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 87677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 86538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 88138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 87000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 88600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 87231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 88831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 87461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 89061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 87692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 89292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 87807,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 89407,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 87923,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 89523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 88154,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 89754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 88384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 89984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 88615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 90215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 88846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 90446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 89307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 90907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 89538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 91138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 90000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 91600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 90115,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 91715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 90231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 91831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 90461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 92061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 90692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 92292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 91038,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 92638,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 91384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 92984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 91615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 93215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 92077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 93677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 92307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 93907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 92538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 94138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 93000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 94600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 93346,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 94946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 93461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 95061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 93692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 95292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 93923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 95523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 94154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 95754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 94384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 95984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 94731,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 96331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 95077,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 96677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 95538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 97138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 95769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 97369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 96000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 97600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 96231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 97831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 96692,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 98292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 97038,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 98638,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 97154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 98754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 97384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 98984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 97615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 99215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 97846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 99446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 98077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 99677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 98307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 99907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 98769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 100369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 99461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 101061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 99923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 101523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 100269,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 101869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 100384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 101984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 100731,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 102331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 101307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 102907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 101423,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 103023,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 101538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 103138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 101654,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 103254,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 101769,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 103369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 109154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 110754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 109269,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 110869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 109615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 111215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 110077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 111677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 110307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 111907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 110538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 112138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 110769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 112369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 111000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 112600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 111115,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 112715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 111461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 113061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 111923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 113523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 112154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 113754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 112384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 113984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 112615,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 114215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 112846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 114446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 112961,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 114561,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 113307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 114907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 113769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 115369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 114000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 115600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 114231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 115831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 114461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 116061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 114692,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 116292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 115038,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 116638,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 115154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 116754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 115500,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 117100,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 115615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 117215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 115846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 117446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 116077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 117677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 117000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 118600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 117692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 119292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 117923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 119523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 118154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 119754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 118615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 120215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 119077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 120677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 119307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 120907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 120000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 121600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 120231,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 121831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 120692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 122292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 121154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 122754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 121384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 122984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 121846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 123446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 123000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 124600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 123231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 124831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 123461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 125061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 123692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 125292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 123923,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 125523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 124384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 125984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 124846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 126446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 125307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 126907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 125769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 127369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 126115,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 127715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 126231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 127831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 126692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 128292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 127154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 128754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 127615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 129215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 128077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 129677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 128307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 129907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 128538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 130138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 129000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 130600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 129461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 131061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 129692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 131292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 130615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 132215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 130731,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 132331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 130846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 132446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 131077,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 132677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 131307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 132907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 131769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 133369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 132115,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 133715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 132231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 133831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 132692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 134292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 133154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 134754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 133500,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 135100,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 133846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 135446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 134077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 135677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 134769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 136369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 134884,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 136484,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 135000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 136600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 135231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 136831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 135461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 137061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 135807,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 137407,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 136154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 137754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 136384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 137984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 136615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 138215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 136846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 138446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 137192,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 138792,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 137538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 139138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 137769,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 139369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 138231,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 139831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 138461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 140061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 138692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 140292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 139154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 140754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 139500,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 141100,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 139615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 141215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 140077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 141677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 140423,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 142023,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 140538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 142138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 141000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 142600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 141461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 143061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 141692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 143292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 141923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 143523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 142154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 143754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 142384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 143984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 142846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 144446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 143307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 144907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 144231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 145831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 144692,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 146292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 145384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 146984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 145615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 147215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 146077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 147677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 146769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 148369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 146884,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 148484,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 147231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 148831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 147461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 149061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 147923,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 149523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 148615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 150215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 148731,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 150331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 149307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 150907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 149769,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 151369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 150231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 151831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 150577,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 152177,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 151154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 152754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 151615,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 153215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 151731,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 153331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 152077,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 153677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 152423,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 154023,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 152769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 154369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 153000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 154600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 153461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 155061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 153577,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 155177,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 153923,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 155523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 154269,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 155869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 154615,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 156215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 154846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 156446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 155307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 156907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 155884,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 157484,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 156346,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 157946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 156692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 158292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 157154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 158754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 157269,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 158869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 157615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 159215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 157961,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 159561,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 158307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 159907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 158538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 160138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 158769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 160369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 159000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 160600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 159461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 161061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 159923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 161523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 160269,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 161869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 160384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 161984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 160846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 162446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 161077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 162677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 161307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 162907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 161538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 163138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 161769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 163369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 162231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 163831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 162577,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 164177,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 162692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 164292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 163384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 164984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 163500,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 165100,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 163615,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 165215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 164077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 165677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 164307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 165907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 164538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 166138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 164884,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 166484,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 165461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 167061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 165923,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 167523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 166154,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 167754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 166384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 167984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 166846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 168446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 167077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 168677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 167307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 168907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 167769,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 169369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 168231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 169831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 168461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 170061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 168692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 170292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 168923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 170523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 169154,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 170754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 169384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 170984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 169615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 171215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 169845,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 171445,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 170077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 171677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 170538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 172138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 171000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 172600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 171461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 173061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 171923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 173523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 172269,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 173869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 172384,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 173984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 172846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 174446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 173307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 174907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 173769,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 175369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 174115,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 175715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 174461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 176061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 174692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 176292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 174923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 176523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 175154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 176754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 175615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 177215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 175961,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 177561,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 176307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 177907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 176538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 178138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 176654,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 178254,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 177000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 178600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 177346,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 178946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 177461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 179061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 178154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 179754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 178384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 179984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 178846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 180446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 179307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 180907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 180000,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 181600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 180115,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 181715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 180231,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 181831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 180461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 182061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 180692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 182292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 180923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 182523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 181154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 182754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 181500,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 183100,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 181846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 183446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 182077,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 183677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 182307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 183907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 182538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 184138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 183000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 184600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 183346,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 184946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 183692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 185292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 184154,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 185754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 184384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 185984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 184615,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 186215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 184846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 186446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 185307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 186907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 185538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 187138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 186000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 187600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 186231,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 187831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 186461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 188061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 186692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 188292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 187154,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 188754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 187615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 189215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 188077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 189677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 197769,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 199369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 198692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 200292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 198923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 200523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 199154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 200754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 199615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 201215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 200538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 202138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 201231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 202831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 201461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 203061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 201923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 203523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 202384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 203984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 202846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 204446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 203307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 204907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 205154,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 206754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 205500,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 207100,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 205846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 207446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 206077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 207677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 206307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 207907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 206538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 208138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 206769,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 208369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 207000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 208600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 207461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 209061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 207692,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 209292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 208154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 209754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 208269,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 209869,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 208384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 209984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 208615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 210215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 208846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 210446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 209192,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 210792,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 209538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 211138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 209769,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 211369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 210231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 211831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 210346,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 211946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 210461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 212061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 210577,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 212177,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 210692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 212292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 211154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 212754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 211500,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 213100,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 211615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 213215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 212077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 213677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 212307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 213907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 212538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 214138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 212884,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 214484,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 213231,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 214831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 213461,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 215061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 213923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 215523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 214154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 215754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 214384,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 215984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 214846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 216446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 215307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 216907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 215538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 217138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 215654,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 217254,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 215769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 217369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 216000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 217600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 216231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 217831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 216577,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 218177,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 216923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 218523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 217154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 218754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 217846,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 219446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 218077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 219677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 218307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 219907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 218538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 220138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 218769,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 220369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 218884,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 220484,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 219000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 220600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 219231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 220831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 219461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 221061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 219692,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 221292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 219923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 221523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 220384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 221984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 220731,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 222331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 220846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 222446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 221077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 222677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 221307,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 222907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 221538,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 223138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 221769,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 223369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 222231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 223831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 222461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 224061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 222923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 224523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 223038,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 224638,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 223154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 224754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 223384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 224984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 223615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 225215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 223961,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 225561,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 224307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 225907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 224538,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 226138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 225000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 226600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 225115,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 226715,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 225231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 226831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 225346,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 226946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 225461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 227061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 225923,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 227523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 226384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 227984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 226615,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 228215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 226731,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 228331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 226846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 228446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 227077,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 228677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 227307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 228907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 227654,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 229254,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 227884,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 229484,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 228231,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 229831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 228692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 230292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 228923,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 230523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 229154,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 230754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 229615,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 231215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 230077,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 231677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 230307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 231907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 230423,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 232023,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 230538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 232138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 230769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 232369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 231000,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 232600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 231231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 232831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 231461,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 233061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 231692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 233292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 232154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 233754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 232846,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 234446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 233077,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 234677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 233307,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 234907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 233654,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 235254,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 233769,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 235369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 234231,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 235831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 234692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 236292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 235038,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 236638,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 235154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 236754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 235615,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 237215,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 3,
-    "timestamp": 235846,
+    "noteType": "TAP",
+    "trackType": "3",
+    "timestamp": 237446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 236077,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 237677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 236307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 237907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 236538,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 238138,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 237000,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 238600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 237346,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 238946,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 237461,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 239061,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 237692,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 239292,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 237923,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 239523,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 238154,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 239754,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 238384,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 239984,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 238731,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 240331,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 238846,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 240446,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 239077,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 240677,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 239307,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 240907,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 239769,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 241369,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 1,
-    "timestamp": 240000,
+    "noteType": "TAP",
+    "trackType": "1",
+    "timestamp": 241600,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 240231,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 241831,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 240577,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 242177,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 240807,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 242407,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 2,
-    "timestamp": 241038,
+    "noteType": "TAP",
+    "trackType": "2",
+    "timestamp": 242638,
     "duration": 0
   },
   {
-    "type": "tap",
-    "track": 0,
-    "timestamp": 242077,
+    "noteType": "TAP",
+    "trackType": "0",
+    "timestamp": 243677,
     "duration": 0
   }
 ]

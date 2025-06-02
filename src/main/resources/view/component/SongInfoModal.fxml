@@ -22,7 +22,7 @@
             <Label fx:id="songLengthLabel" styleClass="song-length"/>
         </VBox>
         <HBox alignment="CENTER" prefHeight="150.0" styleClass="button-area">
-            <GlowingBorderButton fx:id="startButton" buttonText="START"/>
+            <GlowingBorderButton fx:id="playButton" buttonText="PLAY"/>
         </HBox>
     </VBox>
 </fx:root>

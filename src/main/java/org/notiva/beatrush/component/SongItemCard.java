@@ -17,8 +17,10 @@ import javafx.util.Duration;
 import org.notiva.beatrush.core.ResourceLoader;
 import org.notiva.beatrush.event.MaskLayerHideEvent;
 import org.notiva.beatrush.event.MaskLayerShowEvent;
+import org.notiva.beatrush.event.SongSelectedEvent;
 import org.notiva.beatrush.util.Misc;
 import org.notiva.beatrush.core.MediaManager;
+import org.notiva.beatrush.util.Song;
 
 /**
  * <h2>歌曲卡片元件</h2>
@@ -104,7 +106,7 @@ public class SongItemCard extends AnchorPane {
      * @param songName      歌曲名稱
      * @param songAuthor    歌手名稱
      * @param songLength    歌曲長度
-     * @param songImagePath  歌曲封面圖片路徑
+     * @param songImagePath 歌曲封面圖片路徑
      * @param scalingEffect 是否啟用滑鼠懸停縮放效果
      */
     public SongItemCard(String songName, String songAuthor, Duration songLength, String songImagePath, boolean scalingEffect) {
@@ -114,6 +116,16 @@ public class SongItemCard extends AnchorPane {
         setSongLength(songLength);
         setSongImagePath(songImagePath);
         setScalingEffect(scalingEffect);
+    }
+
+    /**
+     * 靜態工廠。
+     *
+     * @param song          歌曲
+     * @param scalingEffect 是否啟用滑鼠懸停縮放效果
+     */
+    public static SongItemCard createFromSong(Song song, boolean scalingEffect) {
+        return new SongItemCard(song.getSongName(), song.getSongAuthor(), song.getSongLength(), song.getSongImagePath(), scalingEffect);
     }
 
     /**
@@ -170,9 +182,9 @@ public class SongItemCard extends AnchorPane {
     /**
      * 更新 viewport。
      *
-     * @param image 歌曲封面圖片
-     * @param viewHeight  目標高度
-     * @param viewWidth   目標寬度
+     * @param image      歌曲封面圖片
+     * @param viewHeight 目標高度
+     * @param viewWidth  目標寬度
      */
     private void updateViewport(Image image, double viewHeight, double viewWidth) {
         double imageHeight = image.getHeight();
@@ -248,7 +260,7 @@ public class SongItemCard extends AnchorPane {
         SongInfoModal popupContent = new SongInfoModal(getSongName(), getSongAuthor(), getSongLength(), getSongImagePath());
         popupContent.setOpacity(0);
 
-        // === 3. popup ===
+        // === 3. POPUP ===
         songInfoPopup = new Popup();
         songInfoPopup.getContent().add(popupContent);
         songInfoPopup.setAutoHide(true);
@@ -269,8 +281,15 @@ public class SongItemCard extends AnchorPane {
             fireEvent(new MaskLayerHideEvent());
             songInfoPopup = null;
         });
+        
+        // === 4. 互動 ===
+        Song song = new Song(getSongName(), getSongAuthor(), getSongLength(), getSongImagePath());
+        popupContent.setOnPlayButtonClick(e -> {
+            songInfoPopup.hide();
+            fireEvent(new SongSelectedEvent(song));
+        });
 
-        // === 4. 中央定位 ===
+        // === 5. 中央定位 ===
         Platform.runLater(() -> {
             double anchorX = scene.getWindow().getX() + scene.getWidth() / 2 - songInfoPopup.getWidth() / 2;
             double anchorY = scene.getWindow().getY() + scene.getHeight() / 2 - songInfoPopup.getHeight() / 2;
