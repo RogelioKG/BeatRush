@@ -2,10 +2,14 @@ package org.notiva.beatrush.core;
 
 import java.util.HashMap;
 import java.util.Map;
+
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
+/**
+ * <h2>視窗管理器</h2>
+ */
 public class StageManager {
     private final Map<String, Stage> stages = new HashMap<>();
     private final int DEFAULT_WIDTH = 1000;
@@ -27,7 +31,7 @@ public class StageManager {
     /**
      * 註冊一個具有指定名稱的視窗。
      *
-     * @param name 視窗的唯一 ID
+     * @param name  視窗的唯一 ID
      * @param stage 要註冊的 {@link Stage} 物件
      */
     public void registerStage(String name, Stage stage) {
@@ -53,7 +57,7 @@ public class StageManager {
      * 顯示指定名稱的視窗，並加載指定的 FXML 檔案作為其場景內容。
      * 使用預設的寬度和高度 (600x600)。
      *
-     * @param name 要顯示的視窗名稱
+     * @param name     要顯示的視窗名稱
      * @param fxmlFile FXML 檔案路徑 (以 resources 目錄為根目錄)，用於加載場景內容
      */
     public void showStage(String name, String fxmlFile) {
@@ -76,10 +80,10 @@ public class StageManager {
     /**
      * 顯示指定名稱的視窗，並加載指定的 FXML 檔案作為其場景內容，使用指定的寬度和高度。
      *
-     * @param name 要顯示的視窗名稱
+     * @param name     要顯示的視窗名稱
      * @param fxmlFile FXML 檔案路徑 (以 resources 目錄為根目錄)
-     * @param width 場景寬度
-     * @param height 場景高度
+     * @param width    場景寬度
+     * @param height   場景高度
      */
     public void showStage(String name, String fxmlFile, int width, int height) {
         Stage stage = getStage(name);
@@ -92,9 +96,9 @@ public class StageManager {
      * 顯示指定名稱的視窗，並以指定的 {@link Parent} 物件作為其場景內容，使用指定的寬度和高度。
      * 主要是用於需要傳遞參數的情況。
      *
-     * @param name 要顯示的視窗名稱
-     * @param root 要顯示的 {@link Parent} 物件
-     * @param width 場景寬度
+     * @param name   要顯示的視窗名稱
+     * @param root   要顯示的 {@link Parent} 物件
+     * @param width  場景寬度
      * @param height 場景高度
      */
     public void showStage(String name, Parent root, int width, int height) {
@@ -128,8 +132,8 @@ public class StageManager {
      * 創建一個新的場景，使用指定的 FXML 檔案作為其內容。
      *
      * @param fxmlFile FXML 檔案路徑 (以 resources 目錄為根目錄)
-     * @param width 場景寬度
-     * @param height 場景高度
+     * @param width    場景寬度
+     * @param height   場景高度
      * @return 配置好的 Scene 物件
      */
     public Scene getScene(String fxmlFile, int width, int height) {

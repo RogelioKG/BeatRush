@@ -1,14 +1,12 @@
 package org.notiva.beatrush.util;
 
-import com.google.gson.annotations.SerializedName;
+import java.lang.reflect.Field;
+import java.net.URI;
+
 import javafx.geometry.Rectangle2D;
 import javafx.util.Duration;
+import com.google.gson.annotations.SerializedName;
 
-import java.lang.reflect.Field;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
 
 public class Misc {
 

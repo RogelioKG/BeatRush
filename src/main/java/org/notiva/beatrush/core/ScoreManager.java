@@ -6,7 +6,7 @@ import org.notiva.beatrush.util.JudgementLevel;
 import org.notiva.beatrush.util.Score;
 
 /**
- * 評分管理器，負責處理節奏遊戲的評分邏輯
+ * <h2>評分管理器</h2>
  */
 public class ScoreManager {
     private final Score currentScore = new Score();

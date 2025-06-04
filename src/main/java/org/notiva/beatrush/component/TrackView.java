@@ -18,7 +18,13 @@ import org.notiva.beatrush.util.Note;
 import org.notiva.beatrush.util.Track;
 import org.notiva.beatrush.util.TrackLayout;
 
+/**
+ * <h2>音軌元件</h2>
+ */
 public class TrackView extends StackPane {
+    /**
+     * 容納 {@code NoteView} 的容器
+     */
     @FXML
     private Pane notesBox;
 
@@ -42,10 +48,13 @@ public class TrackView extends StackPane {
      */
     private final ScoreManager scoreManager = ScoreManager.getInstance();
 
+    /**
+     * 預設建構子，會載入對應的 FXML 版面。
+     */
     public TrackView() {
         ResourceLoader.loadComponentView(this, "/view/component/TrackView.fxml");
         // 創建節點
-        Line judgementLine = getJudgementLine();
+        Line judgementLine = createJudgementLine();
         Platform.runLater(() -> {
             // 父容器的相關尺寸點
             double topY = this.sceneToLocal(0, 0).getY();
@@ -58,11 +67,21 @@ public class TrackView extends StackPane {
         });
     }
 
+    /**
+     * 建構子：使用指定的音軌初始化。
+     *
+     * @param track 音軌。
+     */
     public TrackView(Track track) {
         this();
         setTrack(track);
     }
 
+    /**
+     * 更新音軌狀態，並根據時間產生新的音符。
+     *
+     * @param elapsedMillis 已經過的遊戲時間（ms）。
+     */
     public void update(double elapsedMillis) {
         if (!track.isFinished()) {
             Note note = track.getCurrentNote();
@@ -74,7 +93,7 @@ public class TrackView extends StackPane {
     }
 
     /**
-     * 移除音符
+     * 移除最接近判定線的音符並進行評分。
      */
     public void removeClosestNote() {
         NoteView closestNote = findClosestNoteToJudgementLine();
@@ -91,7 +110,9 @@ public class TrackView extends StackPane {
     }
 
     /**
-     * 找到最接近判定線的音符
+     * 找出目前最接近判定線的 {@link NoteView}。
+     *
+     * @return 最接近判定線的音符視圖；若無則為 {@code null}。
      */
     private NoteView findClosestNoteToJudgementLine() {
         List<Node> children = notesBox.getChildren();
@@ -109,16 +130,31 @@ public class TrackView extends StackPane {
         return closestNote;
     }
 
+    /**
+     * 根據畫面高度與掉落速度計算音符掉落所需的幀數。
+     *
+     * @return 動畫幀數。
+     */
     private int calculateCycles() {
         double livingY = trackLayout.endY - trackLayout.startY;
         return (int) (livingY / GameSetting.ObjectMotion.FALL_DOWN_Y_PER_FRAME);
     }
 
-    public double calculateDelayTime() {
+    /**
+     * 計算音符從頂端到判定線所需的延遲時間（ms）。
+     *
+     * @return 下落延遲時間（ms）。
+     */
+    public double calculateDelayTimeMs() {
         double delayY = trackLayout.judgementLineY - trackLayout.startY;
         return delayY / GameSetting.ObjectMotion.FALL_DOWN_Y_PER_MS;
     }
 
+    /**
+     * 將判定線加入至音軌元件中。
+     *
+     * @param line 判定線物件。
+     */
     private void addJudgementLine(Line line) {
         // 設定 judgementLine Y 位置
         line.setStartX(15);
@@ -129,7 +165,12 @@ public class TrackView extends StackPane {
         notesBox.getChildren().add(line);
     }
 
-    private Line getJudgementLine() {
+    /**
+     * 建立一條新的判定線物件。
+     *
+     * @return 判定線。
+     */
+    private Line createJudgementLine() {
         Line line = new Line();
         line.setStroke(Color.WHITE);
         line.setStrokeWidth(15);
@@ -137,6 +178,11 @@ public class TrackView extends StackPane {
         return line;
     }
 
+    /**
+     * 將新的 {@link NoteView} 加入音軌元件並啟動其動畫。
+     *
+     * @param noteView 音符元件。
+     */
     private void addNoteView(NoteView noteView) {
         // 設定 noteView Y 位置
         noteView.setLayoutY(trackLayout.startY);
@@ -157,18 +203,30 @@ public class TrackView extends StackPane {
         fallingAnimation.play();
     }
 
-    public void clearNoteView() {
-        notesBox.getChildren().clear();
-    }
-
+    /**
+     * 取得此音軌佈局資訊。
+     *
+     * @return {@link TrackLayout} 物件。
+     */
     public TrackLayout getTrackLayout() {
         return trackLayout;
     }
 
+
+    /**
+     * 取得對應的音軌。
+     *
+     * @return 音軌。
+     */
     public Track getTrack() {
         return track;
     }
 
+    /**
+     * 設定對應的音軌。
+     *
+     * @param track 音軌。
+     */
     public void setTrack(Track track) {
         this.track = track;
     }

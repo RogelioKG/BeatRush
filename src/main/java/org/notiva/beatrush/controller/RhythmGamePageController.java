@@ -3,7 +3,6 @@ package org.notiva.beatrush.controller;
 import java.util.Map;
 
 import javafx.animation.FadeTransition;
-import javafx.animation.PauseTransition;
 import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -36,7 +35,7 @@ public class RhythmGamePageController {
     @FXML
     protected void initialize() {
         // 停止 BGM
-        mediaManager.getBgmPlayer().pause();
+        mediaManager.bgmFadeOut();
         // 音軌初始化
         Map<TrackType, TrackView> trackViewMap = rhythmGameManager.getTrackViewMap();
         for (TrackView trackView : trackViewMap.values()) {

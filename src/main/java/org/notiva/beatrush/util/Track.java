@@ -2,6 +2,9 @@ package org.notiva.beatrush.util;
 
 import java.util.List;
 
+/**
+ * <h2>音軌</h2>
+ */
 public class Track {
     private TrackType trackType;
     private List<Note> trackNotes;

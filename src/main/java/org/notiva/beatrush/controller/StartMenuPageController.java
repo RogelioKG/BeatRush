@@ -24,11 +24,8 @@ public class StartMenuPageController {
         maskLayer.show();
         startButton.addEventHandler(MouseEvent.MOUSE_ENTERED, e -> {
             maskLayer.hide();
-            MediaPlayer bgmPlayer = mediaManager.getBgmPlayer();
-            if (bgmPlayer.getStatus() == MediaPlayer.Status.READY) {
-                bgmPlayer.setVolume(GameSetting.Audio.BGM_VOLUME_RATIO);
-                bgmPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-                bgmPlayer.play();
+            if (mediaManager.getBgmPlayer().getStatus() == MediaPlayer.Status.READY) {
+                mediaManager.bgmFadeIn();
             }
         });
     }

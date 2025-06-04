@@ -5,6 +5,9 @@ import java.util.Map;
 import javafx.scene.input.KeyCode;
 import org.notiva.beatrush.util.TrackType;
 
+/**
+ * <h2>遊戲設定</h2>
+ */
 public final class GameSetting {
 
     public static final class Timing {
@@ -21,7 +24,8 @@ public final class GameSetting {
 
     public static final class Audio {
         public static final double SONG_VOLUME_RATIO = 0.1;
-        public static final double BGM_VOLUME_RATIO = 0.03;
+        public static final double BGM_VOLUME_RATIO = 0.05;
+        public static final double BGM_FADE_MS = 1000;
     }
 
     public static final class JudgmentWindow {

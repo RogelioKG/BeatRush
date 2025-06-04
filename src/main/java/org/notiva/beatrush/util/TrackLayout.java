@@ -4,7 +4,7 @@ import org.notiva.beatrush.component.TrackView;
 import org.notiva.beatrush.core.GameSetting;
 
 /**
- * <h2>音軌相關尺寸點設定</h2>
+ * <h2>音軌佈局資訊</h2>
  * <p>
  * 此類別提供與音軌顯示相關的 Y 座標配置，用於控制音符的垂直運動與判定區域。
  * 所有 Y 座標皆為 {@link TrackView} 的 local Y 座標。

@@ -19,7 +19,9 @@ import javafx.util.Duration;
 import org.notiva.beatrush.core.ResourceLoader;
 import org.notiva.beatrush.core.MediaManager;
 
-
+/**
+ * <h2>超酷按鈕元件</h2>
+ */
 public class GlowingBorderButton extends Button {
     @FXML
     private StackPane button;

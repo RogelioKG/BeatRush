@@ -7,7 +7,7 @@ import org.notiva.beatrush.core.ResourceLoader;
 import org.notiva.beatrush.util.Score;
 
 /**
- * 分數橫幅元件
+ * <h2>分數橫幅元件</h2>
  */
 public class ScoreBanner extends StackPane {
 

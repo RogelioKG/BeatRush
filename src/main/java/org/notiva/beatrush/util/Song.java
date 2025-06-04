@@ -2,6 +2,9 @@ package org.notiva.beatrush.util;
 
 import javafx.util.Duration;
 
+/**
+ * <h2>歌曲</h2>
+ */
 public class Song {
     private static final String SONG_PATH = "/media/song/";
     private final String songName;

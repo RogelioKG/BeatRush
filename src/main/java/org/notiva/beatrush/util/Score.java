@@ -4,7 +4,7 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
 /**
- * 分數
+ * <h2>分數</h2>
  */
 public class Score {
     // 基本分數

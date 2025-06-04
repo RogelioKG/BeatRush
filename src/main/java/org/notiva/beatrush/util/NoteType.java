@@ -2,6 +2,9 @@ package org.notiva.beatrush.util;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * <h2>音符類型</h2>
+ */
 public enum NoteType {
     @SerializedName("TAP")
     TAP,

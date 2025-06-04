@@ -2,6 +2,9 @@ package org.notiva.beatrush.util;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * <h2>音軌類型</h2>
+ */
 public enum TrackType {
     @SerializedName("0")
     LEFT,

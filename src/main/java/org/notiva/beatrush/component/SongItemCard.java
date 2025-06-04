@@ -24,6 +24,7 @@ import org.notiva.beatrush.util.Song;
 
 /**
  * <h2>歌曲卡片元件</h2>
+ * <p>
  * 用於顯示歌曲資訊包含歌名、歌手、長度和封面圖片。
  * 支援滑鼠懸停縮放效果和點擊彈出詳細資訊視窗。
  * 卡片高度同封面圖片高度，由 prefHeight 決定。
@@ -31,6 +32,7 @@ import org.notiva.beatrush.util.Song;
  * 封面圖片的尺寸，和你圖片實際尺寸，完全不合也沒關係。
  * 此元件會自動把圖片裁減到合適比例。
  * 註：歌名、歌手、長度和封面圖片，通通都是 responsive。
+ * </p>
  */
 public class SongItemCard extends AnchorPane {
     @FXML

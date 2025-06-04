@@ -1,5 +1,8 @@
 package org.notiva.beatrush.util;
 
+/**
+ * <h2>評分等級</h2>
+ */
 public enum JudgementLevel {
     PERFECT(100, "Perfect"),
     GREAT(70, "Great"),

@@ -1,7 +1,7 @@
 package org.notiva.beatrush.util;
 
 /**
- * <h2>音符資料模型</h2>
+ * <h2>音符</h2>
  * <p>
  * 表示一個節奏遊戲中的音符，包括音符類型、軌道、時間戳與持續時間等屬性。
  * TapNote 的持續時間為 0，HoldNote 則大於 0。

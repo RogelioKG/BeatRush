@@ -16,6 +16,7 @@ import org.notiva.beatrush.util.Song;
 
 /**
  * <h2>歌曲資訊彈窗元件</h2>
+ * <p>
  * 用於以彈窗形式顯示歌曲的詳細資訊，包含歌名、歌手、長度和封面圖片。
  * 此元件採用直向卡片設計，封面圖片位於上方，文字資訊位於下方。
  * 卡片寬度同封面圖片寬度，由 prefWidth 決定。
@@ -23,6 +24,7 @@ import org.notiva.beatrush.util.Song;
  * 封面圖片的尺寸，和你圖片實際尺寸，完全不合也沒關係。
  * 此元件會自動把圖片裁減到合適比例。
  * 註：歌名、歌手、長度和封面圖片，通通都是 responsive。
+ * </p>
  */
 public class SongInfoModal extends AnchorPane {
     @FXML

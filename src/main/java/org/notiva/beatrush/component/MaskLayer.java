@@ -13,7 +13,7 @@ import org.notiva.beatrush.event.MaskLayerHideEvent;
 import org.notiva.beatrush.event.MaskLayerShowEvent;
 
 /**
- * <h2>遮罩層</h2>
+ * <h2>遮罩層元件</h2>
  * <p>使用範例：</p>
  * <pre>{@code
  * StackPane root = new StackPane();

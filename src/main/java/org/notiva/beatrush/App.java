@@ -12,7 +12,6 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        mediaManager.loadAll();
         stageManager.registerStage("BeatRush", primaryStage);
         stageManager.showStage("BeatRush", "/view/page/StartMenuPage.fxml");
     }

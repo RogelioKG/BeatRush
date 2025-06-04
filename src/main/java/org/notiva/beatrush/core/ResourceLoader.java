@@ -18,7 +18,9 @@ import javafx.scene.media.Media;
 import org.notiva.beatrush.util.Misc;
 import org.notiva.beatrush.util.Note;
 
-
+/**
+ * <h2>資源載入管理器</h2>
+ */
 public class ResourceLoader {
 
     /**
