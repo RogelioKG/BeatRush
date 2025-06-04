@@ -13,9 +13,9 @@ public class Song {
     /**
      * 建構子，初始化歌曲資訊。
      *
-     * @param songName   歌曲名稱
-     * @param songAuthor 歌曲作者
-     * @param songLength 歌曲長度
+     * @param songName      歌曲名稱
+     * @param songAuthor    歌曲作者
+     * @param songLength    歌曲長度
      * @param songImagePath 歌曲圖片
      */
     public Song(String songName, String songAuthor, Duration songLength, String songImagePath) {
@@ -69,5 +69,16 @@ public class Song {
      */
     public String getSongImagePath() {
         return songImagePath;
+    }
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "name='" + songName + '\'' +
+                ", author='" + songAuthor + '\'' +
+                ", length=" + Misc.formatDuration(songLength) +
+                ", filePath='" + songFilePath + '\'' +
+                ", imagePath='" + songImagePath + '\'' +
+                '}';
     }
 }

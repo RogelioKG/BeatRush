@@ -107,6 +107,12 @@ public class MediaManager {
         return new MediaPlayer(media);
     }
 
+    /**
+     * 取得背景音樂的 {@link MediaPlayer} 實例。
+     * <p>需先呼叫 {@link #loadAll()} 初始化。</p>
+     *
+     * @return 背景音樂的 {@link MediaPlayer} 實例。
+     */
     public MediaPlayer getBgmPlayer() {
         return bgmPlayer;
     }

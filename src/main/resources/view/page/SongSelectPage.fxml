@@ -24,7 +24,7 @@
                 <Label text="Song Select" styleClass="song-select-title"/>
                 <TabPane tabClosingPolicy="UNAVAILABLE">
                     <Tab text="📙 All">
-                        <VBox fx:id="allSongList" />
+                        <VBox fx:id="allSongList"/>
                     </Tab>
                     <Tab text="💝 Favorite">
                         <VBox fx:id="favoriteSongList"/>

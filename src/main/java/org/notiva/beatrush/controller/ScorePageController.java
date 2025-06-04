@@ -1,47 +1,35 @@
 package org.notiva.beatrush.controller;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
-import org.notiva.beatrush.component.GlowingBorderButton;
+import javafx.scene.control.Button;
+import javafx.scene.effect.BoxBlur;
+import javafx.scene.layout.AnchorPane;
+import org.notiva.beatrush.component.ScoreBanner;
+import org.notiva.beatrush.core.ScoreManager;
 import org.notiva.beatrush.core.StageManager;
 
 public class ScorePageController {
-    public Pane scorePane;
-    public StackPane scoreTierPane;
-    public GlowingBorderButton continueButton, replayButton;
-    public Label scoreTier;
-    public Label score;
+    @FXML
+    private AnchorPane vaporwaveBackground;
+    @FXML
+    private Button continueButton;
+    @FXML
+    private Button replayButton;
+    @FXML
+    private ScoreBanner scoreBanner;
 
-    /*
-     * 可以使用
-     * Parent root = Loader.loadView("/view/page/ScorePage.fxml");
-     * ScorePageController controller = new ScorePageController();
-     * controller.setScore(score);
-     * StageManager.getInstance().showStage("BeatRush", root);
-     *
-     */
-    public void setScore(int score) {
-        this.score.setText(Integer.toString(score));
-    }
+    private final StageManager stageManager = StageManager.getInstance();
+    private final ScoreManager scoreManager = ScoreManager.getInstance();
 
     @FXML
-    public void initialize() {
-        continueButton.setButtonText("CONTINUE");
-        replayButton.setButtonText("REPLAY");
-    }
-
-    @FXML
-    public void onContinueButtonClick(ActionEvent ignoredActionEvent) {
-        StageManager stageManager = StageManager.getInstance();
-        stageManager.showStage("BeatRush", "/view/page/SongSelectPage.fxml");
-    }
-
-    @FXML
-    public void onReplayButtonClick(ActionEvent ignoredActionEvent) {
-        StageManager stageManager = StageManager.getInstance();
-        stageManager.showStage("BeatRush", "/view/page/RhythmGamePage.fxml");
+    protected void initialize() {
+        // 毛玻璃效果
+        BoxBlur frostedGlassEffect = new BoxBlur(20, 20, 2);
+        vaporwaveBackground.setEffect(frostedGlassEffect);
+        // 按鈕
+        continueButton.setOnAction(e -> stageManager.showStage("BeatRush", "/view/page/SongSelectPage.fxml"));
+        replayButton.setOnAction(e -> stageManager.showStage("BeatRush", "/view/page/RhythmGamePage.fxml"));
+        // 分數
+        scoreBanner.setScore(scoreManager.getCurrentScore());
     }
 }

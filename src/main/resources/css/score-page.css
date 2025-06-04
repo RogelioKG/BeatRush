@@ -1,0 +1,41 @@
+.score-page .banner {
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+}
+
+.score-page .section {
+    -fx-padding: 0px 40px 0px 40px;
+}
+
+.score-page .title {
+    -fx-font-size: 32px;
+    -fx-text-fill: #FFF;
+}
+
+.score-page .total {
+    -fx-font-size: 72px;
+    -fx-text-fill: #FFF;
+}
+
+.score-page .score-grade {
+    -fx-font-size: 108px;
+    -fx-text-fill: #FFF;
+}
+
+.score-page .score-accuracy {
+    -fx-font-size: 24px;
+    -fx-text-fill: #FFF;
+}
+
+.score-page .judgement-level {
+    -fx-font-size: 24px;
+    -fx-text-fill: #FFF;
+}
+
+.score-page .count {
+    -fx-font-size: 18px;
+    -fx-text-fill: #FFF;
+}
+
+.score-page .button {
+    -fx-padding: 0px 40px 0px 40px;
+}

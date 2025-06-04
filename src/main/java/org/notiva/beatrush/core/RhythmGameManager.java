@@ -15,8 +15,8 @@ public class RhythmGameManager {
     private static double delayTime; // 單位：ms
 
     private final Map<TrackType, TrackView> trackViewMap = new EnumMap<>(TrackType.class);
-    private final MediaManager mediaManager = MediaManager.getInstance();
     private final List<Runnable> endHooks = new ArrayList<>();
+    private final MediaManager mediaManager = MediaManager.getInstance();
 
     private final ObjectProperty<Song> currentSong = new SimpleObjectProperty<>();
 
@@ -41,29 +41,31 @@ public class RhythmGameManager {
 
     // 開始遊戲
     public void start() {
-        delayedMusicPlayer.start();
-        delayedMusicPlayer.getMediaPlayer().setOnEndOfMedia(this::end);
+        delayedMusicPlayer.play();
     }
 
     // 暫停遊戲
     public void pause() {
-        delayedMusicPlayer.stop();
+        delayedMusicPlayer.pause();
     }
 
     // 結束遊戲
     public void end() {
-        System.out.println("End!");
         for (Runnable hook : endHooks) {
             hook.run();
         }
     }
 
-    // 允許外部註冊 end hook
+    /**
+     * 註冊 end hook
+     */
     public void registerEndHook(Runnable hook) {
         endHooks.add(hook);
     }
 
-    // 允許外部清除所有 hook
+    /**
+     * 清除所有 end hook
+     */
     public void clearEndHooks() {
         endHooks.clear();
     }
@@ -95,6 +97,7 @@ public class RhythmGameManager {
     }
 
     private void updateGame(double elapsedMillis) {
+        System.out.println(elapsedMillis);
         for (TrackView trackView : trackViewMap.values()) {
             trackView.update(elapsedMillis);
         }
@@ -103,10 +106,12 @@ public class RhythmGameManager {
     private void loadMusicBeatPlayer(String songFilePath) {
         MediaPlayer mediaPlayer = mediaManager.getMediaPlayer(songFilePath);
         delayedMusicPlayer = new DelayedMusicPlayer(mediaPlayer, delayTime);
-        // 在 play() 後會不斷呼叫 updateGame
+        // 音樂播放時，會不斷呼叫 updateGame
         delayedMusicPlayer.setUpdateListener(this::updateGame);
-        // 設定音量
+        // 設定音樂播放音量
         delayedMusicPlayer.getMediaPlayer().setVolume(GameSetting.Audio.SONG_VOLUME_RATIO);
+        // 音樂播放結束時，結束遊戲
+        delayedMusicPlayer.addEndOfMediaListener(this::end);
     }
 
     private void loadTrackView(String songName) {

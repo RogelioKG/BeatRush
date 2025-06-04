@@ -1,7 +1,7 @@
 .song-select-page .song-select-title {
     -fx-font-size: 72px;
     -fx-font-weight: bold;
-    -fx-text-fill: white;
+    -fx-text-fill: #FFF;
     -fx-padding: 0px 0px 25px 0px;
 }
 

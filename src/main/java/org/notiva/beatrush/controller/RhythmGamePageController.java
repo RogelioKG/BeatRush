@@ -6,13 +6,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
-import javafx.util.Duration;
 import org.notiva.beatrush.component.TrackView;
 import org.notiva.beatrush.core.MediaManager;
 import org.notiva.beatrush.core.RhythmGameManager;
 import org.notiva.beatrush.core.ScoreManager;
 import org.notiva.beatrush.core.StageManager;
-import org.notiva.beatrush.util.Song;
 import org.notiva.beatrush.util.TrackType;
 
 public class RhythmGamePageController {
@@ -33,22 +31,25 @@ public class RhythmGamePageController {
         // 音軌初始化
         Map<TrackType, TrackView> trackViewMap = rhythmGameManager.getTrackViewMap();
         for (TrackView trackView : trackViewMap.values()) {
+            trackView.getTrack().reset(); // 重置 (使用者有可能 replay)
             trackSection.getChildren().add(trackView);
         }
+        // 分數重置
+        scoreManager.reset();
         // 開始遊戲
         rhythmGameManager.start();
         // 結束遊戲後，跳轉到 ScorePage
         rhythmGameManager.registerEndHook(
-                () -> stageManager.showStage("BeatRush", "/view/page/ScorePage.fxml")
+            () -> stageManager.showStage("BeatRush", "/view/page/ScorePage.fxml")
         );
+        // 綁定屬性
+        bindProperty();
         // 設置鍵盤焦點和事件監聽
         setupKeyboardListener();
-        // 分數管理
-        bindScore();
     }
 
-    private void bindScore() {
-        score.textProperty().bind(scoreManager.totalScoreProperty().asString());
+    private void bindProperty() {
+        score.textProperty().bind(scoreManager.getCurrentScore().totalScoreProperty().asString());
     }
 
     private void setupKeyboardListener() {
@@ -62,7 +63,6 @@ public class RhythmGamePageController {
         trackSection.requestFocus();
     }
 
-    @FXML
     private void handleKeyPressed(KeyEvent event) {
         // 將鍵盤事件傳遞給遊戲管理器處理
         rhythmGameManager.handleKeyPressed(event);

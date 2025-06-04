@@ -2,8 +2,6 @@ package org.notiva.beatrush.util;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.lang.reflect.Field;
-
 public enum NoteType {
     @SerializedName("TAP")
     TAP,

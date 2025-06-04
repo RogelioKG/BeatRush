@@ -7,11 +7,12 @@ import org.notiva.beatrush.core.MediaManager;
 
 public class App extends Application {
 
+    private final MediaManager mediaManager = MediaManager.getInstance();
+    private final StageManager stageManager = StageManager.getInstance();
+
     @Override
     public void start(Stage primaryStage) {
-        MediaManager mediaManager = MediaManager.getInstance();
         mediaManager.loadAll();
-        StageManager stageManager = StageManager.getInstance();
         stageManager.registerStage("BeatRush", primaryStage);
         stageManager.showStage("BeatRush", "/view/page/StartMenuPage.fxml");
     }

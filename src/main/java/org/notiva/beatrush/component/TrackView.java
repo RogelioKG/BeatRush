@@ -68,7 +68,7 @@ public class TrackView extends StackPane {
             Note note = track.getCurrentNote();
             if (note.getTimestamp() <= elapsedMillis) {
                 addNoteView(new NoteView());
-                track.nextNote();
+                track.next();
             }
         }
     }
@@ -82,11 +82,10 @@ public class TrackView extends StackPane {
             // 進入計分線
             if (closestNote.getLayoutY() > trackLayout.scoringWindowStartY) {
                 // 計分並移除
-                double distanceY = closestNote.getLayoutY() - trackLayout.judgementLineY;
-                double timeDiff = distanceY / GameSetting.ObjectMotion.FALL_DOWN_Y_PER_MS;
+                double timeDiff = closestNote.calculateTimeDiff(trackLayout.judgementLineY);
                 JudgementLevel judgeResult = scoreManager.calculateJudgement(timeDiff);
                 scoreManager.addScore(judgeResult);
-                removeNoteView(closestNote);
+                notesBox.getChildren().remove(closestNote);
             }
         }
     }
@@ -147,14 +146,19 @@ public class TrackView extends StackPane {
         Timeline fallingAnimation = noteView.createFallingAnimation(cycles);
         // 動畫完成時，移除父容器中的此 NoteView
         fallingAnimation.setOnFinished(e -> {
-            removeNoteView(noteView);
+            if (notesBox.getChildren().contains(noteView)) {
+                double timeDiff = noteView.calculateTimeDiff(trackLayout.judgementLineY);
+                JudgementLevel judgeResult = scoreManager.calculateJudgement(timeDiff);
+                scoreManager.addScore(judgeResult);
+                notesBox.getChildren().remove(noteView);
+            }
         });
         // 動畫開始
         fallingAnimation.play();
     }
 
-    private void removeNoteView(NoteView noteView) {
-        notesBox.getChildren().remove(noteView);
+    public void clearNoteView() {
+        notesBox.getChildren().clear();
     }
 
     public TrackLayout getTrackLayout() {

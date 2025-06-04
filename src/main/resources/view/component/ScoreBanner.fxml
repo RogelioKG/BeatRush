@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<fx:root type="javafx.scene.layout.StackPane"
+         xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         alignment="CENTER_LEFT">
+    <!-- Banner -->
+    <HBox maxHeight="200" prefHeight="200" styleClass="banner">
+        <!-- 保留 Circle 所占空間 -->
+        <Region prefWidth="300.0"/>
+        <VBox alignment="CENTER" styleClass="section">
+            <Label text="Score" styleClass="title"/>
+            <Label fx:id="scoreTotal" text="177412" styleClass="total"/>
+        </VBox>
+        <VBox alignment="CENTER" styleClass="section">
+            <Label text="Max Combo" styleClass="title"/>
+            <Label fx:id="maxComboTotal" text="535" styleClass="total"/>
+        </VBox>
+        <VBox alignment="CENTER" styleClass="section">
+            <GridPane alignment="CENTER" hgap="10" vgap="5">
+                <Label text="Perfect" styleClass="judgement-level" GridPane.rowIndex="0"
+                       GridPane.columnIndex="0"/>
+                <Label fx:id="perfectCount" text="557" styleClass="count" GridPane.rowIndex="0"
+                       GridPane.columnIndex="1"/>
+                <Label text="Great" styleClass="judgement-level" GridPane.rowIndex="1"
+                       GridPane.columnIndex="0"/>
+                <Label fx:id="greatCount" text="128" styleClass="count" GridPane.rowIndex="1"
+                       GridPane.columnIndex="1"/>
+                <Label text="Good" styleClass="judgement-level" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <Label fx:id="goodCount" text="12" styleClass="count" GridPane.rowIndex="2"
+                       GridPane.columnIndex="1"/>
+                <Label text="Bad" styleClass="judgement-level" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <Label fx:id="badCount" text="0" styleClass="count" GridPane.rowIndex="3"
+                       GridPane.columnIndex="1"/>
+                <Label text="Miss" styleClass="judgement-level" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <Label fx:id="missCount" text="0" styleClass="count" GridPane.rowIndex="4"
+                       GridPane.columnIndex="1"/>
+            </GridPane>
+        </VBox>
+    </HBox>
+    <!-- Circle -->
+    <StackPane maxWidth="300.0" styleClass="score-circle">
+        <Circle fill="#000000EE" radius="130.0" stroke="WHITE" strokeWidth="1"/>
+        <VBox alignment="CENTER" styleClass="score-circle-info">
+            <Label fx:id="scoreGrade" text="S" styleClass="score-grade"/>
+            <Label fx:id="scoreAccuracy" text="99.9%" styleClass="score-accuracy"/>
+        </VBox>
+    </StackPane>
+</fx:root>

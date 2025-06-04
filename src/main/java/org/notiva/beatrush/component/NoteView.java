@@ -11,6 +11,11 @@ public class NoteView extends Pane {
     public NoteView() {
         ResourceLoader.loadComponentView(this, "/view/component/NoteView.fxml");
     }
+
+    public double calculateTimeDiff(double judgementLineY) {
+        return (this.getLayoutY() - judgementLineY) / GameSetting.ObjectMotion.FALL_DOWN_Y_PER_MS;
+    }
+
     public Timeline createFallingAnimation(int cycles) {
         Timeline timeline = new Timeline(
                 new KeyFrame(Duration.seconds(GameSetting.Timing.FRAME_TIME_S), e -> {

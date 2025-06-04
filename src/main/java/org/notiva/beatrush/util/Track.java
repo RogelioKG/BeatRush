@@ -17,11 +17,16 @@ public class Track {
         return trackNotes.get(currentNoteIndex);
     }
 
-    public void nextNote() {
+    public void next() {
         currentNoteIndex += 1;
         if (currentNoteIndex >= trackNotes.size()) {
             finished = true;
         }
+    }
+
+    public void reset() {
+        currentNoteIndex = 0;
+        finished = false;
     }
 
     public boolean isFinished() {
