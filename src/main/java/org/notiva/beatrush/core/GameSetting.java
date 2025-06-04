@@ -29,9 +29,9 @@ public final class GameSetting {
     }
 
     public static final class JudgmentWindow {
-        public static final double PERFECT_MIN_MS = -70.0;
-        public static final double PERFECT_MAX_MS = 70.0;
-        public static final double GREAT_MIN_MS = -200.0;
+        public static final double PERFECT_MIN_MS = -50.0;
+        public static final double PERFECT_MAX_MS = 50.0;
+        public static final double GREAT_MIN_MS = -150.0;
         public static final double GREAT_MAX_MS = 150.0;
         public static final double GOOD_MIN_MS = -400.0;
         public static final double GOOD_MAX_MS = 200.0;
