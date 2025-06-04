@@ -114,7 +114,6 @@ public class RhythmGameManager {
      * @param elapsedMillis 經過的時間（ms）。
      */
     private void updateGame(double elapsedMillis) {
-        System.out.println(elapsedMillis);
         for (TrackView trackView : trackViewMap.values()) {
             trackView.update(elapsedMillis);
         }
