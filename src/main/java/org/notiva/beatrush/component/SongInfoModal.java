@@ -10,9 +10,7 @@ import javafx.scene.image.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 import org.notiva.beatrush.core.ResourceLoader;
-import org.notiva.beatrush.event.SongSelectedEvent;
 import org.notiva.beatrush.util.Misc;
-import org.notiva.beatrush.util.Song;
 
 /**
  * <h2>歌曲資訊彈窗元件</h2>

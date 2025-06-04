@@ -12,12 +12,12 @@
     <stylesheets>
         <URL value="@../../css/all.css"/>
     </stylesheets>
-    <fx:include source="../component/VaporwaveBackground.fxml" />
-    <MaskLayer fx:id="maskLayer" />
-    <VBox alignment="CENTER"  spacing="100.0">
+    <fx:include source="../component/VaporwaveBackground.fxml"/>
+    <MaskLayer fx:id="maskLayer"/>
+    <VBox alignment="CENTER" spacing="100.0">
         <ImageView fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../image/material/beatrush.png"/>
         </ImageView>
-        <GlowingBorderButton fx:id="startButton" buttonText="START" onAction="#onStartButtonClick" />
+        <GlowingBorderButton fx:id="startButton" buttonText="START" onAction="#onStartButtonClick"/>
     </VBox>
 </StackPane>
