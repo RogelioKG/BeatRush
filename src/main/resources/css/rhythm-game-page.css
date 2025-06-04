@@ -1,0 +1,14 @@
+.rhythm-game-page {
+    -fx-background-color: #101010;
+}
+
+.rhythm-game-page .score-text {
+    -fx-text-fill: #fff;
+    -fx-font-size: 56px;
+    -fx-padding: 20px 20px 20px 20px;
+}
+
+.rhythm-game-page .judgement-level-text {
+    -fx-text-fill: #fff;
+    -fx-font-size: 32px;
+}

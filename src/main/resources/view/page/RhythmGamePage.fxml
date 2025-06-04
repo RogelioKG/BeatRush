@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.HBox?>
-
-<?import javafx.scene.control.Label?>
 <?import java.net.URL?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
            fx:controller="org.notiva.beatrush.controller.RhythmGamePageController"
-           prefHeight="800.0" prefWidth="1600.0" style="-fx-background-color: #1e1e1e;">
+           styleClass="rhythm-game-page">
     <stylesheets>
         <URL value="@../../css/all.css"/>
+        <URL value="@../../css/rhythm-game-page.css"/>
     </stylesheets>
     <HBox alignment="CENTER" fx:id="trackSection"/>
-    <Label fx:id="score" style="-fx-text-fill: #fff; -fx-font-size: 30px;"></Label>
+    <Label fx:id="scoreText" styleClass="score-text" StackPane.alignment="BOTTOM_LEFT"/>
+    <Label fx:id="judgementLevelText" styleClass="judgement-level-text"/>
 </StackPane>

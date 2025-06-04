@@ -1,8 +1,8 @@
 package org.notiva.beatrush.controller;
 
 import javafx.event.ActionEvent;
-
 import javafx.fxml.FXML;
+
 import org.notiva.beatrush.component.GlowingBorderButton;
 import org.notiva.beatrush.core.StageManager;
 

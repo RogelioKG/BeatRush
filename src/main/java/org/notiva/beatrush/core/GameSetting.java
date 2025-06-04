@@ -35,8 +35,18 @@ public final class GameSetting {
         public static final double BAD_MAX_MS = 300.0;
     }
 
+    public static final class Score {
+        public static final int COMBO_BONUS_INTERVAL = 10; // 每幾連擊增加一次分數
+        public static final int COMBO_BONUS_MAX = 30;      // 最大加分
+    }
+
     public static final class Control {
-        public static final Map<KeyCode, TrackType> KEY_TO_TRACK = Map.of(KeyCode.D, TrackType.LEFT, KeyCode.F, TrackType.MIDDLE_LEFT, KeyCode.J, TrackType.MIDDLE_RIGHT, KeyCode.K, TrackType.RIGHT);
+        public static final Map<KeyCode, TrackType> KEY_TO_TRACK = Map.of(
+                KeyCode.D, TrackType.LEFT,
+                KeyCode.F, TrackType.MIDDLE_LEFT,
+                KeyCode.J, TrackType.MIDDLE_RIGHT,
+                KeyCode.K, TrackType.RIGHT
+        );
     }
 
     private GameSetting() {
