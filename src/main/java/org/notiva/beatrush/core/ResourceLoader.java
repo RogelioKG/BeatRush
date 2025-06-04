@@ -1,11 +1,9 @@
 package org.notiva.beatrush.core;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.lang.reflect.Type;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 import com.google.gson.Gson;
@@ -127,22 +125,16 @@ public class ResourceLoader {
      * 載入檔案資源。
      *
      * @param resourcePath 資源相對路徑，例如 "/data/notes.json"
-     * @return 對應的 {@link FileReader}
+     * @return 對應的 {@link Reader}
      * @throws IllegalArgumentException 若找不到資源
      */
-    public static FileReader loadFile(String resourcePath) {
-        URL resourceUrl = ResourceLoader.class.getResource(resourcePath);
-        if (resourceUrl == null) {
+    public static Reader loadFile(String resourcePath) {
+        InputStream inputStream = ResourceLoader.class.getResourceAsStream(resourcePath);
+        if (inputStream == null) {
             throw new IllegalArgumentException("Resource not found: " + resourcePath);
         }
-        try {
-            File file = new File(resourceUrl.toURI());
-            return new FileReader(file);
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to load resource: " + resourcePath, e);
-        }
+        return new InputStreamReader(inputStream, StandardCharsets.UTF_8);
     }
-
 
     /**
      * 載入譜面 JSON 檔案。
@@ -152,7 +144,7 @@ public class ResourceLoader {
      */
     public static List<Note> loadChart(String songName) {
         Gson gson = new Gson();
-        FileReader reader = ResourceLoader.loadFile("/chart/" + songName + ".json");
+        Reader reader = ResourceLoader.loadFile("/chart/" + songName + ".json");
         Type listType = new TypeToken<List<Note>>() {
         }.getType();
         return gson.fromJson(reader, listType);

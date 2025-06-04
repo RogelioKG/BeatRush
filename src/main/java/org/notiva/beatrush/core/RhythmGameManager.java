@@ -103,7 +103,7 @@ public class RhythmGameManager {
                 // 先載入 TrackView，算好 delayTime
                 loadTrackView(newVal.getSongName());
                 // 根據 delayTime，決定延遲多久播放
-                loadMusicBeatPlayer(newVal.getSongFilePath());
+                loadDelayedMusicPlayer(newVal.getSongFilePath());
             }
         });
     }
@@ -125,7 +125,7 @@ public class RhythmGameManager {
      *
      * @param songFilePath 音檔路徑。
      */
-    private void loadMusicBeatPlayer(String songFilePath) {
+    private void loadDelayedMusicPlayer(String songFilePath) {
         MediaPlayer mediaPlayer = mediaManager.getMediaPlayer(songFilePath);
         delayedMusicPlayer = new DelayedMusicPlayer(mediaPlayer, delayTimeMs);
         // 音樂播放時，會不斷呼叫 updateGame
