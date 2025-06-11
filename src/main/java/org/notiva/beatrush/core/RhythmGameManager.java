@@ -17,6 +17,8 @@ public class RhythmGameManager {
     private final Map<TrackType, TrackView> trackViewMap = new EnumMap<>(TrackType.class);
     private final List<Runnable> endHooks = new ArrayList<>();
     private final MediaManager mediaManager = MediaManager.getInstance();
+    private final ScoreManager scoreManager = ScoreManager.getInstance(); // 新增 ScoreManager 實例
+    private final StageManager stageManager = StageManager.getInstance(); // 新增 StageManager 實例
 
     private final ObjectProperty<Song> currentSong = new SimpleObjectProperty<>();
 
@@ -116,6 +118,21 @@ public class RhythmGameManager {
     private void updateGame(double elapsedMillis) {
         for (TrackView trackView : trackViewMap.values()) {
             trackView.update(elapsedMillis);
+        }
+
+        // 檢查 missCount
+        if (scoreManager.getCurrentScore().getMissCount() > 100) {
+            if (delayedMusicPlayer != null && delayedMusicPlayer.isPlaying()) {
+                // 清除 end hook，避免跳轉到 ScorePage
+                clearEndHooks();
+                // 停止計時器
+                delayedMusicPlayer.getTimer().stop();
+                // 停止音樂
+                delayedMusicPlayer.stop();
+                // 跳轉到 GameOverPage
+                // 需要在 JavaFX Application Thread 中執行 UI 更新
+                Platform.runLater(() -> stageManager.showStage("BeatRush", "/view/page/GameOverPage.fxml"));
+            }
         }
     }
 
