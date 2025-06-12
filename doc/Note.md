@@ -1,35 +1,5 @@
 # Note
 
-## Setup Guide
-
-1. clone this repo (複製倉庫)
-    > 若你使用的是 GitHub Desktop，\
-    請參考此影片：[Git, GitHub, & GitHub Desktop for beginners](https://youtu.be/8Dd7KRpKeaE)。
-    ```
-    git clone git@github.com:RogelioKG/Duel-Master.git
-    ```
-2. build (建置專案)
-    ```
-    .\gradlew clean build
-    ```
-3. run (執行專案)
-    ```
-    .\gradlew run
-    ```
-4. create a portable executable (打包成 standalone 執行檔)
-    + `build.gradle.kts`
-        ```diff
-        jlink {
-            ...
-
-        +   jpackage {
-        +       icon = "src/main/resources/doge_gopnik.ico"
-        +       imageName = "demo"
-        +       installerType = "app-image"
-        +       skipInstaller = true
-        +   }
-        }
-        ```
 ## Caution
 
 ### 1. 註解
