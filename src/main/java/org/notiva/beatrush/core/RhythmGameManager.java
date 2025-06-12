@@ -158,7 +158,7 @@ public class RhythmGameManager {
      * @return 載入的音軌列表。
      */
     private List<Track> loadTrack(String songName) {
-        List<Note> notes = ResourceLoader.loadChart(songName);
+        List<Note> notes = ResourceLoader.loadNotes(songName);
 
         Map<TrackType, List<Note>> grouped = new EnumMap<>(TrackType.class);
 

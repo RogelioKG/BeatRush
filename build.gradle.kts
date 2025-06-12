@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "org.notiva"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -50,5 +50,11 @@ jlink {
     options.set(listOf("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages"))
     launcher {
         name = "app"
+    }
+    jpackage {
+        icon = "src/main/resources/image/material/beatrush-icon.ico"
+        imageName = "BeatRush"
+        installerType = "app-image"
+        skipInstaller = true
     }
 }

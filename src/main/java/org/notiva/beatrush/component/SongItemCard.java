@@ -7,6 +7,7 @@ import javafx.beans.property.*;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.image.*;
 import javafx.scene.control.Label;
@@ -298,6 +299,17 @@ public class SongItemCard extends AnchorPane {
             songInfoPopup.setX(anchorX);
             songInfoPopup.setY(anchorY);
         });
+    }
+
+    /**
+     * 將當前 SongItemCard 包裝進 Group 中。
+     *
+     * @return 包含此 SongItemCard 的 Group
+     */
+    public Group wrapInGroup() {
+        Group group = new Group();
+        group.getChildren().add(this);
+        return group;
     }
 
     /**

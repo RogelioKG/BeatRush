@@ -16,6 +16,20 @@
     ```
     .\gradlew run
     ```
+4. create a portable executable (打包成 standalone 執行檔)
+    + `build.gradle.kts`
+        ```diff
+        jlink {
+            ...
+
+        +   jpackage {
+        +       icon = "src/main/resources/doge_gopnik.ico"
+        +       imageName = "demo"
+        +       installerType = "app-image"
+        +       skipInstaller = true
+        +   }
+        }
+        ```
 ## Caution
 
 ### 1. 註解
