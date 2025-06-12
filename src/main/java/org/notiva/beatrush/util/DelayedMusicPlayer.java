@@ -220,4 +220,8 @@ public class DelayedMusicPlayer {
     public MediaPlayer getMediaPlayer() {
         return mediaPlayer;
     }
+
+    public GameTimer getTimer() {
+        return timer;
+    }
 }

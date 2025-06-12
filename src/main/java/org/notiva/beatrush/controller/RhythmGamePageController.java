@@ -14,6 +14,7 @@ import org.notiva.beatrush.core.MediaManager;
 import org.notiva.beatrush.core.RhythmGameManager;
 import org.notiva.beatrush.core.ScoreManager;
 import org.notiva.beatrush.core.StageManager;
+import org.notiva.beatrush.util.Score;
 import org.notiva.beatrush.util.TrackType;
 
 public class RhythmGamePageController {
