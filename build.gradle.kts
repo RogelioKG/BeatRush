@@ -1,9 +1,9 @@
 plugins {
     java
     application
-    id("org.javamodularity.moduleplugin") version "1.8.12"
-    id("org.openjfx.javafxplugin") version "0.0.13"
-    id("org.beryx.jlink") version "2.25.0"
+    id("org.javamodularity.moduleplugin") version "2.0.1"
+    id("org.openjfx.javafxplugin") version "0.1.0"
+    id("org.beryx.jlink") version "4.0.1"
 }
 
 group = "org.notiva"
@@ -13,11 +13,11 @@ repositories {
     mavenCentral()
 }
 
-val junitVersion = "5.10.2"
+val junitVersion = "5.11.4"
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(23)
+        languageVersion = JavaLanguageVersion.of(25)
     }
 }
 
@@ -31,7 +31,7 @@ application {
 }
 
 javafx {
-    version = "24.0.1"
+    version = "25"
     modules = listOf("javafx.controls", "javafx.fxml", "javafx.media")
 }
 
@@ -47,7 +47,12 @@ tasks.withType<Test> {
 
 jlink {
     imageZip.set(layout.buildDirectory.file("/distributions/app-${javafx.platform.classifier}.zip"))
-    options.set(listOf("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages"))
+    options.set(
+        listOf(
+            "--strip-debug", "--compress", "zip-6",
+            "--no-header-files", "--no-man-pages"
+        )
+    )
     launcher {
         name = "app"
     }

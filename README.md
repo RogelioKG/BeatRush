@@ -29,4 +29,4 @@
     + 請在 `/build/jpackage/BeatRush` 目錄頂層補上 [assets] 資源包
 
 
-[assets]: https://drive.google.com/file/d/1mtnInEmd4O6LWyRVw_o2jn86eOZeC1Mt/view?usp=drive_link
+[assets]: https://drive.google.com/file/d/1cVlxX6Jf9Ux1pncOXaTIXwY9DdidCq2f/view
